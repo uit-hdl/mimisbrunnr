@@ -1,0 +1,1930 @@
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.1) (preloaded format=pdflatex 2022.2.14)  2 MAR 2022 14:10
+entering extended mode
+ restricted \write18 enabled.
+ %&-line parsing enabled.
+**./biomarkers.tex
+(biomarkers.tex
+LaTeX2e <2021-11-15> patch level 1
+L3 programming layer <2022-02-05> (cup-journal.cls
+Document Class: cup-journal 2021/07/27 v1.0 Submission to CUP journals
+(/usr/local/share/miktex-texmf/tex/latex/base/article.cls
+Document Class: article 2021/10/04 v1.4n Standard LaTeX document class
+(/usr/local/share/miktex-texmf/tex/latex/base/size10.clo
+File: size10.clo 2021/10/04 v1.4n Standard LaTeX file (size option)
+)
+\c@part=\count185
+\c@section=\count186
+\c@subsection=\count187
+\c@subsubsection=\count188
+\c@paragraph=\count189
+\c@subparagraph=\count190
+\c@figure=\count191
+\c@table=\count192
+\abovecaptionskip=\skip47
+\belowcaptionskip=\skip48
+\bibindent=\dimen138
+)
+(/home/gromenawer/.miktex/texmfs/install/tex/latex/fbb/fbb.sty
+Package: fbb 2020/07/01 v1.16 Style file for fbb fonts.
+
+`fbb' v1.16, 2020/07/01 Text macros for fbb, a Bembo-like font family (msharpe)
+(/usr/local/share/miktex-texmf/tex/latex/base/fontenc.sty
+Package: fontenc 2021/04/29 v2.0v Standard LaTeX package
+
+(/home/gromenawer/.miktex/texmfs/install/tex/latex/ly1/ly1enc.def
+File: ly1enc.def 2009/07/22 v0.7 TeX 'n ANSI encoding (DPC/KB)
+Now handling font encoding LY1 ...
+... processing UTF-8 mapping file for font encoding LY1
+
+(/usr/local/share/miktex-texmf/tex/latex/base/ly1enc.dfu
+File: ly1enc.dfu 2021/06/21 v1.2n UTF-8 support
+   defining Unicode char U+00A0 (decimal 160)
+   defining Unicode char U+00A1 (decimal 161)
+   defining Unicode char U+00A2 (decimal 162)
+   defining Unicode char U+00A3 (decimal 163)
+   defining Unicode char U+00A4 (decimal 164)
+   defining Unicode char U+00A5 (decimal 165)
+   defining Unicode char U+00A6 (decimal 166)
+   defining Unicode char U+00A7 (decimal 167)
+   defining Unicode char U+00AA (decimal 170)
+   defining Unicode char U+00AB (decimal 171)
+   defining Unicode char U+00AD (decimal 173)
+   defining Unicode char U+00AE (decimal 174)
+   defining Unicode char U+00B0 (decimal 176)
+   defining Unicode char U+00B5 (decimal 181)
+   defining Unicode char U+00B6 (decimal 182)
+   defining Unicode char U+00B7 (decimal 183)
+   defining Unicode char U+00BA (decimal 186)
+   defining Unicode char U+00BB (decimal 187)
+   defining Unicode char U+00BC (decimal 188)
+   defining Unicode char U+00BD (decimal 189)
+   defining Unicode char U+00BE (decimal 190)
+   defining Unicode char U+00BF (decimal 191)
+   defining Unicode char U+00C0 (decimal 192)
+   defining Unicode char U+00C1 (decimal 193)
+   defining Unicode char U+00C2 (decimal 194)
+   defining Unicode char U+00C3 (decimal 195)
+   defining Unicode char U+00C4 (decimal 196)
+   defining Unicode char U+00C5 (decimal 197)
+   defining Unicode char U+00C6 (decimal 198)
+   defining Unicode char U+00C7 (decimal 199)
+   defining Unicode char U+00C8 (decimal 200)
+   defining Unicode char U+00C9 (decimal 201)
+   defining Unicode char U+00CA (decimal 202)
+   defining Unicode char U+00CB (decimal 203)
+   defining Unicode char U+00CC (decimal 204)
+   defining Unicode char U+00CD (decimal 205)
+   defining Unicode char U+00CE (decimal 206)
+   defining Unicode char U+00CF (decimal 207)
+   defining Unicode char U+00D0 (decimal 208)
+   defining Unicode char U+00D1 (decimal 209)
+   defining Unicode char U+00D2 (decimal 210)
+   defining Unicode char U+00D3 (decimal 211)
+   defining Unicode char U+00D4 (decimal 212)
+   defining Unicode char U+00D5 (decimal 213)
+   defining Unicode char U+00D6 (decimal 214)
+   defining Unicode char U+00D8 (decimal 216)
+   defining Unicode char U+00D9 (decimal 217)
+   defining Unicode char U+00DA (decimal 218)
+   defining Unicode char U+00DB (decimal 219)
+   defining Unicode char U+00DC (decimal 220)
+   defining Unicode char U+00DD (decimal 221)
+   defining Unicode char U+00DE (decimal 222)
+   defining Unicode char U+00DF (decimal 223)
+   defining Unicode char U+00E0 (decimal 224)
+   defining Unicode char U+00E1 (decimal 225)
+   defining Unicode char U+00E2 (decimal 226)
+   defining Unicode char U+00E3 (decimal 227)
+   defining Unicode char U+00E4 (decimal 228)
+   defining Unicode char U+00E5 (decimal 229)
+   defining Unicode char U+00E6 (decimal 230)
+   defining Unicode char U+00E7 (decimal 231)
+   defining Unicode char U+00E8 (decimal 232)
+   defining Unicode char U+00E9 (decimal 233)
+   defining Unicode char U+00EA (decimal 234)
+   defining Unicode char U+00EB (decimal 235)
+   defining Unicode char U+00EC (decimal 236)
+   defining Unicode char U+00ED (decimal 237)
+   defining Unicode char U+00EE (decimal 238)
+   defining Unicode char U+00EF (decimal 239)
+   defining Unicode char U+00F0 (decimal 240)
+   defining Unicode char U+00F1 (decimal 241)
+   defining Unicode char U+00F2 (decimal 242)
+   defining Unicode char U+00F3 (decimal 243)
+   defining Unicode char U+00F4 (decimal 244)
+   defining Unicode char U+00F5 (decimal 245)
+   defining Unicode char U+00F6 (decimal 246)
+   defining Unicode char U+00F8 (decimal 248)
+   defining Unicode char U+00F9 (decimal 249)
+   defining Unicode char U+00FA (decimal 250)
+   defining Unicode char U+00FB (decimal 251)
+   defining Unicode char U+00FC (decimal 252)
+   defining Unicode char U+00FD (decimal 253)
+   defining Unicode char U+00FE (decimal 254)
+   defining Unicode char U+00FF (decimal 255)
+   defining Unicode char U+0131 (decimal 305)
+   defining Unicode char U+0141 (decimal 321)
+   defining Unicode char U+0142 (decimal 322)
+   defining Unicode char U+0152 (decimal 338)
+   defining Unicode char U+0153 (decimal 339)
+   defining Unicode char U+0160 (decimal 352)
+   defining Unicode char U+0161 (decimal 353)
+   defining Unicode char U+0174 (decimal 372)
+   defining Unicode char U+0175 (decimal 373)
+   defining Unicode char U+0176 (decimal 374)
+   defining Unicode char U+0177 (decimal 375)
+   defining Unicode char U+0178 (decimal 376)
+   defining Unicode char U+017D (decimal 381)
+   defining Unicode char U+017E (decimal 382)
+   defining Unicode char U+0192 (decimal 402)
+   defining Unicode char U+0218 (decimal 536)
+   defining Unicode char U+0219 (decimal 537)
+   defining Unicode char U+021A (decimal 538)
+   defining Unicode char U+021B (decimal 539)
+   defining Unicode char U+0237 (decimal 567)
+   defining Unicode char U+02C6 (decimal 710)
+   defining Unicode char U+02DC (decimal 732)
+   defining Unicode char U+2013 (decimal 8211)
+   defining Unicode char U+2014 (decimal 8212)
+   defining Unicode char U+201C (decimal 8220)
+   defining Unicode char U+201D (decimal 8221)
+   defining Unicode char U+2020 (decimal 8224)
+   defining Unicode char U+2021 (decimal 8225)
+   defining Unicode char U+2022 (decimal 8226)
+   defining Unicode char U+2026 (decimal 8230)
+   defining Unicode char U+2030 (decimal 8240)
+   defining Unicode char U+2039 (decimal 8249)
+   defining Unicode char U+203A (decimal 8250)
+   defining Unicode char U+2122 (decimal 8482)
+   defining Unicode char U+FB00 (decimal 64256)
+   defining Unicode char U+FB01 (decimal 64257)
+   defining Unicode char U+FB02 (decimal 64258)
+   defining Unicode char U+FB03 (decimal 64259)
+   defining Unicode char U+FB04 (decimal 64260)
+   defining Unicode char U+FB05 (decimal 64261)
+   defining Unicode char U+FB06 (decimal 64262)
+)))
+(/usr/local/share/miktex-texmf/tex/latex/base/textcomp.sty
+Package: textcomp 2020/02/02 v2.0n Standard LaTeX package
+)
+(/usr/local/share/miktex-texmf/tex/generic/iftex/ifetex.sty
+Package: ifetex 2019/10/25 v1.3 ifetex legacy package. Use iftex instead.
+
+(/usr/local/share/miktex-texmf/tex/generic/iftex/iftex.sty
+Package: iftex 2022/02/03 v1.0f TeX engine tests
+))
+(/usr/local/share/miktex-texmf/tex/latex/etoolbox/etoolbox.sty
+Package: etoolbox 2020/10/05 v2.5k e-TeX tools for LaTeX (JAW)
+\etb@tempcnta=\count193
+)
+(/home/gromenawer/.miktex/texmfs/install/tex/latex/xstring/xstring.sty
+(/home/gromenawer/.miktex/texmfs/install/tex/generic/xstring/xstring.tex
+\integerpart=\count194
+\decimalpart=\count195
+)
+Package: xstring 2021/07/21 v1.84 String manipulations (CT)
+)
+(/usr/local/share/miktex-texmf/tex/latex/base/ifthen.sty
+Package: ifthen 2020/11/24 v1.1c Standard LaTeX ifthen package (DPC)
+)
+(/home/gromenawer/.miktex/texmfs/install/tex/latex/fontaxes/fontaxes.sty
+Package: fontaxes 2020/07/21 v1.0e Font selection axes
+LaTeX Info: Redefining \upshape on input line 29.
+LaTeX Info: Redefining \itshape on input line 31.
+LaTeX Info: Redefining \slshape on input line 33.
+LaTeX Info: Redefining \swshape on input line 35.
+LaTeX Info: Redefining \scshape on input line 37.
+LaTeX Info: Redefining \sscshape on input line 39.
+LaTeX Info: Redefining \ulcshape on input line 41.
+LaTeX Info: Redefining \textsw on input line 47.
+LaTeX Info: Redefining \textssc on input line 48.
+LaTeX Info: Redefining \textulc on input line 49.
+)
+LaTeX Info: Redefining \swshape on input line 41.
+
+(/usr/local/share/miktex-texmf/tex/latex/xkeyval/xkeyval.sty
+Package: xkeyval 2020/11/20 v2.8 package option processing (HA)
+
+(/usr/local/share/miktex-texmf/tex/generic/xkeyval/xkeyval.tex
+(/usr/local/share/miktex-texmf/tex/generic/xkeyval/xkvutils.tex
+\XKV@toks=\toks16
+\XKV@tempa@toks=\toks17
+
+(/usr/local/share/miktex-texmf/tex/generic/xkeyval/keyval.tex))
+\XKV@depth=\count196
+File: xkeyval.tex 2014/12/03 v2.7a key=value parser (HA)
+)))
+(/home/gromenawer/.miktex/texmfs/install/tex/latex/sourcesanspro/sourcesanspro.
+sty
+Package: sourcesanspro 2018/05/19 v2.7 Adobe's Source Sans Pro typeface
+ (/usr/local/share/miktex-texmf/tex/generic/iftex/ifxetex.sty
+Package: ifxetex 2019/10/25 v0.7 ifxetex legacy package. Use iftex instead.
+)
+(/usr/local/share/miktex-texmf/tex/generic/iftex/ifluatex.sty
+Package: ifluatex 2019/10/25 v1.5 ifluatex legacy package. Use iftex instead.
+)
+(/usr/local/share/miktex-texmf/tex/latex/base/fontenc.sty
+Package: fontenc 2021/04/29 v2.0v Standard LaTeX package
+LaTeX Font Info:    Trying to load font information for T1+fbb-TLF on input lin
+e 112.
+
+(/home/gromenawer/.miktex/texmfs/install/tex/latex/fbb/T1fbb-TLF.fd
+File: T1fbb-TLF.fd 2020/07/01 (msharpe) Font definitions for T1/fbb-TLF.
+)
+LaTeX Font Info:    Font shape `T1/fbb-TLF/m/n' will be
+(Font)              scaled to size 9.70001pt on input line 112.
+))
+(/home/gromenawer/.miktex/texmfs/install/tex/latex/sansmath/sansmath.sty
+Package: sansmath 2007/02/28  ver 1.1 Donald Arseneau
+\c@mv@sans=\count197
+LaTeX Font Info:    Overwriting math alphabet `\mathrm' in version `sans'
+(Font)                  OT1/cmr/m/n --> OT1/SourceSansPro-TLF/m/n on input line
+ 103.
+LaTeX Font Info:    Overwriting math alphabet `\mathsfsl' in version `sans'
+(Font)                  OT1/SourceSansPro-TLF/m/sl --> OT1/SourceSansPro-TLF/m/
+sl on input line 104.
+LaTeX Font Info:    Overwriting symbol font `operators' in version `sans'
+(Font)                  OT1/cmr/m/n --> OT1/SourceSansPro-TLF/m/n on input line
+ 105.
+LaTeX Font Info:    Overwriting symbol font `letters' in version `sans'
+(Font)                  OML/cmm/m/it --> OML/cmm/m/it on input line 109.
+LaTeX Font Info:    Overwriting symbol font `symbols' in version `sans'
+(Font)                  OMS/cmsy/m/n --> OMS/cmsy/m/n on input line 110.
+LaTeX Font Info:    Overwriting math alphabet `\mathsfbf' in version `sans'
+(Font)                  OT1/SourceSansPro-TLF/bx/sl --> OT1/SourceSansPro-TLF/b
+x/n on input line 112.
+)
+(/home/gromenawer/.miktex/texmfs/install/tex/latex/mathastext/mathastext.sty
+Package: mathastext 2019/11/16 v1.3w Use the text font in math mode (JFB)
+\mst@exists@muskip=\muskip16
+\mst@forall@muskip=\muskip17
+\mst@prime@muskip=\muskip18
+\mst@do@nonletters=\toks18
+\mst@do@easynonletters=\toks19
+\mst@do@az=\toks20
+\mst@do@AZ=\toks21
+\symmtoperatorfont=\mathgroup4
+\symmtletterfont=\mathgroup5
+
+** will use Euler font; command \MTEulerScale
+\symmteulervm=\mathgroup6
+** ! and ?
+** punctuation: , . : ; and \colon
+LaTeX Info: Redefining \relbar on input line 787.
+LaTeX Info: Redefining \rightarrowfill on input line 790.
+LaTeX Info: Redefining \leftarrowfill on input line 795.
+** + and =
+LaTeX Info: Redefining \Relbar on input line 886.
+** adding = ; and + to \nfss@catcodes
+** parentheses ( ) [ ] and slash /
+** alldelims: < > \backslash \setminus | \vert \mid \{ and \}
+LaTeX Font Info:    Redeclaring math delimiter \backslash on input line 932.
+LaTeX Font Info:    Redeclaring math symbol \setminus on input line 944.
+LaTeX Info: Redefining \models on input line 953.
+** \# \mathdollar \% \& 
+** \imath and \jmath 
+LaTeX Font Info:    Overwriting math alphabet `\mathnormalbold' in version `nor
+mal'
+(Font)                  T1/fbb-TLF/b/it --> T1/fbb-TLF/b/it on input line 2140.
+
+LaTeX Font Info:    Overwriting math alphabet `\mathnormalbold' in version `bol
+d'
+(Font)                  T1/fbb-TLF/b/it --> T1/fbb-TLF/b/it on input line 2140.
+
+LaTeX Font Info:    Overwriting symbol font `mtletterfont' in version `normal'
+(Font)                  T1/fbb-TLF/m/it --> T1/fbb-TLF/m/it on input line 2140.
+
+LaTeX Font Info:    Overwriting symbol font `mtletterfont' in version `bold'
+(Font)                  T1/fbb-TLF/m/it --> T1/fbb-TLF/b/it on input line 2140.
+
+LaTeX Font Info:    Overwriting symbol font `mtoperatorfont' in version `normal
+'
+(Font)                  T1/fbb-TLF/m/n --> T1/fbb-TLF/m/n on input line 2140.
+LaTeX Font Info:    Overwriting symbol font `mtoperatorfont' in version `bold'
+(Font)                  T1/fbb-TLF/m/n --> T1/fbb-TLF/b/n on input line 2140.
+LaTeX Font Info:    Overwriting math alphabet `\Mathbf' in version `normal'
+(Font)                  T1/fbb-TLF/b/n --> T1/fbb-TLF/b/n on input line 2140.
+LaTeX Font Info:    Overwriting math alphabet `\Mathbf' in version `bold'
+(Font)                  T1/fbb-TLF/b/n --> T1/fbb-TLF/b/n on input line 2140.
+LaTeX Font Info:    Overwriting math alphabet `\Mathit' in version `normal'
+(Font)                  T1/fbb-TLF/m/it --> T1/fbb-TLF/m/it on input line 2140.
+
+LaTeX Font Info:    Overwriting math alphabet `\Mathit' in version `bold'
+(Font)                  T1/fbb-TLF/m/it --> T1/fbb-TLF/b/it on input line 2140.
+
+LaTeX Font Info:    Overwriting math alphabet `\Mathsf' in version `normal'
+(Font)                  T1/SourceSansPro-TLF/m/n --> T1/SourceSansPro-TLF/m/n o
+n input line 2140.
+LaTeX Font Info:    Overwriting math alphabet `\Mathsf' in version `bold'
+(Font)                  T1/SourceSansPro-TLF/m/n --> T1/SourceSansPro-TLF/b/n o
+n input line 2140.
+LaTeX Font Info:    Overwriting math alphabet `\Mathtt' in version `normal'
+(Font)                  T1/cmtt/m/n --> T1/cmtt/m/n on input line 2140.
+LaTeX Font Info:    Overwriting math alphabet `\Mathtt' in version `bold'
+(Font)                  T1/cmtt/m/n --> T1/cmtt/b/n on input line 2140.
+LaTeX Font Info:    Overwriting symbol font `mteulervm' in version `bold'
+(Font)                  U/zeur/m/n --> U/zeur/b/n on input line 2140.
+LaTeX Font Info:    Overwriting math alphabet `\MathEulerBold' in version `norm
+al'
+(Font)                  U/zeur/b/n --> U/zeur/b/n on input line 2140.
+LaTeX Font Info:    Overwriting math alphabet `\MathEulerBold' in version `bold
+'
+(Font)                  U/zeur/b/n --> U/zeur/b/n on input line 2140.
+** Latin letters in the normal (resp. bold) math versions are now
+** set up to use the fonts T1/fbb-TLF/m(b)/it
+** Other characters (digits, ...) and \log-like names will be
+** typeset with the n shape.
+** \hbar
+** minus as endash
+** Greek letters will use the Euler font. Use \MathastextEulerScale{<factor>} t
+o scale the font.
+** \HUGE has been (re)-defined.
+** mathastext has declared larger sizes for subscripts.
+** To keep LaTeX defaults, use option `defaultmathsizes'.
+) (/home/gromenawer/.miktex/texmfs/install/tex/latex/lastpage/lastpage.sty
+Package: lastpage 2021/09/03 v1.2n Refers to last page's name (HMM; JPG)
+)
+(/home/gromenawer/.miktex/texmfs/install/tex/latex/enumitem/enumitem.sty
+Package: enumitem 2019/06/20 v3.9 Customized lists
+\enitkv@toks@=\toks22
+\labelindent=\skip49
+\enit@outerparindent=\dimen139
+\enit@toks=\toks23
+\enit@inbox=\box50
+\enit@count@id=\count198
+\enitdp@description=\count199
+)
+(/home/gromenawer/.miktex/texmfs/install/tex/latex/threeparttable/threeparttabl
+e.sty
+Package: threeparttable 2003/06/13  v 3.0
+\@tempboxb=\box51
+) (/home/gromenawer/.miktex/texmfs/install/tex/latex/endnotes/endnotes.sty
+Package: endnotes 2020-01-02 endnotes package
+\c@endnote=\count266
+\endnotesep=\dimen140
+\@enotes=\write3
+) (/home/gromenawer/.miktex/texmfs/install/tex/latex/geometry/geometry.sty
+Package: geometry 2020/01/02 v5.9 Page Geometry
+
+(/usr/local/share/miktex-texmf/tex/generic/iftex/ifvtex.sty
+Package: ifvtex 2019/10/25 v1.7 ifvtex legacy package. Use iftex instead.
+)
+\Gm@cnth=\count267
+\Gm@cntv=\count268
+\c@Gm@tempcnt=\count269
+\Gm@bindingoffset=\dimen141
+\Gm@wd@mp=\dimen142
+\Gm@odd@mp=\dimen143
+\Gm@even@mp=\dimen144
+\Gm@layoutwidth=\dimen145
+\Gm@layoutheight=\dimen146
+\Gm@layouthoffset=\dimen147
+\Gm@layoutvoffset=\dimen148
+\Gm@dimlist=\toks24
+
+(/home/gromenawer/.miktex/texmfs/install/tex/latex/geometry/geometry.cfg))
+(/home/gromenawer/.miktex/texmfs/install/tex/latex/changepage/changepage.sty
+Package: changepage 2009/10/20 v1.0c check page and change page layout
+\c@cp@cntr=\count270
+\cp@tempcnt=\count271
+)
+(/home/gromenawer/.miktex/texmfs/install/tex/latex/stringstrings/stringstrings.
+sty
+Package: stringstrings 2020/12/08 v1.24 Extensive array of string manipulation 
+routines for cosmetic and programming application
+\c@@letterindex=\count272
+\c@@@letterindex=\count273
+\c@@@@letterindex=\count274
+\c@@wordindex=\count275
+\c@@iargc=\count276
+\c@@gobblesize=\count277
+\c@@maxrotation=\count278
+\c@@stringsize=\count279
+\c@@@stringsize=\count280
+\c@@@@stringsize=\count281
+\c@@revisedstringsize=\count282
+\c@@gobbleindex=\count283
+\c@@charsfound=\count284
+\c@@alph=\count285
+\c@@alphaindex=\count286
+\c@@capstrigger=\count287
+\c@@fromindex=\count288
+\c@@toindex=\count289
+\c@@previousindex=\count290
+\c@@flag=\count291
+\c@@matchloc=\count292
+\c@@matchend=\count293
+\c@@matchsize=\count294
+\c@@matchmax=\count295
+\c@@skipped=\count296
+\c@@lcwords=\count297
+\c@@@matchloc=\count298
+) (/home/gromenawer/.miktex/texmfs/install/tex/latex/textpos/textpos.sty
+Package: textpos 2020/09/26 v1.10
+
+Package: textpos 2020/09/26 1.10, absolute positioning of text on the page
+Package textpos Info: choosing support for LaTeX3 on input line 61.
+\TP@textbox=\box52
+\TP@holdbox=\box53
+\TPHorizModule=\dimen149
+\TPVertModule=\dimen150
+\TP@margin=\dimen151
+\TP@absmargin=\dimen152
+Grid set 16 x 16 = 38.39343pt x 49.68562pt
+\TPboxrulesize=\dimen153
+\TP@ox=\dimen154
+\TP@oy=\dimen155
+\TP@tbargs=\toks25
+TextBlockOrigin set to 0pt x 0pt
+) (/usr/local/share/miktex-texmf/tex/latex/xcolor/xcolor.sty
+Package: xcolor 2021/10/31 v2.13 LaTeX color extensions (UK)
+
+(/usr/local/share/miktex-texmf/tex/latex/graphics-cfg/color.cfg
+File: color.cfg 2016/01/02 v1.6 sample color configuration
+)
+Package xcolor Info: Driver file: pdftex.def on input line 227.
+
+(/usr/local/share/miktex-texmf/tex/latex/graphics-def/pdftex.def
+File: pdftex.def 2020/10/05 v1.2a Graphics/color driver for pdftex
+)
+(/home/gromenawer/.miktex/texmfs/install/tex/latex/colortbl/colortbl.sty
+Package: colortbl 2020/01/04 v1.0e Color table columns (DPC)
+
+(/usr/local/share/miktex-texmf/tex/latex/tools/array.sty
+Package: array 2021/10/04 v2.5f Tabular extension package (FMi)
+\col@sep=\dimen156
+\ar@mcellbox=\box54
+\extrarowheight=\dimen157
+\NC@list=\toks26
+\extratabsurround=\skip50
+\backup@length=\skip51
+\ar@cellbox=\box55
+)
+\everycr=\toks27
+\minrowclearance=\skip52
+)
+\rownum=\count299
+Package xcolor Info: Model `cmy' substituted by `cmy0' on input line 1352.
+Package xcolor Info: Model `hsb' substituted by `rgb' on input line 1356.
+Package xcolor Info: Model `RGB' extended on input line 1368.
+Package xcolor Info: Model `HTML' substituted by `rgb' on input line 1370.
+Package xcolor Info: Model `Hsb' substituted by `hsb' on input line 1371.
+Package xcolor Info: Model `tHsb' substituted by `hsb' on input line 1372.
+Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1373.
+Package xcolor Info: Model `Gray' substituted by `gray' on input line 1374.
+Package xcolor Info: Model `wave' substituted by `hsb' on input line 1375.
+
+(/usr/local/share/miktex-texmf/tex/latex/xcolor/svgnam.def
+File: svgnam.def 2021/10/31 v2.13 Predefined colors according to SVG 1.1 (UK)
+))
+(/home/gromenawer/.miktex/texmfs/install/tex/latex/caption/caption.sty
+Package: caption 2020/10/26 v3.5g Customizing captions (AR)
+
+(/home/gromenawer/.miktex/texmfs/install/tex/latex/caption/caption3.sty
+Package: caption3 2020/10/21 v2.2e caption3 kernel (AR)
+\captionmargin=\dimen158
+\captionmargin@=\dimen159
+\captionwidth=\dimen160
+\caption@tempdima=\dimen161
+\caption@indent=\dimen162
+\caption@parindent=\dimen163
+\caption@hangindent=\dimen164
+Package caption Info: Standard document class detected.
+)
+\c@caption@flags=\count300
+\c@continuedfloat=\count301
+Package caption Info: changepage package is loaded.
+\caption@adjustwidth@hsize=\dimen165
+\caption@adjustwidth@linewidth=\dimen166
+Package caption Info: threeparttable package is loaded.
+)
+(/home/gromenawer/.miktex/texmfs/install/tex/latex/floatrow/floatrow.sty
+Package: floatrow 2008/08/02 v0.3b floatrow: float package extension
+\c@float@type=\count302
+\float@exts=\toks28
+\float@box=\box56
+\@floatcapt=\box57
+Package floatrow Info: Modified float package code loaded on input line 455.
+Package floatrow Info: Modified rotfloat package code loaded on input line 473.
+
+\FR@everyfloat=\toks29
+\flrow@foot=\insert252
+\FB@wd=\dimen167
+\FBo@wd=\dimen168
+\FBc@wd=\dimen169
+\FBo@ht=\skip53
+\FBc@ht=\skip54
+\FBf@ht=\skip55
+\FBo@max=\skip56
+\FBc@max=\skip57
+\FBf@max=\skip58
+\c@FBl@b=\count303
+\floatbox@depth=\count304
+\c@FRobj=\count305
+\c@FRsobj=\count306
+\Xhsize=\skip59
+\sXhsize=\skip60
+\Zhsize=\skip61
+\sZhsize=\skip62
+\flrow@rowbox=\box58
+\FR@Zunitlength=\dimen170
+\c@FBcnt=\count307
+\FPOScnt=\count308
+\LTleft=\skip63
+\LTright=\skip64
+\LTleft=\skip65
+\LTright=\skip66
+\flrow@types=\toks30
+)
+(/usr/local/share/miktex-texmf/tex/latex/graphics/graphicx.sty
+Package: graphicx 2021/09/16 v1.2d Enhanced LaTeX Graphics (DPC,SPQR)
+
+(/usr/local/share/miktex-texmf/tex/latex/graphics/graphics.sty
+Package: graphics 2021/03/04 v1.4d Standard LaTeX Graphics (DPC,SPQR)
+
+(/usr/local/share/miktex-texmf/tex/latex/graphics/trig.sty
+Package: trig 2021/08/11 v1.11 sin cos tan (DPC)
+)
+(/usr/local/share/miktex-texmf/tex/latex/graphics-cfg/graphics.cfg
+File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
+)
+Package graphics Info: Driver file: pdftex.def on input line 107.
+)
+\Gin@req@height=\dimen171
+\Gin@req@width=\dimen172
+)
+(/usr/local/share/miktex-texmf/tex/latex/url/url.sty
+\Urlmuskip=\muskip19
+Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
+)
+(/home/gromenawer/.miktex/texmfs/install/tex/latex/mdframed/mdframed.sty
+Package: mdframed 2013/07/01 1.9b: mdframed
+
+(/home/gromenawer/.miktex/texmfs/install/tex/latex/kvoptions/kvoptions.sty
+Package: kvoptions 2020-10-07 v3.14 Key value format for package options (HO)
+
+(/home/gromenawer/.miktex/texmfs/install/tex/generic/ltxcmds/ltxcmds.sty
+Package: ltxcmds 2020-05-10 v1.25 LaTeX kernel commands for general use (HO)
+)
+(/home/gromenawer/.miktex/texmfs/install/tex/generic/kvsetkeys/kvsetkeys.sty
+Package: kvsetkeys 2019/12/15 v1.18 Key value parser (HO)
+))
+(/usr/local/share/miktex-texmf/tex/latex/l3packages/xparse/xparse.sty
+(/usr/local/share/miktex-texmf/tex/latex/l3kernel/expl3.sty
+Package: expl3 2022-02-05 L3 programming layer (loader) 
+
+(/usr/local/share/miktex-texmf/tex/latex/l3backend/l3backend-pdftex.def
+File: l3backend-pdftex.def 2022-02-07 L3 backend support: PDF output (pdfTeX)
+\l__color_backend_stack_int=\count309
+\l__pdf_internal_box=\box59
+))
+Package: xparse 2022-01-12 L3 Experimental document command parser
+)
+(/home/gromenawer/.miktex/texmfs/install/tex/latex/zref/zref-abspage.sty
+Package: zref-abspage 2020-07-03 v2.32 Module abspage for zref (HO)
+
+(/home/gromenawer/.miktex/texmfs/install/tex/latex/zref/zref-base.sty
+Package: zref-base 2020-07-03 v2.32 Module base for zref (HO)
+
+(/home/gromenawer/.miktex/texmfs/install/tex/generic/infwarerr/infwarerr.sty
+Package: infwarerr 2019/12/03 v1.5 Providing info/warning/error messages (HO)
+)
+(/home/gromenawer/.miktex/texmfs/install/tex/generic/kvdefinekeys/kvdefinekeys.
+sty
+Package: kvdefinekeys 2019-12-19 v1.6 Define keys (HO)
+) (/usr/local/share/miktex-texmf/tex/generic/pdftexcmds/pdftexcmds.sty
+Package: pdftexcmds 2020-06-27 v0.33 Utility functions of pdfTeX for LuaTeX (HO
+)
+Package pdftexcmds Info: \pdf@primitive is available.
+Package pdftexcmds Info: \pdf@ifprimitive is available.
+Package pdftexcmds Info: \pdfdraftmode found.
+)
+(/home/gromenawer/.miktex/texmfs/install/tex/generic/etexcmds/etexcmds.sty
+Package: etexcmds 2019/12/15 v1.7 Avoid name clashes with e-TeX commands (HO)
+)
+(/home/gromenawer/.miktex/texmfs/install/tex/latex/auxhook/auxhook.sty
+Package: auxhook 2019-12-17 v1.6 Hooks for auxiliary files (HO)
+)
+Package zref Info: New property list: main on input line 764.
+Package zref Info: New property: default on input line 765.
+Package zref Info: New property: page on input line 766.
+)
+(/usr/local/share/miktex-texmf/tex/latex/base/atbegshi-ltx.sty
+Package: atbegshi-ltx 2021/01/10 v1.0c Emulation of the original atbegshi
+package with kernel methods
+)
+\c@abspage=\count310
+Package zref Info: New property: abspage on input line 66.
+)
+(/home/gromenawer/.miktex/texmfs/install/tex/latex/needspace/needspace.sty
+Package: needspace 2010/09/12 v1.3d reserve vertical space
+)
+\mdf@templength=\skip67
+\c@mdf@globalstyle@cnt=\count311
+\mdf@skipabove@length=\skip68
+\mdf@skipbelow@length=\skip69
+\mdf@leftmargin@length=\skip70
+\mdf@rightmargin@length=\skip71
+\mdf@innerleftmargin@length=\skip72
+\mdf@innerrightmargin@length=\skip73
+\mdf@innertopmargin@length=\skip74
+\mdf@innerbottommargin@length=\skip75
+\mdf@splittopskip@length=\skip76
+\mdf@splitbottomskip@length=\skip77
+\mdf@outermargin@length=\skip78
+\mdf@innermargin@length=\skip79
+\mdf@linewidth@length=\skip80
+\mdf@innerlinewidth@length=\skip81
+\mdf@middlelinewidth@length=\skip82
+\mdf@outerlinewidth@length=\skip83
+\mdf@roundcorner@length=\skip84
+\mdf@footenotedistance@length=\skip85
+\mdf@userdefinedwidth@length=\skip86
+\mdf@needspace@length=\skip87
+\mdf@frametitleaboveskip@length=\skip88
+\mdf@frametitlebelowskip@length=\skip89
+\mdf@frametitlerulewidth@length=\skip90
+\mdf@frametitleleftmargin@length=\skip91
+\mdf@frametitlerightmargin@length=\skip92
+\mdf@shadowsize@length=\skip93
+\mdf@extratopheight@length=\skip94
+\mdf@subtitleabovelinewidth@length=\skip95
+\mdf@subtitlebelowlinewidth@length=\skip96
+\mdf@subtitleaboveskip@length=\skip97
+\mdf@subtitlebelowskip@length=\skip98
+\mdf@subtitleinneraboveskip@length=\skip99
+\mdf@subtitleinnerbelowskip@length=\skip100
+\mdf@subsubtitleabovelinewidth@length=\skip101
+\mdf@subsubtitlebelowlinewidth@length=\skip102
+\mdf@subsubtitleaboveskip@length=\skip103
+\mdf@subsubtitlebelowskip@length=\skip104
+\mdf@subsubtitleinneraboveskip@length=\skip105
+\mdf@subsubtitleinnerbelowskip@length=\skip106
+
+(/home/gromenawer/.miktex/texmfs/install/tex/latex/mdframed/md-frame-0.mdf
+File: md-frame-0.mdf 2013/07/01\ 1.9b: md-frame-0
+)
+\mdf@frametitlebox=\box60
+\mdf@footnotebox=\box61
+\mdf@splitbox@one=\box62
+\mdf@splitbox@two=\box63
+\mdf@splitbox@save=\box64
+\mdfsplitboxwidth=\skip107
+\mdfsplitboxtotalwidth=\skip108
+\mdfsplitboxheight=\skip109
+\mdfsplitboxdepth=\skip110
+\mdfsplitboxtotalheight=\skip111
+\mdfframetitleboxwidth=\skip112
+\mdfframetitleboxtotalwidth=\skip113
+\mdfframetitleboxheight=\skip114
+\mdfframetitleboxdepth=\skip115
+\mdfframetitleboxtotalheight=\skip116
+\mdffootnoteboxwidth=\skip117
+\mdffootnoteboxtotalwidth=\skip118
+\mdffootnoteboxheight=\skip119
+\mdffootnoteboxdepth=\skip120
+\mdffootnoteboxtotalheight=\skip121
+\mdftotallinewidth=\skip122
+\mdfboundingboxwidth=\skip123
+\mdfboundingboxtotalwidth=\skip124
+\mdfboundingboxheight=\skip125
+\mdfboundingboxdepth=\skip126
+\mdfboundingboxtotalheight=\skip127
+\mdf@freevspace@length=\skip128
+\mdf@horizontalwidthofbox@length=\skip129
+\mdf@verticalmarginwhole@length=\skip130
+\mdf@horizontalspaceofbox=\skip131
+\mdfsubtitleheight=\skip132
+\mdfsubsubtitleheight=\skip133
+\c@mdfcountframes=\count312
+
+****** mdframed patching \endmdf@trivlist
+
+****** -- success******
+
+\mdf@envdepth=\count313
+\c@mdf@env@i=\count314
+\c@mdf@env@ii=\count315
+\c@mdf@zref@counter=\count316
+Package zref Info: New property: mdf@pagevalue on input line 895.
+)
+(/home/gromenawer/.miktex/texmfs/install/tex/latex/mfirstuc/mfirstuc.sty
+Package: mfirstuc 2021/10/15 v2.07 (NLCT)
+\@glsmfirst=\toks31
+\@glsmrest=\toks32
+)
+(/home/gromenawer/.miktex/texmfs/install/tex/generic/alphalph/alphalph.sty
+Package: alphalph 2019/12/09 v2.6 Convert numbers to letters (HO)
+
+(/home/gromenawer/.miktex/texmfs/install/tex/generic/intcalc/intcalc.sty
+Package: intcalc 2019/12/15 v1.3 Expandable calculations with integers (HO)
+))
+\cup@author@cnt=\count317
+\cup@affil@cnt=\count318
+\cup@affil@alt@cnt=\count319
+\cup@footnote@cnt=\count320
+\cup@affil@marker@cnt=\count321
+\cup@space@pre@title=\skip134
+\cup@space@post@title=\skip135
+\cup@space@post@author=\skip136
+\cup@space@post@address=\skip137
+\cup@space@post@email=\skip138
+\cup@space@post@date=\skip139
+\cup@space@inter@extra=\skip140
+\cup@maketitle@width=\skip141
+\c@scheme=\count322
+\c@chart=\count323
+\c@graph=\count324
+\cup@collect@toks=\toks33
+\cup@collect@empty@toks=\toks34
+
+(/home/gromenawer/.miktex/texmfs/install/tex/latex/biblatex-chicago/biblatex-ch
+icago.sty
+Package: biblatex-chicago 2021/06/30 v 3.16 biblatex style
+ (/usr/local/share/miktex-texmf/tex/latex/hyperref/nameref.sty
+Package: nameref 2021-04-02 v2.47 Cross-referencing by name of section
+
+(/home/gromenawer/.miktex/texmfs/install/tex/latex/refcount/refcount.sty
+Package: refcount 2019/12/15 v3.6 Data extraction from label references (HO)
+)
+(/home/gromenawer/.miktex/texmfs/install/tex/generic/gettitlestring/gettitlestr
+ing.sty
+Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
+)
+\c@section@level=\count325
+LaTeX Info: Redefining \ref on input line 356.
+LaTeX Info: Redefining \pageref on input line 356.
+) (/usr/local/share/miktex-texmf/tex/latex/biblatex/biblatex.sty
+Package: biblatex 2022/02/02 v3.17 programmable bibliographies (PK/MW)
+
+(/home/gromenawer/.miktex/texmfs/install/tex/latex/logreq/logreq.sty
+Package: logreq 2010/08/04 v1.0 xml request logger
+\lrq@indent=\count326
+
+(/home/gromenawer/.miktex/texmfs/install/tex/latex/logreq/logreq.def
+File: logreq.def 2010/08/04 v1.0 logreq spec v1.0
+))
+\c@tabx@nest=\count327
+\c@listtotal=\count328
+\c@listcount=\count329
+\c@liststart=\count330
+\c@liststop=\count331
+\c@citecount=\count332
+\c@citetotal=\count333
+\c@multicitecount=\count334
+\c@multicitetotal=\count335
+\c@instcount=\count336
+\c@maxnames=\count337
+\c@minnames=\count338
+\c@maxitems=\count339
+\c@minitems=\count340
+\c@citecounter=\count341
+\c@maxcitecounter=\count342
+\c@savedcitecounter=\count343
+\c@uniquelist=\count344
+\c@uniquename=\count345
+\c@refsection=\count346
+\c@refsegment=\count347
+\c@maxextratitle=\count348
+\c@maxextratitleyear=\count349
+\c@maxextraname=\count350
+\c@maxextradate=\count351
+\c@maxextraalpha=\count352
+\c@abbrvpenalty=\count353
+\c@highnamepenalty=\count354
+\c@lownamepenalty=\count355
+\c@maxparens=\count356
+\c@parenlevel=\count357
+\blx@tempcnta=\count358
+\blx@tempcntb=\count359
+\blx@tempcntc=\count360
+\c@blx@maxsection=\count361
+\c@blx@maxsegment@0=\count362
+\blx@notetype=\count363
+\blx@parenlevel@text=\count364
+\blx@parenlevel@foot=\count365
+\c@blx@sectionciteorder@0=\count366
+\blx@entrysetcounter=\count367
+\blx@biblioinstance=\count368
+\labelnumberwidth=\skip142
+\labelalphawidth=\skip143
+\biblabelsep=\skip144
+\bibitemsep=\skip145
+\bibnamesep=\skip146
+\bibinitsep=\skip147
+\bibparsep=\skip148
+\bibhang=\skip149
+\blx@bcfin=\read2
+\blx@bcfout=\write4
+\blx@langwohyphens=\language1
+\c@mincomprange=\count369
+\c@maxcomprange=\count370
+\c@mincompwidth=\count371
+Package biblatex Info: Trying to load biblatex default data model...
+Package biblatex Info: ... file 'blx-dm.def' found.
+
+(/usr/local/share/miktex-texmf/tex/latex/biblatex/blx-dm.def
+File: blx-dm.def 2022/02/02 v3.17 biblatex localization (PK/MW)
+)
+Package biblatex Info: Trying to load biblatex style data model...
+Package biblatex Info: ... file 'chicago-authordate-trad.dbx' not found.
+Package biblatex Info: Trying to load biblatex custom data model...
+Package biblatex Info: ... file 'biblatex-dm.cfg' not found.
+\c@afterword=\count372
+\c@savedafterword=\count373
+\c@annotator=\count374
+\c@savedannotator=\count375
+\c@author=\count376
+\c@savedauthor=\count377
+\c@bookauthor=\count378
+\c@savedbookauthor=\count379
+\c@commentator=\count380
+\c@savedcommentator=\count381
+\c@editor=\count382
+\c@savededitor=\count383
+\c@editora=\count384
+\c@savededitora=\count385
+\c@editorb=\count386
+\c@savededitorb=\count387
+\c@editorc=\count388
+\c@savededitorc=\count389
+\c@foreword=\count390
+\c@savedforeword=\count391
+\c@holder=\count392
+\c@savedholder=\count393
+\c@introduction=\count394
+\c@savedintroduction=\count395
+\c@namea=\count396
+\c@savednamea=\count397
+\c@nameb=\count398
+\c@savednameb=\count399
+\c@namec=\count400
+\c@savednamec=\count401
+\c@translator=\count402
+\c@savedtranslator=\count403
+\c@shortauthor=\count404
+\c@savedshortauthor=\count405
+\c@shorteditor=\count406
+\c@savedshorteditor=\count407
+\c@labelname=\count408
+\c@savedlabelname=\count409
+\c@institution=\count410
+\c@savedinstitution=\count411
+\c@lista=\count412
+\c@savedlista=\count413
+\c@listb=\count414
+\c@savedlistb=\count415
+\c@listc=\count416
+\c@savedlistc=\count417
+\c@listd=\count418
+\c@savedlistd=\count419
+\c@liste=\count420
+\c@savedliste=\count421
+\c@listf=\count422
+\c@savedlistf=\count423
+\c@location=\count424
+\c@savedlocation=\count425
+\c@organization=\count426
+\c@savedorganization=\count427
+\c@origlocation=\count428
+\c@savedoriglocation=\count429
+\c@origpublisher=\count430
+\c@savedorigpublisher=\count431
+\c@publisher=\count432
+\c@savedpublisher=\count433
+\c@language=\count434
+\c@savedlanguage=\count435
+\c@origlanguage=\count436
+\c@savedoriglanguage=\count437
+\c@pageref=\count438
+\c@savedpageref=\count439
+\shorthandwidth=\skip150
+\shortjournalwidth=\skip151
+\shortserieswidth=\skip152
+\shorttitlewidth=\skip153
+\shortauthorwidth=\skip154
+\shorteditorwidth=\skip155
+\locallabelnumberwidth=\skip156
+\locallabelalphawidth=\skip157
+\localshorthandwidth=\skip158
+\localshortjournalwidth=\skip159
+\localshortserieswidth=\skip160
+\localshorttitlewidth=\skip161
+\localshortauthorwidth=\skip162
+\localshorteditorwidth=\skip163
+Package biblatex Info: Trying to load compatibility code...
+Package biblatex Info: ... file 'blx-compat.def' found.
+
+(/usr/local/share/miktex-texmf/tex/latex/biblatex/blx-compat.def
+File: blx-compat.def 2022/02/02 v3.17 biblatex compatibility (PK/MW)
+)
+Package biblatex Info: Trying to load generic definitions...
+Package biblatex Info: ... file 'biblatex.def' found.
+
+(/usr/local/share/miktex-texmf/tex/latex/biblatex/biblatex.def
+File: biblatex.def 2022/02/02 v3.17 biblatex compatibility (PK/MW)
+\c@textcitecount=\count440
+\c@textcitetotal=\count441
+\c@textcitemaxnames=\count442
+\c@biburlbigbreakpenalty=\count443
+\c@biburlbreakpenalty=\count444
+\c@biburlnumpenalty=\count445
+\c@biburlucpenalty=\count446
+\c@biburllcpenalty=\count447
+\biburlbigskip=\muskip20
+\biburlnumskip=\muskip21
+\biburlucskip=\muskip22
+\biburllcskip=\muskip23
+\c@smartand=\count448
+)
+Package biblatex Info: Trying to load natbib compatibility...
+Package biblatex Info: ... file 'blx-natbib.def' found.
+
+(/usr/local/share/miktex-texmf/tex/latex/biblatex/blx-natbib.def
+File: blx-natbib.def 2022/02/02 v3.17 biblatex compatibility (PK/MW)
+Package biblatex Info: Delimiter 'nameyeardelim' in context '' already defined,
+ overwriting.
+)
+Package biblatex Info: Trying to load bibliography style 'chicago-authordate-tr
+ad'...
+Package biblatex Info: ... file 'chicago-authordate-trad.bbx' found.
+
+(/home/gromenawer/.miktex/texmfs/install/tex/latex/biblatex-chicago/chicago-aut
+hordate-trad.bbx
+File: chicago-authordate-trad.bbx 
+Package biblatex Info: Trying to load bibliography style 'chicago-authordate'..
+.
+Package biblatex Info: ... file 'chicago-authordate.bbx' found.
+
+(/home/gromenawer/.miktex/texmfs/install/tex/latex/biblatex-chicago/chicago-aut
+hordate.bbx
+File: chicago-authordate.bbx 2021/06/30 v 3.16 biblatex bibliography style
+\lositemsep=\skip164
+\cms@tempcnta=\count449
+\cms@tempcntb=\count450
+\c@bbx:relatedcount=\count451
+\c@bbx:relatedtotal=\count452
+))
+Package biblatex Info: Trying to load citation style 'chicago-authordate-trad'.
+..
+Package biblatex Info: ... file 'chicago-authordate-trad.cbx' found.
+
+(/home/gromenawer/.miktex/texmfs/install/tex/latex/biblatex-chicago/chicago-aut
+hordate-trad.cbx
+File: chicago-authordate-trad.cbx 2021/03/27 v 3.16 biblatex citation style
+Package biblatex Info: Trying to load citation style 'chicago-dates-common'...
+Package biblatex Info: ... file 'chicago-dates-common.cbx' found.
+
+(/home/gromenawer/.miktex/texmfs/install/tex/latex/biblatex-chicago/chicago-dat
+es-common.cbx
+File: chicago-dates-common.cbx 2021/03/27 v 3.16 biblatex citation style
+Package biblatex Info: Redefining '\cite'.
+Package biblatex Info: Redefining '\parencite'.
+Package biblatex Info: Redefining '\footcite'.
+Package biblatex Info: Redefining '\footcitetext'.
+Package biblatex Info: Redefining '\footfullcite'.
+Package biblatex Info: Redefining '\fullcite'.
+Package biblatex Info: Redefining '\textcite'.
+Package biblatex Info: Redefining '\textcites'.
+Package biblatex Info: Redefining '\cites'.
+Package biblatex Info: Redefining '\parencites'.
+Package biblatex Info: Redefining '\footcites'.
+Package biblatex Info: Redefining '\footcitetexts'.
+Package biblatex Info: Delimiter 'dateeradelim' in context '' already defined, 
+overwriting.
+))
+Package biblatex Info: Trying to load configuration file...
+Package biblatex Info: ... file 'biblatex.cfg' found.
+ (/usr/local/share/miktex-texmf/tex/latex/biblatex/biblatex.cfg
+File: biblatex.cfg 
+)
+Package biblatex Info: Input encoding 'utf8' detected.
+Package biblatex Info: Document encoding is UTF8 ....
+Package biblatex Info: ... and expl3
+(biblatex)             2022-02-05 L3 programming layer (loader) 
+(biblatex)             is new enough (at least 2020/04/06),
+(biblatex)             setting 'casechanger=expl3'.
+(/usr/local/share/miktex-texmf/tex/latex/biblatex/blx-case-expl3.sty
+Package: blx-case-expl3 2022/02/02 v3.17 expl3 case changing code for biblatex
+))))
+(/home/gromenawer/.miktex/texmfs/install/tex/latex/booktabs/booktabs.sty
+Package: booktabs 2020/01/12 v1.61803398 Publication quality tables
+\heavyrulewidth=\dimen173
+\lightrulewidth=\dimen174
+\cmidrulewidth=\dimen175
+\belowrulesep=\dimen176
+\belowbottomsep=\dimen177
+\aboverulesep=\dimen178
+\abovetopsep=\dimen179
+\cmidrulesep=\dimen180
+\cmidrulekern=\dimen181
+\defaultaddspace=\dimen182
+\@cmidla=\count453
+\@cmidlb=\count454
+\@aboverulesep=\dimen183
+\@belowrulesep=\dimen184
+\@thisruleclass=\count455
+\@lastruleclass=\count456
+\@thisrulewidth=\dimen185
+)
+(/home/gromenawer/.miktex/texmfs/install/tex/latex/microtype/microtype.sty
+Package: microtype 2021/12/10 v3.0b Micro-typographical refinements (RS)
+\MT@toks=\toks35
+\MT@count=\count457
+\MT@tempbox=\box65
+LaTeX Info: Redefining \leftprotrusion on input line 1010.
+LaTeX Info: Redefining \rightprotrusion on input line 1018.
+LaTeX Info: Redefining \textls on input line 1173.
+\MT@outer@kern=\dimen186
+LaTeX Info: Redefining \textmicrotypecontext on input line 1759.
+\MT@listname@count=\count458
+
+(/home/gromenawer/.miktex/texmfs/install/tex/latex/microtype/microtype-pdftex.d
+ef
+File: microtype-pdftex.def 2021/12/10 v3.0b Definitions specific to pdftex (RS)
+
+LaTeX Info: Redefining \lsstyle on input line 897.
+LaTeX Info: Redefining \lslig on input line 897.
+\MT@outer@space=\skip165
+)
+Package microtype Info: Loading configuration file microtype.cfg.
+ (/home/gromenawer/.miktex/texmfs/install/tex/latex/microtype/microtype.cfg
+File: microtype.cfg 2021/12/10 v3.0b microtype main configuration file (RS)
+)) (/home/gromenawer/.miktex/texmfs/install/tex/latex/siunitx/siunitx.sty
+Package: siunitx 2022-02-15 v3.0.49 A comprehensive (SI) units package
+\l__siunitx_angle_tmp_dim=\dimen187
+\l__siunitx_angle_marker_box=\box66
+\l__siunitx_angle_unit_box=\box67
+\l__siunitx_compound_count_int=\count459
+
+(/home/gromenawer/.miktex/texmfs/install/tex/latex/translations/translations.st
+y
+Package: translations 2022/02/05 v1.12 internationalization of LaTeX2e packages
+ (CN)
+)
+\l__siunitx_number_exponent_fixed_int=\count460
+\l__siunitx_number_min_decimal_int=\count461
+\l__siunitx_number_min_integer_int=\count462
+\l__siunitx_number_round_precision_int=\count463
+\l__siunitx_number_group_minimum_int=\count464
+ (/usr/local/share/miktex-texmf/tex/latex/amsmath/amstext.sty
+Package: amstext 2021/08/26 v2.01 AMS text
+
+(/usr/local/share/miktex-texmf/tex/latex/amsmath/amsgen.sty
+File: amsgen.sty 1999/11/30 v2.0 generic functions
+\@emptytoks=\toks36
+\ex@=\dimen188
+))
+\l__siunitx_table_tmp_box=\box68
+\l__siunitx_table_tmp_dim=\dimen189
+\l__siunitx_table_column_width_dim=\dimen190
+\l__siunitx_table_integer_box=\box69
+\l__siunitx_table_decimal_box=\box70
+\l__siunitx_table_before_box=\box71
+\l__siunitx_table_after_box=\box72
+\l__siunitx_table_before_dim=\dimen191
+\l__siunitx_table_carry_dim=\dimen192
+\l__siunitx_unit_tmp_int=\count465
+\l__siunitx_unit_position_int=\count466
+\l__siunitx_unit_total_int=\count467
+
+(/usr/local/share/miktex-texmf/tex/latex/l3packages/l3keys2e/l3keys2e.sty
+Package: l3keys2e 2022-01-12 LaTeX2e option processing using LaTeX3 keys
+))
+
+Package siunitx Info: Option "detect-all" has been deprecated in this release.
+(siunitx)             
+(siunitx)             Use "mode = match, propagate-math-font = true,
+(siunitx)             reset-math-version = false, reset-text-family = false,
+(siunitx)             reset-text-series = false, reset-text-shape = false,
+(siunitx)             text-family-to-math = true, text-series-to-math = true"
+(siunitx)             as a replacement.
+
+
+Package siunitx Info: Option "separate-uncertainty" has been deprecated in
+(siunitx)             this release.
+(siunitx)             
+(siunitx)             Use "uncertainty-mode = separate" as a replacement.
+
+
+(/home/gromenawer/.miktex/texmfs/install/tex/latex/todonotes/todonotes.sty
+Package: todonotes 2021/06/04 v1.1.5 Todonotes source and documentation.
+Package: todonotes 2021/06/04
+
+(/usr/local/share/miktex-texmf/tex/latex/pgf/frontendlayer/tikz.sty
+(/usr/local/share/miktex-texmf/tex/latex/pgf/basiclayer/pgf.sty
+(/usr/local/share/miktex-texmf/tex/latex/pgf/utilities/pgfrcs.sty
+(/usr/local/share/miktex-texmf/tex/generic/pgf/utilities/pgfutil-common.tex
+\pgfutil@everybye=\toks37
+\pgfutil@tempdima=\dimen193
+\pgfutil@tempdimb=\dimen194
+
+(/usr/local/share/miktex-texmf/tex/generic/pgf/utilities/pgfutil-common-lists.t
+ex)) (/usr/local/share/miktex-texmf/tex/generic/pgf/utilities/pgfutil-latex.def
+\pgfutil@abb=\box73
+) (/usr/local/share/miktex-texmf/tex/generic/pgf/utilities/pgfrcs.code.tex
+(/usr/local/share/miktex-texmf/tex/generic/pgf/pgf.revision.tex)
+Package: pgfrcs 2021/05/15 v3.1.9a (3.1.9a)
+))
+Package: pgf 2021/05/15 v3.1.9a (3.1.9a)
+
+(/usr/local/share/miktex-texmf/tex/latex/pgf/basiclayer/pgfcore.sty
+(/usr/local/share/miktex-texmf/tex/latex/pgf/systemlayer/pgfsys.sty
+(/usr/local/share/miktex-texmf/tex/generic/pgf/systemlayer/pgfsys.code.tex
+Package: pgfsys 2021/05/15 v3.1.9a (3.1.9a)
+
+(/usr/local/share/miktex-texmf/tex/generic/pgf/utilities/pgfkeys.code.tex
+\pgfkeys@pathtoks=\toks38
+\pgfkeys@temptoks=\toks39
+
+(/usr/local/share/miktex-texmf/tex/generic/pgf/utilities/pgfkeysfiltered.code.t
+ex
+\pgfkeys@tmptoks=\toks40
+))
+\pgf@x=\dimen195
+\pgf@y=\dimen196
+\pgf@xa=\dimen197
+\pgf@ya=\dimen198
+\pgf@xb=\dimen199
+\pgf@yb=\dimen256
+\pgf@xc=\dimen257
+\pgf@yc=\dimen258
+\pgf@xd=\dimen259
+\pgf@yd=\dimen260
+\w@pgf@writea=\write5
+\r@pgf@reada=\read3
+\c@pgf@counta=\count468
+\c@pgf@countb=\count469
+\c@pgf@countc=\count470
+\c@pgf@countd=\count471
+\t@pgf@toka=\toks41
+\t@pgf@tokb=\toks42
+\t@pgf@tokc=\toks43
+\pgf@sys@id@count=\count472
+ (/usr/local/share/miktex-texmf/tex/generic/pgf/systemlayer/pgf.cfg
+File: pgf.cfg 2021/05/15 v3.1.9a (3.1.9a)
+)
+Driver file for pgf: pgfsys-pdftex.def
+
+(/usr/local/share/miktex-texmf/tex/generic/pgf/systemlayer/pgfsys-pdftex.def
+File: pgfsys-pdftex.def 2021/05/15 v3.1.9a (3.1.9a)
+
+(/usr/local/share/miktex-texmf/tex/generic/pgf/systemlayer/pgfsys-common-pdf.de
+f
+File: pgfsys-common-pdf.def 2021/05/15 v3.1.9a (3.1.9a)
+)))
+(/usr/local/share/miktex-texmf/tex/generic/pgf/systemlayer/pgfsyssoftpath.code.
+tex
+File: pgfsyssoftpath.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+\pgfsyssoftpath@smallbuffer@items=\count473
+\pgfsyssoftpath@bigbuffer@items=\count474
+)
+(/usr/local/share/miktex-texmf/tex/generic/pgf/systemlayer/pgfsysprotocol.code.
+tex
+File: pgfsysprotocol.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+))
+(/usr/local/share/miktex-texmf/tex/generic/pgf/basiclayer/pgfcore.code.tex
+Package: pgfcore 2021/05/15 v3.1.9a (3.1.9a)
+
+(/usr/local/share/miktex-texmf/tex/generic/pgf/math/pgfmath.code.tex
+(/usr/local/share/miktex-texmf/tex/generic/pgf/math/pgfmathcalc.code.tex
+(/usr/local/share/miktex-texmf/tex/generic/pgf/math/pgfmathutil.code.tex)
+(/usr/local/share/miktex-texmf/tex/generic/pgf/math/pgfmathparser.code.tex
+\pgfmath@dimen=\dimen261
+\pgfmath@count=\count475
+\pgfmath@box=\box74
+\pgfmath@toks=\toks44
+\pgfmath@stack@operand=\toks45
+\pgfmath@stack@operation=\toks46
+)
+(/usr/local/share/miktex-texmf/tex/generic/pgf/math/pgfmathfunctions.code.tex
+(/usr/local/share/miktex-texmf/tex/generic/pgf/math/pgfmathfunctions.basic.code
+.tex)
+(/usr/local/share/miktex-texmf/tex/generic/pgf/math/pgfmathfunctions.trigonomet
+ric.code.tex)
+(/usr/local/share/miktex-texmf/tex/generic/pgf/math/pgfmathfunctions.random.cod
+e.tex)
+(/usr/local/share/miktex-texmf/tex/generic/pgf/math/pgfmathfunctions.comparison
+.code.tex)
+(/usr/local/share/miktex-texmf/tex/generic/pgf/math/pgfmathfunctions.base.code.
+tex)
+(/usr/local/share/miktex-texmf/tex/generic/pgf/math/pgfmathfunctions.round.code
+.tex)
+(/usr/local/share/miktex-texmf/tex/generic/pgf/math/pgfmathfunctions.misc.code.
+tex)
+(/usr/local/share/miktex-texmf/tex/generic/pgf/math/pgfmathfunctions.integerari
+thmetics.code.tex)))
+(/usr/local/share/miktex-texmf/tex/generic/pgf/math/pgfmathfloat.code.tex
+\c@pgfmathroundto@lastzeros=\count476
+))
+(/usr/local/share/miktex-texmf/tex/generic/pgf/math/pgfint.code.tex)
+(/usr/local/share/miktex-texmf/tex/generic/pgf/basiclayer/pgfcorepoints.code.te
+x
+File: pgfcorepoints.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+\pgf@picminx=\dimen262
+\pgf@picmaxx=\dimen263
+\pgf@picminy=\dimen264
+\pgf@picmaxy=\dimen265
+\pgf@pathminx=\dimen266
+\pgf@pathmaxx=\dimen267
+\pgf@pathminy=\dimen268
+\pgf@pathmaxy=\dimen269
+\pgf@xx=\dimen270
+\pgf@xy=\dimen271
+\pgf@yx=\dimen272
+\pgf@yy=\dimen273
+\pgf@zx=\dimen274
+\pgf@zy=\dimen275
+)
+(/usr/local/share/miktex-texmf/tex/generic/pgf/basiclayer/pgfcorepathconstruct.
+code.tex
+File: pgfcorepathconstruct.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+\pgf@path@lastx=\dimen276
+\pgf@path@lasty=\dimen277
+)
+(/usr/local/share/miktex-texmf/tex/generic/pgf/basiclayer/pgfcorepathusage.code
+.tex
+File: pgfcorepathusage.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+\pgf@shorten@end@additional=\dimen278
+\pgf@shorten@start@additional=\dimen279
+)
+(/usr/local/share/miktex-texmf/tex/generic/pgf/basiclayer/pgfcorescopes.code.te
+x
+File: pgfcorescopes.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+\pgfpic=\box75
+\pgf@hbox=\box76
+\pgf@layerbox@main=\box77
+\pgf@picture@serial@count=\count477
+)
+(/usr/local/share/miktex-texmf/tex/generic/pgf/basiclayer/pgfcoregraphicstate.c
+ode.tex
+File: pgfcoregraphicstate.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+\pgflinewidth=\dimen280
+)
+(/usr/local/share/miktex-texmf/tex/generic/pgf/basiclayer/pgfcoretransformation
+s.code.tex
+File: pgfcoretransformations.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+\pgf@pt@x=\dimen281
+\pgf@pt@y=\dimen282
+\pgf@pt@temp=\dimen283
+)
+(/usr/local/share/miktex-texmf/tex/generic/pgf/basiclayer/pgfcorequick.code.tex
+File: pgfcorequick.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+)
+(/usr/local/share/miktex-texmf/tex/generic/pgf/basiclayer/pgfcoreobjects.code.t
+ex
+File: pgfcoreobjects.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+)
+(/usr/local/share/miktex-texmf/tex/generic/pgf/basiclayer/pgfcorepathprocessing
+.code.tex
+File: pgfcorepathprocessing.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+)
+(/usr/local/share/miktex-texmf/tex/generic/pgf/basiclayer/pgfcorearrows.code.te
+x
+File: pgfcorearrows.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+\pgfarrowsep=\dimen284
+)
+(/usr/local/share/miktex-texmf/tex/generic/pgf/basiclayer/pgfcoreshade.code.tex
+File: pgfcoreshade.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+\pgf@max=\dimen285
+\pgf@sys@shading@range@num=\count478
+\pgf@shadingcount=\count479
+)
+(/usr/local/share/miktex-texmf/tex/generic/pgf/basiclayer/pgfcoreimage.code.tex
+File: pgfcoreimage.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+
+(/usr/local/share/miktex-texmf/tex/generic/pgf/basiclayer/pgfcoreexternal.code.
+tex
+File: pgfcoreexternal.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+\pgfexternal@startupbox=\box78
+))
+(/usr/local/share/miktex-texmf/tex/generic/pgf/basiclayer/pgfcorelayers.code.te
+x
+File: pgfcorelayers.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+)
+(/usr/local/share/miktex-texmf/tex/generic/pgf/basiclayer/pgfcoretransparency.c
+ode.tex
+File: pgfcoretransparency.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+)
+(/usr/local/share/miktex-texmf/tex/generic/pgf/basiclayer/pgfcorepatterns.code.
+tex
+File: pgfcorepatterns.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+)
+(/usr/local/share/miktex-texmf/tex/generic/pgf/basiclayer/pgfcorerdf.code.tex
+File: pgfcorerdf.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+)))
+(/usr/local/share/miktex-texmf/tex/generic/pgf/modules/pgfmoduleshapes.code.tex
+File: pgfmoduleshapes.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+\pgfnodeparttextbox=\box79
+) (/usr/local/share/miktex-texmf/tex/generic/pgf/modules/pgfmoduleplot.code.tex
+File: pgfmoduleplot.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+)
+(/usr/local/share/miktex-texmf/tex/latex/pgf/compatibility/pgfcomp-version-0-65
+.sty
+Package: pgfcomp-version-0-65 2021/05/15 v3.1.9a (3.1.9a)
+\pgf@nodesepstart=\dimen286
+\pgf@nodesepend=\dimen287
+)
+(/usr/local/share/miktex-texmf/tex/latex/pgf/compatibility/pgfcomp-version-1-18
+.sty
+Package: pgfcomp-version-1-18 2021/05/15 v3.1.9a (3.1.9a)
+)) (/usr/local/share/miktex-texmf/tex/latex/pgf/utilities/pgffor.sty
+(/usr/local/share/miktex-texmf/tex/latex/pgf/utilities/pgfkeys.sty
+(/usr/local/share/miktex-texmf/tex/generic/pgf/utilities/pgfkeys.code.tex))
+(/usr/local/share/miktex-texmf/tex/latex/pgf/math/pgfmath.sty
+(/usr/local/share/miktex-texmf/tex/generic/pgf/math/pgfmath.code.tex))
+(/usr/local/share/miktex-texmf/tex/generic/pgf/utilities/pgffor.code.tex
+Package: pgffor 2021/05/15 v3.1.9a (3.1.9a)
+
+(/usr/local/share/miktex-texmf/tex/generic/pgf/math/pgfmath.code.tex)
+\pgffor@iter=\dimen288
+\pgffor@skip=\dimen289
+\pgffor@stack=\toks47
+\pgffor@toks=\toks48
+))
+(/usr/local/share/miktex-texmf/tex/generic/pgf/frontendlayer/tikz/tikz.code.tex
+Package: tikz 2021/05/15 v3.1.9a (3.1.9a)
+
+(/usr/local/share/miktex-texmf/tex/generic/pgf/libraries/pgflibraryplothandlers
+.code.tex
+File: pgflibraryplothandlers.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+\pgf@plot@mark@count=\count480
+\pgfplotmarksize=\dimen290
+)
+\tikz@lastx=\dimen291
+\tikz@lasty=\dimen292
+\tikz@lastxsaved=\dimen293
+\tikz@lastysaved=\dimen294
+\tikz@lastmovetox=\dimen295
+\tikz@lastmovetoy=\dimen296
+\tikzleveldistance=\dimen297
+\tikzsiblingdistance=\dimen298
+\tikz@figbox=\box80
+\tikz@figbox@bg=\box81
+\tikz@tempbox=\box82
+\tikz@tempbox@bg=\box83
+\tikztreelevel=\count481
+\tikznumberofchildren=\count482
+\tikznumberofcurrentchild=\count483
+\tikz@fig@count=\count484
+
+(/usr/local/share/miktex-texmf/tex/generic/pgf/modules/pgfmodulematrix.code.tex
+File: pgfmodulematrix.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+\pgfmatrixcurrentrow=\count485
+\pgfmatrixcurrentcolumn=\count486
+\pgf@matrix@numberofcolumns=\count487
+)
+\tikz@expandcount=\count488
+
+(/usr/local/share/miktex-texmf/tex/generic/pgf/frontendlayer/tikz/libraries/tik
+zlibrarytopaths.code.tex
+File: tikzlibrarytopaths.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+)))
+(/usr/local/share/miktex-texmf/tex/generic/pgf/frontendlayer/tikz/libraries/tik
+zlibrarypositioning.code.tex
+File: tikzlibrarypositioning.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+)
+(/usr/local/share/miktex-texmf/tex/latex/tools/calc.sty
+Package: calc 2017/05/25 v4.3 Infix arithmetic (KKT,FJ)
+\calc@Acount=\count489
+\calc@Bcount=\count490
+\calc@Adimen=\dimen299
+\calc@Bdimen=\dimen300
+\calc@Askip=\skip166
+\calc@Bskip=\skip167
+LaTeX Info: Redefining \setlength on input line 80.
+LaTeX Info: Redefining \addtolength on input line 81.
+\calc@Ccount=\count491
+\calc@Cskip=\skip168
+)
+\c@@todonotes@numberoftodonotes=\count492
+)
+\@quotelevel=\count493
+\@quotereset=\count494
+Package translations Info: No language package found. I am going to use `englis
+h' as default language. on input line 97.
+ (biomarkers.aux)
+\openout1 = `biomarkers.aux'.
+
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 97.
+LaTeX Font Info:    ... okay on input line 97.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 97.
+LaTeX Font Info:    ... okay on input line 97.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 97.
+LaTeX Font Info:    ... okay on input line 97.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 97.
+LaTeX Font Info:    ... okay on input line 97.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 97.
+LaTeX Font Info:    ... okay on input line 97.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 97.
+LaTeX Font Info:    ... okay on input line 97.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 97.
+LaTeX Font Info:    ... okay on input line 97.
+LaTeX Font Info:    Checking defaults for LY1/ptm/m/n on input line 97.
+LaTeX Font Info:    Trying to load font information for LY1+ptm on input line 9
+7.
+
+(/home/gromenawer/.miktex/texmfs/install/tex/latex/ly1/ly1ptm.fd
+File: ly1ptm.fd 2001/02/01 font definitions for LY1/ptm using Berry names.
+)
+LaTeX Font Info:    ... okay on input line 97.
+\c@mv@tabular=\count495
+\c@mv@boldtabular=\count496
+Package lastpage Info: Please have a look at the pageslts package at
+(lastpage)             https://www.ctan.org/pkg/pageslts
+(lastpage)             ! on input line 97.
+
+*geometry* driver: auto-detecting
+*geometry* detected driver: pdftex
+*geometry* verbose mode - [ preamble ] result:
+* driver: pdftex
+* paper: custom
+* layout: <same size as paper>
+* layoutoffset:(h,v)=(0.0pt,0.0pt)
+* modes: twoside 
+* h-part:(L,W,R)=(108.12054pt, 344.27827pt, 42.67912pt)
+* v-part:(T,H,B)=(65.44142pt, 597.50797pt, 39.83368pt)
+* \paperwidth=495.07794pt
+* \paperheight=702.78307pt
+* \textwidth=344.27827pt
+* \textheight=597.50797pt
+* \oddsidemargin=35.85056pt
+* \evensidemargin=-29.59087pt
+* \topmargin=-41.59085pt
+* \headheight=12.0pt
+* \headsep=22.76228pt
+* \topskip=10.0pt
+* \footskip=30.0pt
+* \marginparwidth=121.0pt
+* \marginparsep=11.0pt
+* \columnsep=10.0pt
+* \skip\footins=9.0pt plus 4.0pt minus 2.0pt
+* \hoffset=0.0pt
+* \voffset=0.0pt
+* \mag=1000
+* \@twocolumnfalse
+* \@twosidetrue
+* \@mparswitchtrue
+* \@reversemarginfalse
+* (1in=72.27pt=25.4mm, 1cm=28.453pt)
+
+(/usr/local/share/miktex-texmf/tex/context/base/mkii/supp-pdf.mkii
+[Loading MPS to PDF converter (version 2006.09.02).]
+\scratchcounter=\count497
+\scratchdimen=\dimen301
+\scratchbox=\box84
+\nofMPsegments=\count498
+\nofMParguments=\count499
+\everyMPshowfont=\toks49
+\MPscratchCnt=\count500
+\MPscratchDim=\dimen302
+\MPnumerator=\count501
+\makeMPintoPDFobject=\count502
+\everyMPtoPDFconversion=\toks50
+) (/usr/local/share/miktex-texmf/tex/latex/epstopdf-pkg/epstopdf-base.sty
+Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
+Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
+85.
+
+(/usr/local/share/miktex-texmf/tex/latex/00miktex/epstopdf-sys.cfg
+File: epstopdf-sys.cfg 2021/03/18 v2.0 Configuration of epstopdf for MiKTeX
+))
+Package caption Info: Begin \AtBeginDocument code.
+Package caption Info: float package is loaded.
+Package caption Info: floatrow package is loaded.
+Package caption Info: End \AtBeginDocument code.
+Package biblatex Info: Trying to load language 'english' -> 'cms-american'...
+Package biblatex Info: ... file 'cms-american.lbx' found.
+
+(/home/gromenawer/.miktex/texmfs/install/tex/latex/biblatex-chicago/cms-america
+n.lbx
+File: cms-american.lbx 2021/06/30 v 3.16 biblatex localization
+Package biblatex Info: Trying to load language 'american'...
+Package biblatex Info: ... file 'american.lbx' found.
+ (/usr/local/share/miktex-texmf/tex/latex/biblatex/lbx/american.lbx
+File: american.lbx 2022/02/02 v3.17 biblatex localization (PK/MW)
+Package biblatex Info: Trying to load language 'english'...
+Package biblatex Info: ... file 'english.lbx' found.
+
+(/usr/local/share/miktex-texmf/tex/latex/biblatex/lbx/english.lbx
+File: english.lbx 2022/02/02 v3.17 biblatex localization (PK/MW)
+))
+Package biblatex Info: Trying to load language 'english'...
+Package biblatex Info: ... file 'english.lbx' found.
+
+(/usr/local/share/miktex-texmf/tex/latex/biblatex/lbx/english.lbx
+File: english.lbx 2022/02/02 v3.17 biblatex localization (PK/MW)
+))
+Package biblatex Info: Input encoding 'utf8' detected.
+Package biblatex Info: Automatic encoding selection.
+(biblatex)             Assuming data encoding 'utf8'.
+\openout4 = `biomarkers.bcf'.
+
+Package biblatex Info: Trying to load bibliographic data...
+Package biblatex Info: ... file 'biomarkers.bbl' found.
+
+(biomarkers.bbl)
+Package biblatex Info: Reference section=0 on input line 97.
+Package biblatex Info: Reference segment=0 on input line 97.
+LaTeX Info: Redefining \microtypecontext on input line 97.
+Package microtype Info: Applying patch `item' on input line 97.
+Package microtype Info: Applying patch `toc' on input line 97.
+Package microtype Info: Applying patch `eqnum' on input line 97.
+Package microtype Info: Applying patch `footnote' on input line 97.
+Package microtype Info: Generating PDF output.
+Package microtype Info: Character protrusion enabled (level 2).
+Package microtype Info: Using default protrusion set `alltext'.
+Package microtype Info: Automatic font expansion enabled (level 2),
+(microtype)             stretch: 20, shrink: 20, step: 1, non-selected.
+Package microtype Info: Using default expansion set `alltext-nott'.
+LaTeX Info: Redefining \showhyphens on input line 97.
+Package microtype Info: No adjustment of tracking.
+Package microtype Info: No adjustment of interword spacing.
+Package microtype Info: No adjustment of character kerning.
+Package microtype Info: Loading generic protrusion settings for font family
+(microtype)             `fbb-TLF' (encoding: T1).
+(microtype)             For optimal results, create family-specific settings.
+(microtype)             See the microtype manual for details.
+
+(/home/gromenawer/.miktex/texmfs/install/tex/latex/translations/dicts/translati
+ons-basic-dictionary-english.trsl
+File: translations-basic-dictionary-english.trsl (english translation file `tra
+nslations-basic-dictionary')
+)
+Package translations Info: loading dictionary `translations-basic-dictionary' f
+or `english'. on input line 97.
+LaTeX Font Info:    Font shape `T1/fbb-TLF/m/n' will be
+(Font)              scaled to size 6.79001pt on input line 97.
+LaTeX Font Info:    Font shape `T1/fbb-TLF/m/it' will be
+(Font)              scaled to size 6.79001pt on input line 97.
+LaTeX Font Info:    Font shape `T1/fbb-TLF/b/n' will be
+(Font)              scaled to size 6.79001pt on input line 97.
+<epsa-outline-black.png, id=4, 641.7576pt x 204.5241pt>
+File: epsa-outline-black.png Graphic file (type png)
+<use epsa-outline-black.png>
+Package pdftex.def Info: epsa-outline-black.png  used on input line 97.
+(pdftex.def)             Requested size: 73.97716pt x 23.57439pt.
+LaTeX Font Info:    Trying to load font information for T1+SourceSansPro-TLF on
+ input line 97.
+
+(/home/gromenawer/.miktex/texmfs/install/tex/latex/sourcesanspro/T1SourceSansPr
+o-TLF.fd
+File: T1SourceSansPro-TLF.fd 2020/01/19 (autoinst) Font definitions for T1/Sour
+ceSansPro-TLF.
+)
+LaTeX Font Info:    Font shape `T1/SourceSansPro-TLF/m/n' aliased to
+(Font)              `T1/SourceSansPro-TLF/regular/n' on input line 97.
+LaTeX Font Info:    Font shape `T1/SourceSansPro-TLF/regular/n' will be
+(Font)              scaled to size 10.0pt on input line 97.
+Package microtype Info: Loading generic protrusion settings for font family
+(microtype)             `SourceSansPro-TLF' (encoding: T1).
+(microtype)             For optimal results, create family-specific settings.
+(microtype)             See the microtype manual for details.
+LaTeX Font Info:    Font shape `T1/SourceSansPro-TLF/sb/n' aliased to
+(Font)              `T1/SourceSansPro-TLF/semibold/n' on input line 97.
+LaTeX Font Info:    Font shape `T1/SourceSansPro-TLF/semibold/n' will be
+(Font)              scaled to size 10.0pt on input line 97.
+LaTeX Font Info:    Font shape `T1/SourceSansPro-TLF/sb/n' aliased to
+(Font)              `T1/SourceSansPro-TLF/semibold/n' on input line 97.
+LaTeX Font Info:    Font shape `T1/SourceSansPro-TLF/semibold/n' will be
+(Font)              scaled to size 17.28pt on input line 97.
+
+(/home/gromenawer/.miktex/texmfs/install/tex/latex/microtype/mt-cmr.cfg
+File: mt-cmr.cfg 2013/05/19 v2.2 microtype config. file: Computer Modern Roman 
+(RS)
+)
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <8> on input line 97.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <6> on input line 97.
+LaTeX Font Info:    Font shape `T1/fbb-TLF/m/n' will be
+(Font)              scaled to size 7.76001pt on input line 97.
+LaTeX Font Info:    Font shape `T1/fbb-TLF/m/n' will be
+(Font)              scaled to size 5.82pt on input line 97.
+LaTeX Font Info:    Font shape `T1/fbb-TLF/m/it' will be
+(Font)              scaled to size 9.70001pt on input line 97.
+LaTeX Font Info:    Font shape `T1/fbb-TLF/m/it' will be
+(Font)              scaled to size 7.76001pt on input line 97.
+LaTeX Font Info:    Font shape `T1/fbb-TLF/m/it' will be
+(Font)              scaled to size 5.82pt on input line 97.
+LaTeX Font Info:    Trying to load font information for U+zeur on input line 97
+.
+
+(/home/gromenawer/.miktex/texmfs/install/tex/latex/eulervm/uzeur.fd
+File: uzeur.fd 2005/01/11 v4.0 (WaS)
+)
+(/home/gromenawer/.miktex/texmfs/install/tex/latex/microtype/mt-eur.cfg
+File: mt-eur.cfg 2006/07/31 v1.1 microtype config. file: AMS Euler Roman (RS)
+)
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <5> on input line 97.
+LaTeX Font Info:    Font shape `T1/fbb-TLF/m/n' will be
+(Font)              scaled to size 4.85pt on input line 97.
+LaTeX Font Info:    Font shape `T1/fbb-TLF/m/it' will be
+(Font)              scaled to size 4.85pt on input line 97.
+LaTeX Font Info:    Trying to load font information for TS1+fbb-TLF on input li
+ne 97.
+
+(/home/gromenawer/.miktex/texmfs/install/tex/latex/fbb/TS1fbb-TLF.fd
+File: TS1fbb-TLF.fd 2015/08/23 (autoinst) Font definitions for TS1/fbb-TLF.
+)
+LaTeX Font Info:    Font shape `TS1/fbb-TLF/m/n' will be
+(Font)              scaled to size 6.79001pt on input line 97.
+Package microtype Info: Loading generic protrusion settings for font family
+(microtype)             `fbb-TLF' (encoding: TS1).
+(microtype)             For optimal results, create family-specific settings.
+(microtype)             See the microtype manual for details.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <7> on input line 97.
+
+(biomarkers.tdo)
+\tf@tdo=\write6
+\openout6 = `biomarkers.tdo'.
+
+ (biomarkers.lof)
+\tf@lof=\write7
+\openout7 = `biomarkers.lof'.
+
+ (biomarkers.lot)
+\tf@lot=\write8
+\openout8 = `biomarkers.lot'.
+
+Package mdframed Info: mdframed works in twoside mode on input line 115.
+LaTeX Font Info:    Font shape `T1/fbb-TLF/m/n' will be
+(Font)              scaled to size 8.73001pt on input line 115.
+LaTeX Font Info:    Font shape `T1/fbb-TLF/b/n' will be
+(Font)              scaled to size 9.70001pt on input line 117.
+LaTeX Font Info:    Font shape `T1/fbb-TLF/b/n' will be
+(Font)              scaled to size 8.73001pt on input line 117.
+LaTeX Font Info:    Font shape `T1/SourceSansPro-TLF/sb/n' aliased to
+(Font)              `T1/SourceSansPro-TLF/semibold/n' on input line 117.
+LaTeX Font Info:    Font shape `T1/SourceSansPro-TLF/semibold/n' will be
+(Font)              scaled to size 9.0pt on input line 117.
+
+
+Package mdframed Warning: You got a bad break
+(mdframed)                because the last box will be empty
+(mdframed)                you have to change it manually
+(mdframed)                by changing the text, the space
+(mdframed)                or something else on input line 117.
+
+[1
+
+{/home/gromenawer/.miktex/texmfs/data/fonts/map/pdftex/pdftex.map} <./epsa-outl
+ine-black.png>]
+LaTeX Font Info:    Font shape `T1/fbb-TLF/b/n' will be
+(Font)              scaled to size 7.76001pt on input line 117.
+
+Underfull \hbox (badness 10000) in paragraph at lines 127--128
+
+ []
+
+
+LaTeX Warning: Citation 'ref:MainObesityArticle' on page 2 undefined on input l
+ine 129.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 129--130
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 131--132
+
+ []
+
+LaTeX Font Info:    Font shape `TS1/fbb-TLF/m/n' will be
+(Font)              scaled to size 9.70001pt on input line 135.
+
+Underfull \hbox (badness 10000) in paragraph at lines 135--136
+
+ []
+
+
+LaTeX Warning: Citation 'kertzer2017microfoundations' on page 2 undefined on in
+put line 144.
+
+
+LaTeX Warning: Citation 'gerber2004illusion' on page 2 undefined on input line 
+144.
+
+
+LaTeX Warning: Citation 'pearlman2017crossed' on page 2 undefined on input line
+ 144.
+
+LaTeX Font Info:    Font shape `T1/SourceSansPro-TLF/m/n' aliased to
+(Font)              `T1/SourceSansPro-TLF/regular/n' on input line 146.
+LaTeX Font Info:    Font shape `T1/SourceSansPro-TLF/regular/n' will be
+(Font)              scaled to size 8.0pt on input line 146.
+<ViolPct_Year.pdf, id=14, 505.89pt x 505.89pt>
+File: ViolPct_Year.pdf Graphic file (type pdf)
+<use ViolPct_Year.pdf>
+Package pdftex.def Info: ViolPct_Year.pdf  used on input line 148.
+(pdftex.def)             Requested size: 172.13913pt x 172.13927pt.
+LaTeX Font Info:    Font shape `T1/SourceSansPro-TLF/sb/n' aliased to
+(Font)              `T1/SourceSansPro-TLF/semibold/n' on input line 149.
+LaTeX Font Info:    Font shape `T1/SourceSansPro-TLF/semibold/n' will be
+(Font)              scaled to size 8.0pt on input line 149.
+
+LaTeX Warning: Citation 'wood2006ethical' on page 2 undefined on input line 153
+.
+
+[2] (example-content.tex
+
+LaTeX Warning: Citation 'apsa2020ethics' on page 3 undefined on input line 6.
+
+[3 <./ViolPct_Year.pdf>]
+
+LaTeX Warning: Citation 'eck2020time' on page 4 undefined on input line 8.
+
+
+LaTeX Warning: Citation 'baaz2019exploring' on page 4 undefined on input line 8
+.
+
+
+Overfull \hbox (5.08354pt too wide) in paragraph at lines 8--9
+[] \T1/fbb-TLF/m/n/10 (-20) discuss a case in which militant groups tortured a 
+research facilitator
+ []
+
+
+LaTeX Warning: Citation 'young2019psychology' on page 4 undefined on input line
+ 10.
+
+
+Overfull \hbox (12.68489pt too wide) in paragraph at lines 12--12
+[]\T1/SourceSansPro-TLF/semibold/n/10 (-20) Measuring and mitigating the risk o
+f distress and negative psychological outcomes 
+ []
+
+
+LaTeX Warning: Citation 'legerski2010risks' on page 4 undefined on input line 1
+6.
+
+
+LaTeX Warning: Citation 'jaffe2015does' on page 4 undefined on input line 16.
+
+
+LaTeX Warning: Citation 'mcclinton2015adolescents' on page 4 undefined on input
+ line 16.
+
+
+LaTeX Warning: Citation 'jorm2007participant' on page 4 undefined on input line
+ 16.
+
+
+LaTeX Warning: Citation 'henrich2010weirdest' on page 4 undefined on input line
+ 18.
+
+[4]
+Overfull \hbox (15.7939pt too wide) in paragraph at lines 20--21
+[]\T1/fbb-TLF/m/n/10 (-20) A second and complementary approach to minimizing th
+e risk of negative psychological
+ []
+
+
+LaTeX Warning: Citation 'young2019psychology' on page 5 undefined on input line
+ 23.
+
+
+Overfull \hbox (6.95085pt too wide) in paragraph at lines 23--24
+[]\T1/fbb-TLF/m/n/10 (-20) We identify two low-cost practices that may reduce t
+he risks of negative psychological
+ []
+
+
+Overfull \hbox (8.32425pt too wide) in paragraph at lines 23--24
+\T1/fbb-TLF/m/n/10 (-20) assess whether they think participants are experiencin
+g distress ([]). 
+ []
+
+
+LaTeX Warning: Citation 'baron2020lab' on page 5 undefined on input line 25.
+
+
+LaTeX Warning: Citation 'paluck2009deference' on page 5 undefined on input line
+ 29.
+
+
+Overfull \hbox (0.73729pt too wide) in paragraph at lines 29--30
+[]\T1/fbb-TLF/m/n/10 (-20) Second, psychosocial support professionals can be en
+listed at early stages in fieldwork
+ []
+
+
+Underfull \vbox (badness 1215) has occurred while \output is active []
+
+ [5]
+
+LaTeX Warning: Citation 'baron2020lab' on page 6 undefined on input line 39.
+
+
+LaTeX Warning: Citation 'grietens2019repressive' on page 6 undefined on input l
+ine 45.
+
+
+Overfull \hbox (6.09465pt too wide) in paragraph at lines 45--46
+\T1/fbb-TLF/m/n/10 (-20) report harms to research collaborators in authoritaria
+n settings ([]).
+ []
+
+[6]
+Overfull \hbox (2.1267pt too wide) in paragraph at lines 53--54
+\T1/fbb-TLF/m/n/10 (-20) assistants code 172 research articles on political vio
+lence that involved human participants
+ []
+
+[7]
+<Pct_Transparent.pdf, id=42, 505.89pt x 505.89pt>
+File: Pct_Transparent.pdf Graphic file (type pdf)
+<use Pct_Transparent.pdf>
+Package pdftex.def Info: Pct_Transparent.pdf  used on input line 62.
+(pdftex.def)             Requested size: 172.13913pt x 172.13927pt.
+
+
+LaTeX Warning: Citation 'cronin2018ethics' on page 8 undefined on input line 71
+.
+
+
+LaTeX Warning: Citation 'asiedu2021call' on page 8 undefined on input line 71.
+
+
+LaTeX Warning: Citation 'apsa2020ethics' on page 8 undefined on input line 71.
+
+
+LaTeX Warning: Citation 'humphreys2013fishing' on page 8 undefined on input lin
+e 71.
+
+
+LaTeX Warning: Citation 'simonsohn2014p' on page 8 undefined on input line 71.
+
+
+LaTeX Warning: Citation 'open2015estimating' on page 8 undefined on input line 
+71.
+
+[8 <./Pct_Transparent.pdf>])
+
+LaTeX Warning: Empty bibliography on input line 165.
+
+(example-appendices.tex
+LaTeX Font Info:    Font shape `T1/SourceSansPro-TLF/m/n' aliased to
+(Font)              `T1/SourceSansPro-TLF/regular/n' on input line 13.
+LaTeX Font Info:    Font shape `T1/SourceSansPro-TLF/regular/n' will be
+(Font)              scaled to size 6.0pt on input line 13.
+LaTeX Font Info:    Trying to load font information for TS1+SourceSansPro-TLF o
+n input line 13.
+
+(/home/gromenawer/.miktex/texmfs/install/tex/latex/sourcesanspro/TS1SourceSansP
+ro-TLF.fd
+File: TS1SourceSansPro-TLF.fd 2020/01/19 (autoinst) Font definitions for TS1/So
+urceSansPro-TLF.
+)
+LaTeX Font Info:    Font shape `TS1/SourceSansPro-TLF/m/n' aliased to
+(Font)              `TS1/SourceSansPro-TLF/regular/n' on input line 13.
+LaTeX Font Info:    Font shape `TS1/SourceSansPro-TLF/regular/n' will be
+(Font)              scaled to size 8.0pt on input line 13.
+Package microtype Info: Loading generic protrusion settings for font family
+(microtype)             `SourceSansPro-TLF' (encoding: TS1).
+(microtype)             For optimal results, create family-specific settings.
+(microtype)             See the microtype manual for details.
+) 
+AED: lastpage setting LastPage
+[9] (biomarkers.aux)
+
+LaTeX Warning: There were undefined references.
+
+
+Package biblatex Warning: Please (re)run Biber on the file:
+(biblatex)                biomarkers
+(biblatex)                and rerun LaTeX afterwards.
+
+Package logreq Info: Writing requests to 'biomarkers.run.xml'.
+\openout1 = `biomarkers.run.xml'.
+
+ ) 
+Here is how much of TeX's memory you used:
+ 36142 strings out of 480519
+ 757816 string characters out of 2896476
+ 1749527 words of memory out of 3000000
+ 53170 multiletter control sequences out of 15000+600000
+ 655470 words of font info for 278 fonts, out of 8000000 for 9000
+ 0 hyphenation exceptions out of 8191
+ 99i,17n,131p,1510b,4033s stack positions out of 5000i,500n,10000p,200000b,80000s
+{/home/gromenawer/.miktex/texmfs/install/fonts/enc/dvips/sourcesanspro/a_5pon
+h6.enc}{/home/gromenawer/.miktex/texmfs/install/fonts/enc/dvips/sourcesanspro/a
+_emkxm5.enc}{/home/gromenawer/.miktex/texmfs/install/fonts/enc/dvips/fbb/fbb_de
+juay.enc}{/home/gromenawer/.miktex/texmfs/install/fonts/enc/dvips/fbb/fbb_ivhno
+r.enc}{/home/gromenawer/.miktex/texmfs/install/fonts/enc/dvips/fbb/fbb_4zjlsx.e
+nc}{/home/gromenawer/.miktex/texmfs/install/fonts/enc/dvips/fbb/fbb_jc4ywh.enc}
+</home/gromenawer/.miktex/texmfs/install/fonts/type1/adobe/sourcesanspro/Source
+SansPro-Regular.pfb></home/gromenawer/.miktex/texmfs/install/fonts/type1/adobe/
+sourcesanspro/SourceSansPro-Semibold.pfb></home/gromenawer/.miktex/texmfs/insta
+ll/fonts/type1/public/fbb/fbb-Bold.pfb></home/gromenawer/.miktex/texmfs/install
+/fonts/type1/public/fbb/fbb-Italic.pfb></home/gromenawer/.miktex/texmfs/install
+/fonts/type1/public/fbb/fbb-Regular.pfb>
+Output written on biomarkers.pdf (9 pages, 312045 bytes).
+PDF statistics:
+ 87 PDF objects out of 1000 (max. 8388607)
+ 0 named destinations out of 1000 (max. 500000)
+ 94748 words of extra memory for PDF output out of 106986 (max. 10000000)
+

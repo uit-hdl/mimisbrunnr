@@ -1,0 +1,44 @@
+If you want to run everything from zero, use this order:
+
+
+(TODO) install.R
+
+    This makes sure that all your packages are available, and if they don't, it
+    will try to intall them automatically.
+
+    You might still get an error prompting that you need to install some system
+    libraries manually in Linux, like the "libcurl-openssl" for example before
+    you install the "curl" package dependency.
+
+    You only need to run this once. It will take some relative long time to
+    download and compile all the sources thoght if you have a fresh instalation
+    of R.
+
+tools.R
+
+    All the functions that you need to run the program.
+
+dataCleaning.R
+
+    If you want to clean all the data from scratch. You need to run this if you
+    have never run it before and the /dataframe_ready folder is empty. Otherwise
+    you can skip it.
+
+load.R
+
+    As the name suggest, it load all the dataframes into memory.
+
+
+aureus.R
+network.R
+generalAnalysis.R
+
+     Each of the analysis. Run whathever you need, or all of them if you want.
+
+latex.R
+
+     The script that take care of creating the latex document.
+
+(TODO) HTML.R
+
+     The script that take care of creating the notebook and the HTML report.

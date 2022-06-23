@@ -1,0 +1,641 @@
+/* 
+ * ----------------------------------------------- 
+ * 
+ * CONSTANT COLOR DECLARATIONS
+ * 
+ * -----------------------------------------------
+*/
+
+:root {
+
+
+  /* Colors for the lignt (sun) mode */
+  --sun-primary-background-color:   #c3c3c3;
+  --sun-secondary-background-color: #b2b2b2;
+  --sun-terciary-background-color:  #a1a1a1;
+
+  --sun-primary-color:          #16181d ; /* black */
+  --sun-secondary-color:        #1058a2 ; /* blue  */
+  --sun-terciary-color:         #cc5c00 ; /* orange*/
+  --sun-cuaternary-color:       #6e8b22 ; /* green */
+  
+  --sun-primary-color-shade:    #16181d;
+  --sun-secondary-color-shade:  #0e4f91;
+  --sun-terciary-color-shade:   #b75300;
+  --sun-cuaternary-color-shade: #637d1f;
+  
+  --sun-primary-highlight:      #b54d7a;
+  --sun-secondary-highlight:    #962f5f;
+
+  /* Colors for the dark (moon) mode */
+  --moon-primary-color:    #004c79 ;
+  --moon-secondary-color:  #bf6100 ;
+  --moon-terciary-color:   #c3c3c3 ;
+  --moon-cuaternary-color: #367b55 ;
+  
+  --moon-primary-color-high-contrast:   #2ad6ff;
+  --moon-secondary-color-high-contrast: #ff9b43;
+  --moon-terciary-color-high-contrast:  #dfdfdf;
+  
+  --moon-primary-background-color:   #212121;
+  --moon-secondary-background-color: #353535;
+  --moon-terciary-background-color:  red;
+  
+  /* Shades of dark    */
+  /* Shade 1 is darker */
+  --dark-shade-1: #111111;
+  --dark-shade-2: #222222;
+  --dark-shade-3: #333333;
+  --dark-shade-4: #444444;
+  
+  /* Shades of light    */
+  /* Shade 1 is lighter */
+  --light-shade-1: #d4d0cb;
+  --light-shade-2: #d2cec8;
+  --light-shade-3: #9a988d;
+  --light-shade-4: #adadad; 
+  
+}
+
+/* 
+ * ----------------------------------------------- 
+ * 
+ * FONTS AND SPECIAL CHARACTERS DECLARATION
+ * 
+ * -----------------------------------------------
+*/
+
+
+/*
+ * Font Awesome Free 5.13.0 by @fontawesome - https://fontawesome.com
+ * License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License)
+ */
+
+@font-face {
+    font-family: 'Font Awesome 5 Free';
+    font-style: normal;
+    font-weight: 900;
+    font-display: block;
+    src: url("file:///home/gromenawer/Desktop/Amalgamlab/mimisbrunnr/reports/HTML/fonts/fa-solid-900.eot");
+    src: url("file:///home/gromenawer/Desktop/Amalgamlab/mimisbrunnr/reports/HTML/fonts/fa-solid-900.eot")   format("embedded-opentype"),
+         url("file:///home/gromenawer/Desktop/Amalgamlab/mimisbrunnr/reports/HTML/fonts/fa-solid-900.woff2") format("woff2"),
+         url("file:///home/gromenawer/Desktop/Amalgamlab/mimisbrunnr/reports/HTML/fonts/fa-solid-900.woff")  format("woff"),
+         url("file:///home/gromenawer/Desktop/Amalgamlab/mimisbrunnr/reports/HTML/fonts/fa-solid-900.ttf")   format("truetype"),
+         url("file:///home/gromenawer/Desktop/Amalgamlab/mimisbrunnr/reports/HTML/fonts/fa-solid-900.svg")   format("svg");
+
+}
+
+.fa,
+.fas {
+  font-family: 'Font Awesome 5 Free';
+  font-weight: 900; }
+
+
+/*Special characters*/
+.fa-home:before           { content: "\f015"; padding: 14px; }
+.fa-user:before           { content: "\f007"; }
+.fa-clock:before          { content: "\f017"; }
+.fa-gamepad:before        { content: "\f11b"; }
+.fa-graduation-cap:before { content: "\f19d"; }
+.fa-globe-europe:before   { content: "\f7a2"; }
+.fa-pizza-slice:before    { content: "\f818"; }
+.fa-camera-retro:before   { content: "\f083"; }
+.fa-folder:before         { content: "\f07b"; }
+.fa-music:before          { content: "\f001"; }
+.fa-desktop:before        { content: "\f108"; }
+.fa-swimmer:before        { content: "\f5c4"; }
+.fa-heart:before          { content: "\f004"; }
+.fa-power-off:before      { content: "\f011"; }
+
+h1{
+	color: #ffffff;
+	font-family: "Poppins", sans-serif;
+	text-transform: uppercase;
+	
+	font-size: 70px;
+	letter-spacing: 0.2em;
+	cursor: pointer;
+	
+	text-shadow: 1px 1px 0 #444444,  
+	             2px 2px   #fc0049,
+	             3px 3px 0 #333333,  
+				 4px 4px   #fe8f01,
+				 5px 5px 0 #222222,  
+				 6px 6px   #fdf21f,
+				 7px 7px 0 #111111,  
+				 8px 8px   #3fdf4b,
+				 9px 9px 0 #000000,  
+				 10px 10px #3462fe;
+				 12px 12px 0 rgba(0, 0, 0, .2);				 
+	
+	
+	
+}
+
+h1:hover{
+
+	text-shadow: 0.04em 0.04em #fc0049,
+				 0.08em 0.08em #fe8f01,
+				 0.12em 0.12em #fdf21f,
+				 0.16em 0.16em #3fdf4b,
+				 0.2em  0.2em #3462fe;
+				 
+}		 
+
+
+/*
+h1{
+
+    color: var(--sun-terciary-color);
+
+}
+*/
+
+h2{
+
+    color: var(--sun-secondary-color);
+
+}
+
+h3{
+
+    color: var(--sun-terciary-color);
+
+}
+
+p{
+
+    color: var(--dark-shade-2);
+
+}
+
+
+
+/* 
+ * ---------- 
+ * 
+ * IMAGES
+ * 
+ * ---------- 
+*/
+
+/*Addjusted to container (default)*/
+/*
+img{
+
+    
+    width: 100%; 
+    object-fit: 'contain';
+
+}
+*/
+
+.profilePic{
+
+    /*height: 100%;*/
+    width: 90%; 
+    object-fit: 'contain';
+    
+    display:      block;
+    margin-left:  auto;
+    margin-right: auto;
+
+}
+
+.iconPic{
+
+    /*height: 100%;*/
+    width: 70%; 
+    object-fit: 'contain';
+    
+    display:      block;
+    margin-left:  auto;
+    margin-right: auto;
+
+}
+
+.image-overall {
+
+    flex-direction:   column;
+    display:          flex;
+  
+    width:            auto;
+    margin:           auto;
+    text-align:       left;  
+    
+}
+
+.image-description-box{
+
+    flex-direction:   column;
+    display:          flex;
+    
+     
+    max-width:        800px;
+    
+    padding:          10px;
+    
+    text-align:       left;
+    color:            var(--dark-shade-2);
+    
+}
+
+.image-title{
+
+    padding:          2px;
+
+    font-weight:      bold;
+
+}
+
+.image-verbose{
+
+    padding:          2px;
+
+}
+
+
+
+
+/* 
+ * ----------------- 
+ * 
+ * TABLES
+ * 
+ * -----------------
+*/
+
+/* ----------------- 
+ * 
+ * SIMPLE TABLES
+ * 
+ * These consist in a table container, which has a overheader with
+ * the icons to download the CSV, TXT and so on.
+ * 
+ * Then you have the table
+ * 
+ * Then you have the footer of the table with the table text that is
+ * as width as the table
+ * -----------------
+*/
+
+.table-overall {
+
+    flex-direction:   column;
+    display:          flex;
+  
+    width:            auto;
+    margin:           auto;
+    text-align:       left;  
+    
+    align-items:    left;
+    
+    
+    max-height:       800px;
+    overflow:         scroll;
+}
+
+.table-overall::-webkit-scrollbar {
+    display: none;
+}
+
+.table-description-box{
+
+    flex-direction:   column;
+    display:          flex;
+    
+     
+    max-width:        800px;
+    
+    padding:          10px;
+    
+    text-align:       left;
+    color:            var(--dark-shade-2);
+    
+}
+
+.table-title{
+
+    padding:          2px;
+
+    font-weight:      bold;
+
+}
+
+.table-verbose{
+
+    padding:          2px;
+
+}
+
+/*
+.table-menu {
+
+    flex-direction: row;
+
+    display:          flex;
+
+    
+    background-color: green;
+    min-height:       400px;
+    max-height:       600px;
+}
+
+.table-menu-option{
+
+    display:          flex;
+
+    background-color: red;
+    
+    min-width:       100px;
+    min-height:      100px;
+    
+    max-width:       300px;
+    max-height:      300px;
+    
+}
+*/
+
+.table-container {
+
+    display:          flex;
+
+}
+
+.simpleTable {
+
+	/* Set basic font family */
+    font-family:     Arial, Helvetica, sans-serif;
+    
+    /* No borders */
+    border-collapse: collapse;
+    border:          0px;
+    
+    /* Expand horizontally as much as needed */
+    width:           auto;
+    
+    /* In case you want the table centered
+    margin-left:     auto;
+    margin-right:    auto;
+    */
+    margin-right: auto;
+    margin-left:  0px;
+    
+    /* Drop a shadow */
+    box-shadow:      0 0 20px rgba(0,0,0,0.1);
+    
+    overflow-x: hidden;
+    
+    
+}
+
+.simpleTable td {
+
+    
+    padding:         6px;
+    
+}
+
+.tableCorner{
+    padding-top:     1px;
+    padding-bottom:  1px;
+}
+
+/*
+.tableColumn{
+
+    width:auto
+    
+}
+
+.tableColumn:hover{
+
+    background-color: #AAAAAA;
+    
+}
+*/
+
+.tableHeader {
+    padding-left:     6px;
+    padding-right:    12px;
+    padding-top:      12px;
+    padding-bottom:   12px;
+    
+    font-weight:      bold;
+    text-align:       left;
+    color:            var(--light-shade-2);
+    
+    background-color: var(--sun-primary-color);
+    
+    position: sticky;
+	top: 0; /* Don't forget this, required for the stickiness */
+}
+
+.tableRow {
+	text-align: left;
+}
+
+.tableRow:hover{
+    padding-top:      14px;
+    padding-bottom:   14px;
+    background-color: #AAAAAA;
+}
+
+.tableRow:hover .tableRower{
+    background-color: var(--sun-primary-highlight);
+}
+
+.tableRow:hover .tableRowID{
+	background-color: var(--sun-secondary-highlight);
+}
+
+.tableRow:hover .tableCell{
+	background-color: var(--sun-terciary-background-color);
+}
+
+.tableRower {
+    color:            var(--light-shade-2);
+}
+
+.tableRower_A {
+    background-color: var(--sun-secondary-color);
+}
+
+.tableRower_B {
+    background-color: var(--sun-secondary-color-shade);
+}
+
+.tableRowID {
+
+	padding-left:     6px;
+    padding-right:    6px;
+    
+    margin-left:      6px;
+    margin-right:     6px;
+    
+    width:            40px;
+    
+    color:            var(--light-shade-2);
+    font-weight:      bold;
+    text-align:       center;
+    
+}
+
+.tableRowID_A {
+
+   background-color: var(--sun-terciary-color-shade);
+
+}
+
+.tableRowID_B {
+
+  background-color: var(--sun-terciary-color);
+
+}
+
+.tableCell {
+    color:           var(--dark-shade-2);
+
+} 
+
+.tableCell_A {
+    background-color: var(--sun-primary-background-color);
+} 
+.tableCell_B {
+    background-color: var(--sun-secondary-background-color);
+} 
+
+.tableCell:hover{
+    color:            var(--sun-terciary-color-shade);
+}
+
+
+/* 
+ * ---------- 
+ * 
+ * HR
+ * 
+ * ---------- 
+*/
+
+hr{
+    border: 0;
+    border-top: 1px solid #444;
+    margin: 20px 0;
+}
+
+.hr3 {
+  border: 0;
+  height: 2px;
+  background-image: linear-gradient(to right, transparent, #CCC, transparent);  
+}
+
+body {
+
+    background-color: var(--sun-primary-background-color);
+    font-family: Arial, Helvetica, sans-serif;
+    
+    display: flex;
+	flex-direction: column;
+	align-items:stretch;
+}
+
+/* 
+ * ----------------- 
+ * 
+ * MIDDLE SECTION
+ * 
+ * -----------------
+*/
+
+	/* Overall container that have all the stuff inside */
+	.middle {  
+
+		background-color: var(--sun-primary-background-color);
+
+		padding: 40px;
+
+		display: flex;
+		flex-direction: row;
+		
+		text-align: left;
+    
+	}
+
+
+	/* 
+	 * 
+	 * Side column container , this is the left column that occupies
+	 * about 30% of the web
+	 * 
+	 */
+	.sideColumn {
+
+        margin-right: 20px;
+		
+		flex: 30%;
+		
+		display: flex;
+		flex-direction: column;
+		
+		max-width: 300px;
+
+  
+	}
+	
+		/* Links in the side column*/
+		.sideColumn a {
+			color: var(--sun-secondary-color);
+			text-decoration: none;
+		}
+
+		.sideColumn a:visited {
+			color: var(--sun-primary-color);
+			text-decoration: none;
+		}	
+	
+		/* Each of the side column independent containers */
+		.sidePanel{
+	
+			background-color: var(--sun-secondary-background-color);
+		
+		    border: 1px solid #111;
+		
+			box-shadow: 0 5px 10px 0 rgba(0,0,0,0.32), 0 10px 20px 0 rgba(0,0,0,0.12);
+	
+			font-size: 15px;
+			
+			padding-left: 10px;
+			padding-right: 10px;
+			
+			margin-bottom: 20px;
+	
+		}
+	
+	
+	/* 
+	 * 
+	 * Main column container, everything else is occupied by this
+	 * 
+	 */
+	
+	.mainColumn {
+
+        border: 1px solid #111;
+
+		padding: 40px;
+		margin-right: 20px;
+
+		flex: 70%;
+		
+		/*display:        flex;*/ /*I have no idea why this flex breaks the tables alignments even thouth nothing is set to center*/
+		flex-direction: column;
+		align-items:    left;
+		
+		
+		background-color: var(--sun-secondary-background-color);
+		
+		box-shadow: 0 5px 10px 0 rgba(0,0,0,0.32), 0 10px 20px 0 rgba(0,0,0,0.12);
+		
+  
+	}

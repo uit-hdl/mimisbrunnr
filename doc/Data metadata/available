@@ -1,0 +1,1582 @@
+################################################################################
+Some basics:
+################################################################################
+There is a whole Calendar.R that tries to read all the variables regarding
+timing control and present it to the user in a human readable summary. Please
+see that for further details. Here is a few highlights of it:
+
+FF1: Is the date for the first control. There is no specific date as these takes
+     around 9 month to complete. So it sort of means "First data point" if you
+     will.
+
+FF2: Is the date for the second control. This happens about 3 years later from
+     FF1. We don't have any data for FF2 yet. HOWEVER!, see the following:
+
+FF11: Is the follow up that happen a week later for the S.Aureus samples.
+      Despise being called a week later, it doesn't happen a week later in most
+      cases, but rather about 18 days.
+
+FF12: Is the follow up that happens about 10 months later.
+
+FF3: Same deal, but about 10 years later. We don't have any FF3 info yet, and at
+     the time of writing this, is doesn't even exist.
+
+################################################################################
+Info summary:
+
+-- ID                  nothinig here beside the id of the person
+
+-- Basic               attendance, sex and age
+
+-- Antromomorphics     height, weights, bmi, and dexa data
+
+-- Diseases            Everything that is wrong with you
+
+-- Medicine            What are you taking, that is not hormonal contraceptives
+
+-- MContraceptives     Menstruation and Hormonal Contraceptives
+
+-- Social Network      Info about your friends
+
+-- Aureus              Info about your carrier status
+
+-- High School         Where do you study and what it is 
+
+-- Blood               Blood analysis not including inflamatory biomarkers
+
+-- Questionaries       Info about questionaries fullfiling process
+
+-- Sociology           Etnicity and household info
+
+-- FrienshipsOverview  Details about how relationships forms
+
+-- Puberty             Mixed table for men and women regarding puberty
+
+-- Drugs               Recreational drugs use
+
+-- Sports              How often and how hard do you make sports
+
+-- Hygiene             How much of a dyogenes you are, includes sunbathing.
+
+-- Hospital History    Some variables regarding pass hospitalization
+
+-- IBiomarkers         The info about the inflamatory biomarkers (LOD/NHL)
+
+
+And now the  actual tables with all the variables
+
+################################################################################
+
+
+
+
+################################################################################
+ID:
+################################################################################
+
+    This is the only variable with the ID of a person. In the final table we use
+    sequencial IDs from 1 to 1038 instead of the original one. First for
+    anonymizing the data further, and second for math and optimization reasons.
+
+	PERS_KEY_FF1
+
+################################################################################
+Basic:
+################################################################################
+
+    ATTENDANCE_DATE_FF1
+    ATTENDANCE_DATE_FF12
+
+    SEX_FF1
+    AGE_FF1
+
+################################################################################
+Antropomorphic:
+################################################################################
+
+    ----------------------------------------------------------------------------
+    Weight and Hips are averaged in the analysis table, there is really no point
+    on having two measures hanging around everywhere.
+
+    The DEXA information will come here when we get it.
+    ----------------------------------------------------------------------------
+
+    HEIGHT_FF1
+    WEIGHT_FF1
+    WAIST1_FF1
+    WAIST2_FF1 (not used directly, found average with previous)
+    HIP1_FF1
+    HIP2_FF1   (not used directly, found average with previous) 
+    BMI_FF1
+
+    ----------------------------------------------------------------------------
+    Similar info in the FF2
+    ----------------------------------------------------------------------------
+
+    PERS_KEY_FF1
+    HEIGHT_FF2
+    WEIGHT_FF2
+    WAIST1_FF2
+    WAIST2_FF2 (not used directly, found average with previous)
+    HIP1_FF2
+    HIP2_FF2   (not used directly, found average with previous)
+
+################################################################################
+Diseases:
+################################################################################
+
+    ----------------------------------------------------------------------------
+    General self-reported status of your current health:
+    ----------------------------------------------------------------------------
+
+	HEALTH_FF1
+
+    ----------------------------------------------------------------------------
+    These are a bunch of shortcut variables that tells if you have diabetes,
+    asthma, and whatever (yes/no). Later, you have the actual list of chronic
+    diseases that are transformed into a proper relational database format.
+
+    There are sort of "popular" diseases. Everybody knows what diabetes is and
+    is a important variable to filter by quickly. Then you have some weird
+    things that goes into the chronic diseases table (and diabetes as well).
+    ----------------------------------------------------------------------------
+
+	DIABETES_FF1
+
+	ICHY_SKIN_FF1
+	ICHY_SKIN_LOCATION_FF1
+	ICHY_SKIN_AGE_FF1
+	ICHY_SKIN_SEVERITY_FF1
+
+	HAND_ECZEMA_FF1
+
+	ALLERGIC_RHINITIS_FF1
+
+	ASTHMA_FF1
+
+	ATOPIC_ECZEMA_FF1
+
+	psoriasis_lifetime_ff1
+        psoriasis_severity_ff1
+
+    ----------------------------------------------------------------------------
+    List of diseases:
+    ----------------------------------------------------------------------------
+
+	chronic_disease_ff1
+
+        diagnosis_chronic_disease1_ff1
+	icd10_chronic_disease1_ff1
+
+	diagnosis_chronic_disease2_ff1
+	icd10_chronic_disease2_ff1
+
+	diagnosis_chronic_disease3_ff1
+	icd10_chronic_disease3_ff1
+
+	diagnosis_chronic_disease4_ff1
+	icd10_chronic_disease4_ff1
+
+	diagnosis_chronic_disease5_ff1
+	icd10_chronic_disease5_ff1
+
+	chronic_disease_other_ff1
+	chronic_disease_other_desc_ff1	
+
+    ----------------------------------------------------------------------------
+    List of diseases onset, diagnotistic, starting, etc...
+    ----------------------------------------------------------------------------
+
+        AGE_DIAGN_CHRONIC_DISEASE1_FF1
+        AGE_DIAGN_CHRONIC_DISEASE2_FF1
+        AGE_DIAGN_CHRONIC_DISEASE3_FF1
+        AGE_DIAGN_CHRONIC_DISEASE4_FF1
+        AGE_DIAGN_CHRONIC_DISEASE5_FF1
+
+        
+        ------------------------------------------------------------------------
+        This is really bad, we have a age for symptoms debut for chronic disease
+        but we don't have this variable for each disease. So unless you only
+        have a disease, we can't use this data.
+
+        Futhermore, the definition of chronic disease is not clear. We have 
+        chronic diseases 1 to 5 + other, and then we have common diseases such
+        as diabetes and so on. So we don't know what this make reference.
+
+        Again, really bad DB design.
+
+        If this information exist, I'm applying the same debut to all diseases
+        that a person has. But please be aware that this information is very
+        flimsy.
+        ------------------------------------------------------------------------
+
+	AGE_CHRONIC_SYMPTOM_DEBUT_FF1
+
+    ----------------------------------------------------------------------------
+    All these variables are empty and ignored, no info in the metadata either
+    ----------------------------------------------------------------------------
+
+        DIAGN4
+        DIAGN0
+        DIAGN1
+        DIAGN2
+	DIAGN3
+
+        CHRON0
+        CHRON1
+        CHRON2
+        CHRON3
+        CHRON4
+        CHRON5
+        CHRON6
+        CHRON7
+        CHRON8
+        CHRON9
+        CHRONA
+
+
+################################################################################
+Medicine:
+################################################################################
+
+    ----------------------------------------------------------------------------
+    When did the medicine questionare was filled and burocracy
+    ----------------------------------------------------------------------------
+
+	MEDICATION_DATE_FF1
+	MEDICATION_TIME_FF1
+	MEDICATION_SIGNATURE_FF1
+
+
+    ----------------------------------------------------------------------------
+    List of medication to be transformed in proper relational DB
+    ----------------------------------------------------------------------------
+
+        MEDICATION_BRAND1_FF1
+	MEDICATION_ATC1_FF1
+	MEDICATION_REGULAR1_FF1
+
+	MEDICATION_BRAND2_FF1
+	MEDICATION_ATC2_FF1
+	MEDICATION_REGULAR2_FF1
+
+	MEDICATION_BRAND3_FF1
+	MEDICATION_ATC3_FF1
+	MEDICATION_REGULAR3_FF1
+
+	MEDICATION_BRAND4_FF1
+	MEDICATION_ATC4_FF1
+	MEDICATION_REGULAR4_FF1
+
+	MEDICATION_BRAND5_FF1
+	MEDICATION_ATC5_FF1
+	MEDICATION_REGULAR5_FF1
+
+	MEDICATION_OTHER_FF1
+	MEDICATION_OTHER_DESC_FF1
+
+	ANALGETICS_BRAND1_FF1
+	ANALGETICS_ATC1_FF1
+	ANALGETICS_HOURS1_FF1
+	ANALGETICS_LAST_NUMBER1_FF1
+
+	ANALGETICS_BRAND2_FF1
+	ANALGETICS_ATC2_FF1
+	ANALGETICS_HOURS2_FF1
+	ANALGETICS_LAST_NUMBER2_FF1
+
+	ANALGETICS_BRAND3_FF1
+	ANALGETICS_ATC3_FF1
+	ANALGETICS_HOURS3_FF1
+	ANALGETICS_LAST_NUMBER3_FF1
+
+	ANALGETICS_BRAND4_FF1
+        ANALGETICS_ATC4_FF1
+        ANALGETICS_HOURS4_FF1
+        ANALGETICS_LAST_NUMBER4_FF1
+
+	ANTIBIOTICS_BRAND1_FF1
+	ANTIBIOTICS_ATC1_FF1
+
+
+
+	ANTIBIOTICS_BRAND1_FF12
+	ANTIBIOTICS_ATC1_FF12
+
+	ANTIBIOTICS_BRAND2_FF12
+	ANTIBIOTICS_ATC2_FF12
+
+	ANTIBIOTICS_BRAND3_FF12
+	ANTIBIOTICS_ATC3_FF12
+
+    ----------------------------------------------------------------------------
+    List of YES/NO question shortcuts
+    ----------------------------------------------------------------------------
+
+	MEDICATION_DAILY_FF1
+
+	ANALGETICS_FF1
+
+	ANTIBIOTICS_FF1
+	ANTIBIOTICS_FF12
+
+	PAINKILLERS_PRESC_4WEEKS_FF1
+
+	PAINKILLERS_NOPRESC_4WEEKS_FF1
+
+	SLEEPING_PILLS_4WEEKS_FF1
+
+	ANTIDEPRESSANTS_4WEEKS_FF1
+
+	ADHD_MEDICATION_4WEEKS_FF1
+
+	TRANQUILIZERS_4WEEKS_FF1	
+
+    ----------------------------------------------------------------------------
+    Other things
+    ----------------------------------------------------------------------------
+
+	TIME_LAST_MEAL_FF1
+
+	MEDIC0
+	MEDIC1
+	MEDIC2
+	MEDIC3
+	MEDIC4
+	MEDIC5
+	MEDIC6
+	MEDIC7
+	MEDIC8
+	MEDIC9
+	MEDICA
+	MEDICB
+	MEDICC
+	MEDICD
+	MEDICE
+	MEDICF
+
+	ANALG0	
+	ANALG1
+	ANALG2
+	ANALG3
+
+
+
+    ----------------------------------------------------------------------------
+    Ignored columns
+
+    These columns have all their cells blank, so I just skip reading these.
+    ----------------------------------------------------------------------------
+
+	ANTIBIOTICS_BRAND2_FF1
+	ANTIBIOTICS_ATC2_FF1
+
+	ANTIBIOTICS_BRAND3_FF1
+	ANTIBIOTICS_ATC3_FF1
+
+	ANTIB0
+	ANTIB1
+	ANTIB2
+	ANTIB3
+	ANTIB4
+	ANTIB5
+
+
+################################################################################
+Menstruation and Contraceptives:
+################################################################################
+
+    This data is for women only, as such you have those weird WOMEN_DATE
+    variables that has nothing to do with women by itself, is just that the
+    variables that are related to women need to have a register date,
+    signatures, and so on. And the person that designed these variable thought
+    it was a good idea to summarize all with WOMEN_X variable names
+
+    ----------------------------------------------------------------------------
+    When did the women only questionare was filled and burocracy
+    ----------------------------------------------------------------------------
+
+    WOMEN_DATE_FF1
+    WOMEN_TIME_FF1
+    WOMEN_SIGNATURE_FF1	
+
+
+
+
+
+    ----------------------------------------------------------------------------
+    Is there a chance for you to be pregnant?
+
+    There are 21 women awnsering yes to possible pregancy. A total of 20
+    pregnancy test are done, with all of them negative. So these variables are
+    just ignored and not going into the general data.
+
+    If needed, put them into the menstruation table
+
+    ----------------------------------------------------------------------------
+
+
+    CHANCE_PREGNANT_FF1
+    PREGNANCY_TEST_CONSENT_FF1
+    PREGNANCY_TEST_RESULT_FF1	
+
+    DEXA_APPROVED_FF1          (No dexa info, that goes into the Antropometric
+                                table. Here is just approved dexa, which means
+                                no dexa for you if you are pregnant)
+
+    (These two variable are ignored, time is not interested, and the person who
+     run the quationary neither)
+
+    WOMEN_TIME_FF1
+    WOMEN_SIGNATURE_FF1
+
+
+    ----------------------------------------------------------------------------
+    Menstruation information
+    ----------------------------------------------------------------------------
+
+    MENSES_FF1
+    MENSES_REGULARITY_FF1
+    MENSES_CYCLE_LENGTH_FF1
+    MENSES_START_DATE_FF1
+
+    ----------------------------------------------------------------------------
+    Menstruation uncertenty
+
+    We skip this variable because is a 0/1 variable. Where there is a 0, we
+    don't have a START_DATE_FF1, and in all cases where there is 1 we do. So is
+    a redundant variable with no extra info.
+    ----------------------------------------------------------------------------
+
+    MENSES_START_DATE_CERTAIN_FF1
+
+    ----------------------------------------------------------------------------
+    Contraceptives shortcuts. Note that in the final table, we don't mark yes/no
+    but rather the type. If the type is "none", that means no, and if it is
+    something else, that means yes.
+    ----------------------------------------------------------------------------
+
+    CONTRACEPTIVES_FF1
+    CONTRACEPTIVES_TYPE_FF1
+
+    ----------------------------------------------------------------------------
+    Contraceptives relational DB list
+    ----------------------------------------------------------------------------
+
+    ORAL_CONTRACEPT_NAME_FF1
+    ORAL_0
+    INJECTED_CONTRACEPT_NAME_FF1
+    INJEC0
+    SUBDERMAL_CONTRACEPT_NAME_FF1
+    SUBDE0
+    CONTRACEP_SKIN_PATCH_NAME_FF1
+    CONTR0
+    VAGINAL_CONTRACEPT_NAME_FF1
+    VAGIN0
+    ORAL_CONTRACEPT_ATC_FF1
+    INJECTED_CONTRACEPT_ATC_FF1
+    SUBDERMAL_CONTRACEPT_ATC_FF1   
+    CONTRACEP_SKIN_PATCH_ATC_FF1
+    VAGINAL_CONTRACEPT_ATC_FF1
+
+
+################################################################################
+Social Network:
+################################################################################
+
+    ----------------------------------------------------------------------------
+    When did the women only questionare was filled and burocracy
+    ----------------------------------------------------------------------------
+
+	NETWORK_DATE_FF1
+
+	NETWORK_DATE_FF12
+	NETWORK_TIME_FF12
+
+        ------------------------------------------------------------------------
+        These two variables keep track of the exact time that the network
+        was filled. All of them are morning time, and they have no special
+        interest in any way, so for simplicity are not processed.
+        ------------------------------------------------------------------------
+
+    	    NETWORK_TIME_FF1
+	    NETWORK_TIME_FF12
+
+    ----------------------------------------------------------------------------
+    How well does the network represent you
+    ----------------------------------------------------------------------------
+
+	NETWORK_OVERVIEW_FF1
+	NETWORK_OVERVIEW_FF12
+
+    ----------------------------------------------------------------------------
+    Friend list for FF1
+    ----------------------------------------------------------------------------
+
+    FRIEND_1_FF1	
+    FRIEND_2_FF1
+    FRIEND_3_FF1
+    FRIEND_4_FF1
+    FRIEND_5_FF1
+
+    FRIEND1_PHYSICAL_CONTACT_FF1
+    FRIEND1_CONTACT_SCHOOL_FF1
+    FRIEND1_CONTACT_SPORT_FF1
+    FRIEND1_CONTACT_HOME_FF1
+    FRIEND1_CONTACT_OTHER_FF1
+
+    FRIEND2_PHYSICAL_CONTACT_FF1
+    FRIEND2_CONTACT_SCHOOL_FF1
+    FRIEND2_CONTACT_SPORT_FF1
+    FRIEND2_CONTACT_HOME_FF1
+    FRIEND2_CONTACT_OTHER_FF1
+
+    FRIEND3_PHYSICAL_CONTACT_FF1
+    FRIEND3_CONTACT_SCHOOL_FF1
+    FRIEND3_CONTACT_SPORT_FF1
+    FRIEND3_CONTACT_HOME_FF1
+    FRIEND3_CONTACT_OTHER_FF1
+
+    FRIEND4_PHYSICAL_CONTACT_FF1
+    FRIEND4_CONTACT_SCHOOL_FF1
+    FRIEND4_CONTACT_SPORT_FF1
+    FRIEND4_CONTACT_HOME_FF1
+    FRIEND4_CONTACT_OTHER_FF1
+
+    FRIEND5_PHYSICAL_CONTACT_FF1
+    FRIEND5_CONTACT_SCHOOL_FF1
+    FRIEND5_CONTACT_SPORT_FF1
+    FRIEND5_CONTACT_HOME_FF1
+    FRIEND5_CONTACT_OTHER_FF1
+
+    ----------------------------------------------------------------------------
+    Friend list for FF12
+    ----------------------------------------------------------------------------
+
+        FRIEND_1_FF12
+	FRIEND_2_FF12
+	FRIEND_3_FF12
+	FRIEND_4_FF12
+	FRIEND_5_FF12
+
+	FRIEND1_PHYSICAL_CONTACT_FF12
+	FRIEND1_CONTACT_SCHOOL_FF12
+	FRIEND1_CONTACT_SPORT_FF12
+	FRIEND1_CONTACT_HOME_FF12
+	FRIEND1_CONTACT_OTHER_FF12
+
+	FRIEND2_PHYSICAL_CONTACT_FF12
+	FRIEND2_CONTACT_SCHOOL_FF12
+	FRIEND2_CONTACT_SPORT_FF12
+	FRIEND2_CONTACT_HOME_FF12
+	FRIEND2_CONTACT_OTHER_FF12
+
+	FRIEND3_PHYSICAL_CONTACT_FF12
+	FRIEND3_CONTACT_SCHOOL_FF12
+	FRIEND3_CONTACT_SPORT_FF12
+	FRIEND3_CONTACT_HOME_FF12
+	FRIEND3_CONTACT_OTHER_FF12
+
+	FRIEND4_PHYSICAL_CONTACT_FF12
+	FRIEND4_CONTACT_SCHOOL_FF12
+	FRIEND4_CONTACT_SPORT_FF12
+	FRIEND4_CONTACT_HOME_FF12
+	FRIEND4_CONTACT_OTHER_FF12
+
+	FRIEND5_PHYSICAL_CONTACT_FF12
+	FRIEND5_CONTACT_SCHOOL_FF12
+	FRIEND5_CONTACT_SPORT_FF12
+	FRIEND5_CONTACT_HOME_FF12
+	FRIEND5_CONTACT_OTHER_FF12
+
+################################################################################
+Social Network Technical Details:
+################################################################################
+
+
+
+	NETWORK_SIGNATURE_FF1
+	NETWORK_COMMENT_FF1
+
+	NETWORK_SIGNATURE_FF12	
+	NETWORK_CMNT_FF12
+
+
+    ----------------------------------------------------------------------------
+    Other comments
+
+    All empty, so ignored.
+    ----------------------------------------------------------------------------
+
+	NETWO0
+	NETWO1
+	NETWO2
+	NETWO3
+	NETWO4
+	NETWO5
+	NETWO6
+	NETWO7
+	NETWO8
+	NETWO9
+	NETWOA
+
+
+
+################################################################################
+Swabbing technical table:
+
+This has information regardless if something happens during the swabbing, not
+the results of the swabbing itself
+################################################################################
+
+	status_swab_ff1	
+
+        event_swab_ff1
+	event_swab_med_ff1
+	event_swab_med_comment_ff1
+	event_swab_tech_ff1
+	event_swab_tech_comment_ff1
+	event_swab_abort_ff1
+	event_swab_abort_comment_ff1
+	event_swab_other_ff1
+	event_swab_other_comment_ff1
+
+	status_swab_2_ff1	
+	swab_nose_2_ff1
+        swab_throat_2_ff1
+
+
+    ----------------------------------------------------------------------------
+    Other technical variables
+
+      These variables are listed here to log that I look at them, but all are
+      empty cells and there is no info in the metadata description. So I just
+      ignore them.
+    ----------------------------------------------------------------------------
+
+	COMME0
+        COMME1								
+
+	EVENT0
+	EVENT1
+	EVENT2
+	EVENT3
+	EVENT4
+	EVENT5
+	EVENT6
+	EVENT7
+        EVENT8
+        EVENT9
+
+	EVENTA		
+	EVENTB
+	EVENTC
+	EVENTD
+        EVENTE
+        EVENTF
+        EVENTG
+        EVENTH
+        EVENTI
+        EVENTJ
+        EVENTK
+        EVENTL	
+        EVENTM
+        EVENTN
+        EVENTO
+        EVENTP
+        EVENTQ
+        EVENTR
+        EVENTS
+        EVENTT
+        EVENTU
+        EVENTV
+        EVENTW	
+        EVENTX
+        EVENTY
+        EVENTZ	
+
+
+        EVENT10
+        EVENT11
+        EVENT12
+        EVENT13
+        EVENT14
+        EVENT15
+        EVENT16
+        EVENT17
+        EVENT18
+        EVENT19
+
+        EVENT1A
+        EVENT1B
+        EVENT1C
+        EVENT1D
+        EVENT1E
+        EVENT1F
+        EVENT1G
+        EVENT1H
+        EVENT1I	
+        EVENT1J
+        EVENT1K
+        EVENT1L
+        EVENT1M
+        EVENT1N
+        EVENT1O
+        EVENT1P
+        EVENT1Q
+        EVENT1R
+        EVENT1S
+        EVENT1T
+        EVENT1U
+        EVENT1V
+        EVENT1W
+        EVENT1X
+        EVENT1Y
+        EVENT1Z
+
+        EVENT20
+        EVENT21
+        EVENT22
+        EVENT23
+        EVENT24	
+        EVENT25
+        EVENT26
+        EVENT27
+        EVENT28
+        EVENT29
+
+        EVENT2A
+        EVENT2B
+        EVENT2C
+        EVENT2D
+        EVENT2E
+        EVENT2F
+        EVENT2G
+        EVENT2H
+        EVENT2I
+        EVENT2J
+        EVENT2K
+        EVENT2L
+        EVENT2M
+        EVENT2N
+        EVENT2O
+        EVENT2P
+        EVENT2Q
+        EVENT2R
+        EVENT2S
+        EVENT2T
+        EVENT2U
+        EVENT2V
+        EVENT2W
+        EVENT2X
+        EVENT2Y
+        EVENT2Z
+
+        EVENT30
+        EVENT31	
+        EVENT32
+        EVENT33
+        EVENT34
+        EVENT35
+        EVENT36
+        EVENT37
+        EVENT38
+        EVENT39
+
+        EVENT3A
+        EVENT3B
+        EVENT3C	
+        EVENT3D
+        EVENT3E
+        EVENT3F
+        EVENT3G 
+        EVENT3H
+        EVENT3I
+        EVENT3J
+        EVENT3K
+        EVENT3L
+        EVENT3M
+        EVENT3N
+
+################################################################################
+Aureus:
+################################################################################
+
+
+	CONTROL_NASAL_DAY2_FF1
+	CONTROL_THROAT_DAY2_FF1
+
+
+
+
+
+
+    status_swab_ff12
+
+    ----------------------------------------------------------------------------
+    When things happened.
+    ----------------------------------------------------------------------------
+
+        SWAB_DATE_FF1
+	SWAB_DATE_FF12
+
+	SAMPLING_SWAB_2_DATE_FF1
+
+    DATE_CULTURE_DAY0_FF1
+
+    new_attendance_date
+
+	DATE_FREEZE_STAPH_NASAL_FF1
+	DATE_FREEZE_STAPH_THROAT_FF1
+
+    ----------------------------------------------------------------------------
+    The results for the FF1
+    ----------------------------------------------------------------------------
+
+	STAPH_NASAL_DAY2_FF1
+	STAPH_THROAT_DAY2_FF1
+	STAPH_GROWTH_NASAL_DAY2_FF1
+	STAPH_GROWTH_THROAT_DAY2_FF1
+
+	STAPH_NASAL_ENRICH_FF1
+	STAPH_THROAT_ENRICH_FF1
+	STAPH_GROWTH_NASAL_ENRICH_FF1
+	STAPH_GROWTH_THROAT_ENRICH_FF1
+
+	STAPH_COAGULASE_NASAL_FF1
+	STAPH_COAGULASE_THROAT_FF1
+	STAPH_COAG_NASAL_ENRICH_FF1
+	STAPH_COAG_THROAT_ENRICH_FF1
+
+    ----------------------------------------------------------------------------
+    The results for the FF11 (Same variables as for FF1)
+    ----------------------------------------------------------------------------
+
+	staph_throat_day2_ff11
+	staph_growth_nasal_day2_ff11
+	staph_growth_throat_day2_ff11
+
+        staph_nasal_enrich_ff11
+	staph_throat_enrich_ff11
+	staph_growth_nasal_enrich_ff11
+	staph_growth_throat_enrich_ff11
+
+	staph_coagulase_nasal_ff11
+	staph_coagulase_throat_ff11
+	staph_coag_nasal_enrich_ff11
+	staph_coag_throat_enrich_ff11
+
+    ----------------------------------------------------------------------------
+    The SPA-type Variables
+    -- Is for FF1 only
+    -- T1 for about 700 people
+    -- T2,N1 and N2 for about 100 people, used as control.
+    ----------------------------------------------------------------------------
+
+	SPA_THROAT1_FF1
+	SPA_NASAL1_FF1
+	SPA_NASAL2_FF1
+	SPA_THROAT2_FF1
+
+	CCN_THROAT1_FF1
+	CC_THROAT1_FF1
+
+    ----------------------------------------------------------------------------
+    All of these variables are comments and labels which are useful to keep
+    track of the samples, but doesn't have any use for the analysis itself.
+    ----------------------------------------------------------------------------
+
+	NASAL_SAMPLE_OK_FF1
+	THROAT_SAMPLE_OK_FF1
+	LAB_COMMENTS_DAY0_FF1
+	LAB_COMMENTS_DAY2_FF1
+	LAB_COMMENTS_ENRICH_FF1
+
+	COMMENTS_STAPH_FF1
+	COMME0
+	COMME1
+
+	FREEZE_NUMBER_STAPH_NASAL_FF1
+	FREEZE_NUMBER_STAPH_THROAT_FF1
+	freeze_number_staph_nasal_ff11
+        freeze_number_staph_throat_ff11
+
+
+	event_swab_ff12
+	event_swab_med_ff12
+	event_swab_med_cmnt_ff12
+	event_swab_tech_ff12
+	event_swab_tech_cmnt_ff12
+	event_swab_abort_ff12
+	event_swab_abort_cmnt_ff12
+	event_swab_other_ff12
+	event_swab_other_cmnt_ff12
+
+################################################################################
+High School:
+################################################################################
+
+	HIGH_SCHOOL_NAME_FF1
+	HIGH_SCHOOL_CLASS_FF1
+	HIGH_SCHOOL_PROGRAMME_FF1
+	HIGH_SCHOOL_MAIN_PROGRAM_FF1
+
+
+################################################################################
+Blood:
+################################################################################
+
+
+    ----------------------------------------------------------------------------
+    When the blood was taken
+    ----------------------------------------------------------------------------
+
+        BLOOD_ANALYSIS_DATE_FF1
+	PTH_ANALYSIS_DATE_FF1   (plasma date, technically not blood, and shouldn't
+                                 be in the blood table, but meh.)
+
+    ----------------------------------------------------------------------------
+    Blood status variables
+    ----------------------------------------------------------------------------
+
+        status_blood_ff1
+        event_blood_ff1
+	event_blood_med_ff1
+	event_blood_med_comment_ff1
+	event_blood_tech_ff1
+	event_blood_tech_comment_ff1
+	event_blood_abort_ff1
+	event_blood_abort_comment_ff1
+	event_blood_other_ff1
+	event_blood_other_comment_ff1
+
+        EVENT_S_25_VITD_FF1
+        EVENT_S_25_VITD_CMNT_FF1
+        EVENT_RETINOL_FF1
+        EVENT_RETINOL_CMNT_FF1
+
+    ----------------------------------------------------------------------------
+    Other technical variables
+
+      These variables are listed here to log that I look at them, but all are
+      empty cells and there is no info in the metadata description. So I just
+      ignore them.
+    ----------------------------------------------------------------------------
+
+
+        EVENT3O
+        EVENT3P
+        EVENT3Q
+        EVENT3R
+        EVENT3S
+        EVENT3T
+        EVENT3U
+        EVENT3V
+        EVENT3W
+        EVENT3X
+        EVENT3Y
+
+        EVENT3Z
+        EVENT40
+        EVENT41
+        EVENT42
+        EVENT43
+        EVENT44
+        EVENT45
+        EVENT46
+        EVENT47
+        EVENT48
+        EVENT49
+
+        EVENT4A
+        EVENT4B
+        EVENT4C
+        EVENT4D
+        EVENT4E
+        EVENT4F
+        EVENT4G
+        EVENT4H
+        EVENT4I
+        EVENT4J
+        EVENT4K
+
+        EVENT4L
+        EVENT4M
+        EVENT4N
+        EVENT4O
+        EVENT4P
+        EVENT4Q
+        EVENT4R
+        EVENT4S
+        EVENT4T
+        EVENT4U
+        EVENT4V
+
+        EVENTA
+        EVENTB
+        EVENTC
+        EVENTD
+        EVENTE
+        EVENTF
+        EVENTG
+        EVENTH
+        EVENTI
+        EVENTJ
+        EVENTK
+        EVENTL
+        EVENT0
+        EVENT1
+        EVENT2
+        EVENT3
+        EVENT4
+        EVENT5
+        EVENT6
+        EVENT7
+        EVENT8
+        EVENT9
+
+    ----------------------------------------------------------------------------
+    Main blood results
+    ----------------------------------------------------------------------------
+
+        MCH_FF1
+        MCHC_FF1
+        MCV_FF1
+        FE_FF1
+        FERRITIN_FF1
+        TRANSFERRIN_FF1
+        CHOLESTEROL_FF1
+        TRIGLYCERIDES_FF1
+        LDL_FF1
+        HDL_FF1
+        CALCIUM_FF1
+        S_CRP_S_FF1
+        APO_A_FF1  
+        APO_B_FF1
+        S_ESTRADIOL_FF1
+        S_PROGESTERONE_FF1
+        S_TESTOSTERONE_FF1
+        S_DHEA_SO4_FF1
+        S_SHBG_FF1
+        S_LH_FF1
+        S_FSH_FF1
+        GLUCOSE_FF1
+        S_HBA1C_FF1
+        HAEMOGLOBIN_FF1
+        ALBUMIN_FF1
+        S_25_VITD_FF1
+        S_RETINOL_FF1
+
+	PTH_FF1
+
+    ----------------------------------------------------------------------------
+    Fatty Accids results
+    ----------------------------------------------------------------------------
+
+        S_FA_C12_0_FF1
+        S_FA_C14_0_FF1
+        S_FA_C15_0_FF1
+        S_FA_C16_0_FF1
+        S_FA_C16_1_N7_FF1
+        S_FA_C18_0_FF1
+        S_FA_C18_1_T6_11_FF1
+        S_FA_C18_1_C9_FF1
+        S_FA_C18_1_C11_FF1
+        S_FA_C18_2_N6_FF1
+        S_FA_C20_0_FF1
+        S_FA_C18_3_N6_FF1
+        S_FA_C18_3_N3_FF1
+        S_FA_C20_1_N9_FF1
+        S_FA_C20_2_N6_FF1
+        S_FA_C22_0_FF1
+        S_FA_C20_3_N6_FF1
+        S_FA_C20_4_N6_FF1
+        S_FA_C23_0_FF1
+        S_FA_C20_5_N3_FF1
+        S_FA_C24_0_FF1
+        S_FA_C24_1_FF1
+        S_FA_C22_5_N3_FF1
+        S_FA_C22_6_N3_FF1
+
+        S_FA_C12_0_PERCENT_FF1
+        S_FA_C14_0_PERCENT_FF1
+        S_FA_C15_0_PERCENT_FF1
+        S_FA_C16_0_PERCENT_FF1
+        S_FA_C16_1_N7_PERCENT_FF1
+        S_FA_C18_0_PERCENT_FF1
+        S_FA_C18_1_T6_11_PERCENT_FF1
+        S_FA_C18_1_C9_PERCENT_FF1
+        S_FA_C18_1_C11_PERCENT_FF1
+        S_FA_C18_2_N6_PERCENT_FF1
+        S_FA_C20_0_PERCENT_FF1
+        S_FA_C18_3_N6_PERCENT_FF1
+        S_FA_C18_3_N3_PERCENT_FF1
+        S_FA_C20_1_N9_PERCENT_FF1
+        S_FA_C20_2_N6_PERCENT_FF1
+        S_FA_C22_0_PERCENT_FF1
+	S_FA_C20_3_N6_PERCENT_FF1
+	S_FA_C20_4_N6_PERCENT_FF1
+	S_FA_C23_0_PERCENT_FF1
+	S_FA_C20_5_N3_PERCENT_FF1
+	S_FA_C24_0_PERCENT_FF1
+	S_FA_C24_1_PERCENT_FF1
+	S_FA_C22_5_N3_PERCENT_FF1
+	S_FA_C22_6_N3_PERCENT_FF1
+
+    ----------------------------------------------------------------------------
+    Fatty Accids unknown percent
+    
+    This represent the amount of FA percent that was not identified. It has an
+    slight rounding error, so I take this out of the analysis. And if you want
+    to figure it out, you just need to add all of the previous to 100 and get
+    the difference; so is redundant.
+    ----------------------------------------------------------------------------
+
+	S_FA_UNKNOWN_PERCENT_FF1
+
+    ----------------------------------------------------------------------------
+    LCMSMS (Mass spectromety measures). They are not really interesting as they
+    have the same value as the main, but with one extra decimal that doesn't
+    really add much.
+    ----------------------------------------------------------------------------
+
+	S_11DOC_LCMSMS_FF1
+	S_TESTOSTERON_LCMSMS_FF1
+	S_ANDROSTENDION_LCMSMS_FF1
+	S_17OHPROG_LCMSMS_FF1
+	S_PROGESTERON_LCMSMS_FF1
+	S_ESTRADIOL_LCMSMS_FF1
+
+    ----------------------------------------------------------------------------
+    Above/Bellow limit booleans. Not in use since we define our own dynamic
+    table telling which limit we have for each depending on sex, age, and so on.
+    Not to mention that what might consider healthy limit today might change
+    tomorrow, so draggin on the thresold set by the machine is incorrect.
+    ----------------------------------------------------------------------------
+
+        S_E2_BELOW_LIMIT_FF1
+        S_PROG_BELOW_LIMIT_FF1
+        S_SHBG_ABOVE_LIMIT_FF1
+        S_LH_BELOW_LIMIT_FF1
+        S_FSH_BELOW_LIMIT_FF1
+	S_PROG_BELOW_LMT_LCMSMS_FF1
+	S_ESTR_BELOW_LMT_LCMSMS_FF1
+
+################################################################################
+Questionaries:
+################################################################################
+
+    ----------------------------------------------------------------------------
+    When was the questionare filled
+    ----------------------------------------------------------------------------
+
+	DATE_QUESTBACK_FF1
+
+################################################################################
+Sociology:
+################################################################################
+
+    ----------------------------------------------------------------------------
+    Info about who live in the house
+    ----------------------------------------------------------------------------
+
+        HOUSHOLD_MOTHER_FF1
+        HOUSHOLD_FATHER_FF1
+        HOUSHOLD_SIBS1TO2_FF1
+        HOUSHOLD_SIBS3PLUS_FF1
+        HOUSHOLD_STEPFATHER_FF1
+        HOUSHOLD_STEPMOTHER_FF1
+        HOUSHOLD_FOSTERPARENT_FF1
+   	HOUSHOLD_ADOPTIVEPARENT_FF1
+	HOUSHOLD_GRANDPARENTS_FF1
+	HOUSHOLD_FRIENDS_FF1
+	HOUSHOLD_ALONE_FF1
+	HOUSHOLD_INSTITUTION_FF1
+	HOUSHOLD_OTHER_FF1
+
+    ----------------------------------------------------------------------------
+    If you don't live with your parents, when did you left home
+    ----------------------------------------------------------------------------
+
+	LEFT_HOME_WHEN_FF1
+
+
+    ----------------------------------------------------------------------------
+    What does your parents do
+    ----------------------------------------------------------------------------
+
+	MOTHER_WORK_FULL_TIME_FF1
+	MOTHER_WORK_PART_TIME_FF1
+	MOTHER_WORK_UNEMPLOYED_FF1
+	MOTHER_WORK_DISABLED_FF1
+	MOTHER_WORK_DOMESTIC_FF1
+	MOTHER_WORK_SCHOOL_FF1
+	MOTHER_WORK_PENSIONED_FF1
+	MOTHER_WORK_DECEASED_FF1
+	MOTHER_WORK_DONT_KNOW_FF1
+	MOTHER_WORK_OTHER_FF1
+
+	FATHER_WORK_FULL_TIME_FF1
+	FATHER_WORK_PART_TIME_FF1
+	FATHER_WORK_UNEMPLOYED_FF1
+	FATHER_WORK_DISABLED_FF1
+	FATHER_WORK_DOMESTIC_FF1
+	FATHER_WORK_SCHOOL_FF1
+	FATHER_WORK_PENSIONED_FF1
+	FATHER_WORK_DECEASED_FF1
+	FATHER_WORK_DONT_KNOW_FF1
+	FATHER_WORK_OTHER_FF1
+
+    ----------------------------------------------------------------------------
+    What is your parents education
+    ----------------------------------------------------------------------------
+
+        MOTHER_EDUCATION_FF1
+	FATHER_EDUCATION_FF1
+
+    ----------------------------------------------------------------------------
+    What is your ethnicity
+    ----------------------------------------------------------------------------
+
+	ETHNICITY_NORWEGIAN_FF1
+	ETHNICITY_SAMI_FF1
+	ETHNICITY_KVENFINNISH_FF1
+	ETHNICITY_OTHER_FF1
+	ETHNICITY_OTHER_SPEC_FF1
+
+
+    ----------------------------------------------------------------------------
+    These columns don't have a description on the metadata, and are also empty.
+    As all the rest, they are not registered and ignored.
+    ----------------------------------------------------------------------------
+
+	ETHNI0
+	ETHNI1
+	ETHNI2
+	ETHNI3
+	ETHNI4
+	ETHNI5
+	ETHNI6
+	ETHNI7
+	ETHNI8
+	ETHNI9
+	ETHNIA
+
+
+################################################################################
+Frienships overview:
+
+    This has nothing to do with the social network, is about how relationships
+    forms and how well or bad you make friends. We don't have any interesting
+    variable anyway.
+
+################################################################################
+
+
+	NUMBER_SMS_FF1
+
+
+################################################################################
+Puberty:
+################################################################################
+	MENARCHE_FF1
+        MENARCHE_AGE_YEAR_FF1
+	MENARCHE_AGE_MONTH_FF1
+	PUBIC_HAIR_FEMALE_FF1
+	BREASTS_FEMALE_FF1
+	PUBIC_HAIR_MALE_FF1
+	PUBIC_HAIR_AGE_MALE_FF1
+	PUBERTY_BOYS_HEIGHT_FF1
+	PUBERTY_BOYS_HAIR_BODY_FF1
+	PUBERTY_BOYS_VOICE_FF1
+	PUBERTY_BOYS_HAIR_FACE_FF1
+
+################################################################################
+Drugs:
+################################################################################
+
+	SMOKE_FF1
+	SNUFF_FF1
+	CIGARETTES_PER_WEEK_FF1
+	CIGARETTES_PER_DAY_FF1
+	SNUFF_PORTION_PER_WEEK_FF1
+	SNUFF_PORTION_PER_DAY_FF1
+	ALCOHOL_FREQUENCY_FF1
+        ALCOHOL_UNITS_FF1
+        ALCOHOL_6UNITS_FF1
+
+
+################################################################################
+Sports:
+################################################################################
+	TRANSPORT_TYPE_SUMMER_FF1
+	TRANSPORT_DURATION_SUMMER_FF1
+	TRANSPORT_TYPE_WINTER_FF1
+	TRANSPORT_DURATION_WINTER_FF1
+
+        PHYS_ACT_LEISURE_FF1
+	PHYS_ACT_OUTSIDE_SCHOOL_FF1
+	PHYS_ACT_FREQ_FF1
+	PHYS_ACT_HOURS_FF1
+	PHYS_ACT_INTENSITY_FF1
+
+################################################################################
+Hygiene:
+################################################################################
+        SHOWER_BATH_FREQUENCY_FF1
+	HANDWASH_FREQUENCY_FF1
+	BODY_LOTION_FREQUENCY_FF1
+	SKIN_COLOUR_SUNBATHING_FF1
+	HOLIDAY_SUNBATHING_FF1
+	SOLARIUM_LAST_4WEEKS_FF1
+
+################################################################################
+Hospital History:
+################################################################################
+	HOSPITAL_LAST_12M_FF1
+	HOUSEHOLD_HEALTHSERVICES_FF1
+	TONSILLECTOMY_FF1
+
+################################################################################
+Inflamatory Biomarkers:
+    LOD = late onset development ??
+    NDL = ???????????
+
+    The breaks inbetween biomarkers is just to divide by alphabetic order, so I
+    can check that we have the same LOD and NDL
+################################################################################
+
+	OLKINF_BATCH_NUMBER_FF1
+	OLKINF_FLAGGED_FF1
+
+	ADA_LOD_OLKINF_FF1
+	ARTN_LOD_OLKINF_FF1
+	AXIN1_LOD_OLKINF_FF1
+
+	BDNF_LOD_OLKINF_FF1
+	BNGF_LOD_OLKINF_FF1
+
+	CASP8_LOD_OLKINF_FF1
+	CCL11_LOD_OLKINF_FF1
+	CCL19_LOD_OLKINF_FF1
+	CCL20_LOD_OLKINF_FF1
+	CCL23_LOD_OLKINF_FF1
+        CCL25_LOD_OLKINF_FF1
+	CCL28_LOD_OLKINF_FF1
+	CCL3_LOD_OLKINF_FF1
+	CCL4_LOD_OLKINF_FF1
+	CD244_LOD_OLKINF_FF1
+	CD40_LOD_OLKINF_FF1
+	CD5_LOD_OLKINF_FF1
+	CD6_LOD_OLKINF_FF1
+	CDCP1_LOD_OLKINF_FF1
+	CSF1_LOD_OLKINF_FF1
+	CST5_LOD_OLKINF_FF1
+	CX3CL1_LOD_OLKINF_FF1
+	CXCL1_LOD_OLKINF_FF1
+	CXCL10_LOD_OLKINF_FF1
+	CXCL11_LOD_OLKINF_FF1
+	CXCL5_LOD_OLKINF_FF1
+	CXCL6_LOD_OLKINF_FF1
+	CXCL9_LOD_OLKINF_FF1
+
+	DNER_LOD_OLKINF_FF1
+
+	EIF4EBP1_LOD_OLKINF_FF1
+	ENRAGE_LOD_OLKINF_FF1
+
+	FGF19_LOD_OLKINF_FF1
+	FGF21_LOD_OLKINF_FF1
+	FGF23_LOD_OLKINF_FF1
+	FGF5_LOD_OLKINF_FF1
+	FLT3L_LOD_OLKINF_FF1
+
+	GDNF_LOD_OLKINF_FF1
+
+	HGF_LOD_OLKINF_FF1
+
+	IFNG_LOD_OLKINF_FF1
+	IL10_LOD_OLKINF_FF1
+	IL10RA_LOD_OLKINF_FF1
+	IL10RB_LOD_OLKINF_FF1
+	IL12B_LOD_OLKINF_FF1
+	IL13_LOD_OLKINF_FF1
+	IL15RA_LOD_OLKINF_FF1
+	IL17A_LOD_OLKINF_FF1
+	IL17C_LOD_OLKINF_FF1
+	IL18_LOD_OLKINF_FF1
+	IL18R1_LOD_OLKINF_FF1
+	IL1A_LOD_OLKINF_FF1
+	IL2_LOD_OLKINF_FF1
+	IL20_LOD_OLKINF_FF1
+	IL20RA_LOD_OLKINF_FF1
+	IL22RA1_LOD_OLKINF_FF1
+	IL24_LOD_OLKINF_FF1
+	IL2RB_LOD_OLKINF_FF1
+	IL33_LOD_OLKINF_FF1
+	IL4_LOD_OLKINF_FF1
+	IL5_LOD_OLKINF_FF1
+	IL6_LOD_OLKINF_FF1
+	IL7_LOD_OLKINF_FF1
+	IL8_LOD_OLKINF_FF1
+
+	LIF_LOD_OLKINF_FF1
+	LIFR_LOD_OLKINF_FF1
+
+	MCP1_LOD_OLKINF_FF1
+	MCP2_LOD_OLKINF_FF1
+	MCP3_LOD_OLKINF_FF1
+	MCP4_LOD_OLKINF_FF1
+	MMP1_LOD_OLKINF_FF1
+	MMP10_LOD_OLKINF_FF1
+
+	NRTN_LOD_OLKINF_FF1
+	NT3_LOD_OLKINF_FF1
+
+	OPG_LOD_OLKINF_FF1
+	OSM_LOD_OLKINF_FF1
+
+	PDL1_LOD_OLKINF_FF1
+
+	SCF_LOD_OLKINF_FF1
+	SIRT2_LOD_OLKINF_FF1
+	SLAMF1_LOD_OLKINF_FF1
+	ST1A1_LOD_OLKINF_FF1	
+        STAMBP_LOD_OLKINF_FF1
+
+	TGFA_LOD_OLKINF_FF1
+	TGFB1_LOD_OLKINF_FF1
+	TNF_LOD_OLKINF_FF1
+	TNFB_LOD_OLKINF_FF1
+	TNFRSF9_LOD_OLKINF_FF1
+	TNFSF14_LOD_OLKINF_FF1
+	TRAIL_LOD_OLKINF_FF1
+	TRANCE_LOD_OLKINF_FF1
+	TSLP_LOD_OLKINF_FF1
+	TWEAK_LOD_OLKINF_FF1
+
+	UPA_LOD_OLKINF_FF1
+
+	VEGFA_LOD_OLKINF_FF1
+
+	ADA_NLD_OLKINF_FF1
+	ARTN_NLD_OLKINF_FF1
+	AXIN1_NLD_OLKINF_FF1
+
+	BDNF_NLD_OLKINF_FF1
+	BNGF_NLD_OLKINF_FF1
+
+	CASP8_NLD_OLKINF_FF1
+	CCL11_NLD_OLKINF_FF1
+	CCL19_NLD_OLKINF_FF1
+	CCL20_NLD_OLKINF_FF1
+	CCL23_NLD_OLKINF_FF1
+	CCL25_NLD_OLKINF_FF1
+        CCL28_NLD_OLKINF_FF1
+	CCL3_NLD_OLKINF_FF1
+	CCL4_NLD_OLKINF_FF1
+	CD244_NLD_OLKINF_FF1
+	CD40_NLD_OLKINF_FF1
+	CD5_NLD_OLKINF_FF1
+	CD6_NLD_OLKINF_FF1
+	CDCP1_NLD_OLKINF_FF1
+	CSF1_NLD_OLKINF_FF1
+	CST5_NLD_OLKINF_FF1
+	CX3CL1_NLD_OLKINF_FF1
+	CXCL1_NLD_OLKINF_FF1
+	CXCL10_NLD_OLKINF_FF1
+	CXCL11_NLD_OLKINF_FF1
+	CXCL5_NLD_OLKINF_FF1
+	CXCL6_NLD_OLKINF_FF1
+	CXCL9_NLD_OLKINF_FF1
+
+	DNER_NLD_OLKINF_FF1
+
+	EIF4EBP1_NLD_OLKINF_FF1
+	ENRAGE_NLD_OLKINF_FF1
+
+	FGF19_NLD_OLKINF_FF1
+	FGF21_NLD_OLKINF_FF1
+	FGF23_NLD_OLKINF_FF1
+	FGF5_NLD_OLKINF_FF1
+	FLT3L_NLD_OLKINF_FF1
+
+	GDNF_NLD_OLKINF_FF1
+
+	HGF_NLD_OLKINF_FF1
+
+	IFNG_NLD_OLKINF_FF1
+	IL10_NLD_OLKINF_FF1
+	IL10RA_NLD_OLKINF_FF1
+	IL10RB_NLD_OLKINF_FF1
+	IL12B_NLD_OLKINF_FF1
+	IL13_NLD_OLKINF_FF1
+	IL15RA_NLD_OLKINF_FF1
+	IL17A_NLD_OLKINF_FF1
+	IL17C_NLD_OLKINF_FF1
+	IL18_NLD_OLKINF_FF1
+	IL18R1_NLD_OLKINF_FF1
+	IL1A_NLD_OLKINF_FF1	
+        IL2_NLD_OLKINF_FF1
+	IL20_NLD_OLKINF_FF1
+	IL20RA_NLD_OLKINF_FF1
+	IL22RA1_NLD_OLKINF_FF1
+	IL24_NLD_OLKINF_FF1
+	IL2RB_NLD_OLKINF_FF1
+	IL33_NLD_OLKINF_FF1
+	IL4_NLD_OLKINF_FF1
+	IL5_NLD_OLKINF_FF1
+	IL6_NLD_OLKINF_FF1
+	IL7_NLD_OLKINF_FF1
+	IL8_NLD_OLKINF_FF1
+
+	LIF_NLD_OLKINF_FF1
+	LIFR_NLD_OLKINF_FF1
+
+	MCP1_NLD_OLKINF_FF1
+	MCP2_NLD_OLKINF_FF1
+	MCP3_NLD_OLKINF_FF1
+	MCP4_NLD_OLKINF_FF1
+	MMP1_NLD_OLKINF_FF1
+	MMP10_NLD_OLKINF_FF1
+
+	NRTN_NLD_OLKINF_FF1
+	NT3_NLD_OLKINF_FF1
+
+	OPG_NLD_OLKINF_FF1
+	OSM_NLD_OLKINF_FF1
+
+	PDL1_NLD_OLKINF_FF1
+
+	SCF_NLD_OLKINF_FF1
+	SIRT2_NLD_OLKINF_FF1
+	SLAMF1_NLD_OLKINF_FF1
+	ST1A1_NLD_OLKINF_FF1
+	STAMBP_NLD_OLKINF_FF1
+
+	TGFA_NLD_OLKINF_FF1
+	TGFB1_NLD_OLKINF_FF1
+	TNF_NLD_OLKINF_FF1
+	TNFB_NLD_OLKINF_FF1
+	TNFRSF9_NLD_OLKINF_FF1
+	TNFSF14_NLD_OLKINF_FF1
+	TRAIL_NLD_OLKINF_FF1
+	TRANCE_NLD_OLKINF_FF1
+	TSLP_NLD_OLKINF_FF1
+	TWEAK_NLD_OLKINF_FF1
+
+	UPA_NLD_OLKINF_FF1
+
+	VEGFA_NLD_OLKINF_FF1
+
+################################################################################
+Diet:
+################################################################################
+    fat_fish_ff1
+	lean_fish_ff1
+	seagull_eggs_ff1
+	reindeer_ff1	
+
+
+
+

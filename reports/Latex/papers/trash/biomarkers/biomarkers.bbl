@@ -1,0 +1,39 @@
+\begin{thebibliography}{1}
+
+\bibitem{ref:MainObesityArticle}
+A.~C. Nicholas and H.~F. James, ``The spread of obesity in a large social
+  network over 32 years,'' {\em The New England Journal of Medicine}, 2007.
+\newblock \url{https://www.nejm.org/doi/full/10.1056/NEJMsa066082}.
+
+\bibitem{ref:FitFutures}
+A.~Winther, E.~Dennison, L.~Ahmed, A.~Furberg, G.~Grimnes, R.~Jorde,
+  C.~Gjesdal, and N.~Emaus, ``Fit futures: a study of norwegian adolescents'
+  lifestyle and bone health,'' {\em Arch Osteoporos 2014;9:185}, September
+  2014.
+\newblock \url{https://link.springer.com/article/10.1007/s11657-014-0185-0}.
+
+\bibitem{ref:OlinkInflammation}
+O.~H. AB, ``Olink target 96 inflammation,'' February 2022.
+\newblock \url{ https://www.olink.com/products-services/target/inflammation/}.
+
+\bibitem{ref:igraph}
+igraph, ``igraph,'' February 2022.
+\newblock \url{https://igraph.org/}.
+
+\bibitem{ref:statnet}
+statnet, ``statnet,'' February 2022.
+\newblock \url{https://statnet.org/}.
+
+\bibitem{ref:ggraph}
+ggraph, ``ggraph,'' February 2022.
+\newblock \url{https://ggraph.data-imaginist.com/}.
+
+\bibitem{ref:sykepleirindeksen}
+E.~Norge, ``Sykepleierindeksen h1 2020,'' Sep. 2020.
+\newblock
+  \url{http://www.itu.int/en/ITU-D/Statistics/Pages/stat/default.aspx#}.
+
+\bibitem{ref:JohnDoe}
+J.~Doe", ``"title",'' {\em "Journal"}, "2017".
+
+\end{thebibliography}

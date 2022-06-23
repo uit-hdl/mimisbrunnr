@@ -1,0 +1,171 @@
+\documentclass[
+  journal=psrm,
+  manuscript=research-note,  %% valid values are article (default), review, letter, comment
+  year=2022,
+  volume=6,
+]{cup-journal}
+
+% Packages for the example
+\usepackage{booktabs,microtype,siunitx}
+\sisetup{detect-all,separate-uncertainty = true}
+
+\usepackage{todonotes} 
+
+\addbibresource{example.bib}
+
+%---------------------------------------------------------------
+% TITLE
+%---------------------------------------------------------------
+
+
+\title{Obesity and social network influence in inflammatory biomarkers in a general youth population}
+
+%------------------------------
+% AUTHORS AND AFFILIATIONS
+%------------------------------
+
+%--------------
+% Rafael
+%--------------
+
+\author{Rafael A. Nozal Cañadas, MSc}
+\affiliation{Department of Computer Science, UiT The Arctic University of Norway,Tromsø, Norway}
+\email{rca015@uit.no}
+
+%--------------
+% Dina
+%--------------
+
+\author{Dina B. Stensen, MD}
+\affiliation{Department of Community Medicine, Faculty of Health Sciences, UiT The Arctic University of Norway, Tromsø, Norway}
+\alsoaffiliation{Division of Internal Medicine, University Hospital of North Norway, Norway}
+
+%--------------
+% Christopher
+%--------------
+
+\author{Christopher Sivert Nielsen, PhD}
+\affiliation{Department of Chronic Diseases and Ageing, Norwegian Institute of Public Health, Oslo, Norway}
+\affiliation{Department of Pain Management and Research, Division of Emergencies and Critical Care, Oslo University Hospital, Oslo, Norway }
+
+%--------------
+% Anne Merethe
+%--------------
+
+\author{Anne Merethe Hanssen, PhD}
+\affiliation{Department of Microbiology and Infection Control, Division of Internal Medicine, University Hospital of North Norway, Tromsø, Norway}
+
+%--------------
+% Lars Ailo
+%--------------
+
+\author{Lars Ailo Bongo, PhD}
+\affiliation{Department of Computer Science, UiT The Arctic University of Norway,Tromsø, Norway}
+
+%--------------
+% Anne-Sofie
+%--------------
+
+\author{Anne-Sofie Furberg, PhD}
+\affiliation{Department of Microbiology and Infection Control, Division of Internal Medicine, University Hospital of North Norway, Tromsø, Norway}
+\alsoaffiliation{Faculty of Health and Social Sciences, Molde University College, Britvegen 2, 6410 Molde, Norway}
+
+\date{\today} % Add a date here if you would like one to appear underneath the title block, use \today for the current date, leave empty for no date
+
+%\handlingeditor{Excellent E Editor}
+
+\doi{20.2022/issd.2022.06}
+
+%\received {29 July 2020}
+%\revised  {26 March 2021}
+%\accepted {25 May 2021}
+%\published{13 August 2021}
+
+\keywords{Obesity; inflamatory; OLINK; BMI; social network} %% first word caps
+% \jel{Q11; Q12; D81; M31}
+% \msc{Q14; Q18; E21}
+% \abbreviations{
+%     BDHS: Bangladesh Demographic and Health Survey, 
+%     IDA: Fe-deficiency anaemia, 
+%     IFA: Fe-folic acid, 
+%     MNP: multiple micronutrient powder, 
+%     VAD: vitamin A deficiency
+% }
+
+%---------------------------------------------------------------
+
+\begin{document}
+
+%----------------------------------------------------------------------------------------
+%	List of todos
+%----------------------------------------------------------------------------------------
+
+\listoftodos
+
+%----------------------------------------------------------------------------------------
+%	List of tables and figures
+%----------------------------------------------------------------------------------------
+\listoffigures
+\listoftables
+
+%----------------------------------------------------------------------------------------
+%	ABSTRACT
+%----------------------------------------------------------------------------------------
+
+\begin{abstract}
+We studied the influence of your friends social network with respect obesity and inflamatory biomakers. The Fit Futures 1 study collected interview data on social contact among 1038 first level students in the same high school district in Norway. In this context, we also collected blood samples (n = 937), OLINK inflamatory proteomic data (n = 936) and did antropomorphic measurements (n = 1034). Social networks were constructed from self-reported social contact between participants. There is an statistical significance between lifestyle factors, diseases, vitamim D levels and social interaction with several biomarkers. The results suggest that people in your social network may influence your inflammatory response.
+\end{abstract}
+
+
+
+%----------------------------------------------------------------------------------------
+%	Introduction
+%----------------------------------------------------------------------------------------
+ 
+\section{Introduction}
+
+Obesity is a condition associated with several health problems including the number one cause of death in almost every socio-economic group, cardiovascular diseases, as well as many types of cancers and other complications.\\
+
+While there are genetic conditions associated with it, the most common causes of obesity are excessive food consumption or a lack of exercise. In simple terms your amount of body fat is simply the difference between your energy intake and energy output. These two factors are heavily influenced by your lifestyle, which in term are impacted by your friends. Obesity, despite not been caused by a viral, bacterial, or parasitic agent, is nevertheless contagious among close group of friends ~\cite{ref:MainObesityArticle}. Even though it is impossible for an individual to perform lipogenesis with what somebody else eats, people tend to behave in the same way to their peers, and end up eating and exercising similarly as their direct contact network.\\
+
+Obesity is associated with the inflammatory response of your immune system. While the exact mechanism is unclear, it might be due that a poor immune response that otherwise would have curled the infiltration of opportunistic bacteria, thus causing an unwelcome inflammatory response. In this study we explore the possibility that people in the same social network can influence your influence response, as well as how much these biomarkers are expressed with respect to your anthropometric variables. Answering two fundamental questions:\\
+
+\begin{itemize}
+
+  \item Does the spread of levels of obesity also spread the biomarkers levels?\\
+  
+  \item How does the average proteomic profile compare between different categories of obesity?
+  
+\end{itemize}
+
+
+
+
+There has been a proliferation of research involving human participants on the topic of violence. Since 2008, the percent of articles in six top political science journals that study violence and involve human participants has doubled, from about 3\% to more than 6\%.\footnote{Journals in the review include the American Political Science Review, American Journal of Political Science, Journal of Politics, World Politics, Journal of Peace Research, and Journal of Conflict Resolution.} The boom of field research on violence has been fueled by a number of goals: the desire to test the ``microfoundations'' of theories about the causes and consequences of conflict \citep{kertzer2017microfoundations}, the demand for research designs that identify causal claims \citep{gerber2004illusion}, and concerns that the perspectives of people affected by conflict should be represented \citep{pearlman2017crossed}. Most importantly, the proliferation of research in violent contexts is driven by a desire to use high quality evidence to inform policies to mitigate and prevent violence. 
+
+\begin{figure}[hbt!]
+    \centering
+    \includegraphics[width=0.5\textwidth]{ViolPct_Year.pdf}
+    \caption{Percent of all articles published in six top political science journals that study political violence with human participants, 2008-2019}
+    \label{fig:pct_violence}
+\end{figure}
+
+Yet the fact that many researchers have good intentions does not imply that doing research on violence is ethical. This letter highlights some of the main ethical principles that researchers working on violence aspire to uphold -- some of which fall outside the current scope of Institutional Review Boards (IRBs) -- and suggests practical solutions that could help researchers better adhere to them. The core principles that inform federal regulations for research with human participants are beneficence, justice, and respect for persons, derived from the Belmont Report (1976). Our practical suggestions are not exhaustive, and are generally ways to validate and monitor assumptions related to ethics rather than ``solve'' ethical dilemmas. There is no one-size-fits-all solution to research in violent contexts \citep{wood2006ethical}. However, these practices might help researchers adhere more closely to maximizing the benefits of their research, protecting participant autonomy, and minimizing harm to participants and staff. 
+
+In the rest of this letter, we describe practices in four areas that could improve adherence to ethical principles, primarily by increasing the transparency of research methods around ethics. We highlight practices that other researchers have developed both within and outside political science and use examples from our own fieldwork on violence in Zimbabwe and Mexico, carried out with a number of collaborators. 
+The first family of practices describes better documenting risk assessments. The second concerns avoiding distress and negative psychological outcomes. The third highlights ways to assess the adequacy of the informed consent process. The fourth considers the challenge of monitoring negative consequences during and after project implementation. The overarching logic behind our suggestions is to make research ethics more transparent and empirical, so that it can become a part of the peer review process and is seen as a subfield of research methods to incentivize the development of increasingly robust practices.
+
+
+
+\input{example-content}
+
+% PSRM uses footnotes, not endnotes. \endnote in this template will behave like \footnote; and \printendnotes will not output anything.
+% \printendnotes
+
+\printbibliography
+
+\appendix
+
+\input{example-appendices}
+
+\end{document}

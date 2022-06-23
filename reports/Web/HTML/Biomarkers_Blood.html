@@ -1,0 +1,1310 @@
+ <!DOCTYPE html>
+ 
+<html>
+	
+		<!--
+	---------------------
+	HEAD
+	---------------------
+	-->
+	<head>
+		
+		<title>Data Exploring Web</title>
+		
+		<meta charset="UTF-8">
+		
+		<meta name="description" content="This webs serve to explore data and plots generated using FF1 , FF2 and FF3 datasets ">
+		
+		<meta name="author" content="Rafael Adolfo Nozal Cañadas">
+		
+		<!-- TODO: Test this better -->
+		<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+				
+		<!-- TODO: Change this to website rather than file -->
+		<link rel="stylesheet" type="text/css" href="/home/gromenawer/Desktop/Amalgamlab/mimisbrunnr/reports/Web/CSS/mystyle.css">
+		
+		
+	</head>
+
+
+
+	<!--
+	---------------------
+	BODY
+	---------------------
+	-->
+	
+	<body>
+
+		<!--
+		---------------------
+		
+		MAIN
+		
+		---------------------
+		-->
+
+
+		<!-- Overall container -->
+		<div class="middle">
+
+						<!--
+			-------------------------------------
+			LEFT COLUMN WITH ABOUT AND TOPICS
+			-------------------------------------
+			-->
+		
+		    <!-- Left column -->	
+			<div class="sideColumn">
+			
+								<!-- About the website panel -->				
+				<div class="sidePanel">
+					<h2>About Website</h2>
+					
+					<img class = "profilePic" src= "/home/gromenawer/Desktop/Amalgamlab/mimisbrunnr/res/img/basic/download.png" alt= "It's me!" >
+					
+					<hr>
+					
+					<p> HDL at UiT <a href="https://uit.no/ansatte/person?p_document_id=633560"> UiT </a>. </p>
+					<p> Tromsø , NORWAY </p>
+					<p> Adress Hansina Hensen Something 9000 </p>
+					
+				</div>
+
+				
+								<!-- Last entries -->				
+				<div class="sidePanel">
+					<h2>Topics</h2>
+					
+					<p> <a href="/home/gromenawer/Desktop/Amalgamlab/mimisbrunnr/reports/Web/HTML/submenus/biomarkers.html"> STAPH </a> </p>
+					<p> <a href="/home/gromenawer/Desktop/Amalgamlab/mimisbrunnr/reports/Web/HTML/submenus/biomarkers.html"> Biomarkers - Intro</a> </p>
+					<p> <a href="/home/gromenawer/Desktop/Amalgamlab/mimisbrunnr/reports/Web/HTML/submenus/biomarkers.html"> Biomarkers - Social</a> </p>
+					<p> <a href="/home/gromenawer/Desktop/Amalgamlab/mimisbrunnr/reports/Web/HTML/submenus/biomarkers.html"> Biomarkers - Blood</a> </p>
+					<p> <a href="/home/gromenawer/Desktop/Amalgamlab/mimisbrunnr/reports/Web/HTML/submenus/biomarkers.html"> Biomarkers - Host Factors</a> </p>
+					<p> <a href="/home/gromenawer/Desktop/Amalgamlab/mimisbrunnr/reports/Web/HTML/submenus/biomarkers.html"> Biomarkers - Diseases and Medicines</a> </p>
+					
+				</div>
+
+				
+			</div>
+
+			
+						<!--
+			-------------------------------------
+			CENTER COLUMN WITH CONTENT
+			-------------------------------------
+			-->
+
+
+			<!-- Center column -->	
+			<div class="mainColumn">
+				
+                        <div class="table-overall" id="Blood_MetaSummary">
+            <div class="table-description-box">
+                <div class="table-title">
+                    <p>Blood Metadata</p>
+                </div>
+                <div class="table-verbose">
+                    <p>This table shows, from left to right, the blood serum
+                                variable long name, short name, unit in which is measure,
+                                healthy values intervals (minimum for men, maximum for men
+                                minimum for women, maximum for women, average for men and
+                                women, if there is a significant difference between men and women,
+                                and how many men and women (percentage of the total) are
+                                outside the healthy limit.</p>
+                </div>
+            </div>
+            <div class="table-container">
+                <table class="simpleTable" align="left">
+                    <tr>
+                        <th class="tableHeader"> <img class="iconPic" src="/home/gromenawer/Desktop/Amalgamlab/mimisbrunnr//res/img/icons/csv-file.png" alt="Download as CSV file"> </th>
+                        <th class="tableHeader">Description</th>
+                        <th class="tableHeader">Short</th>
+                        <th class="tableHeader">Unit</th>
+                        <th class="tableHeader">Men Lower Limit</th>
+                        <th class="tableHeader">Men Upper Limit</th>
+                        <th class="tableHeader">Women Lower Limit</th>
+                        <th class="tableHeader">Women Upper Limit</th>
+                        <th class="tableHeader">x̄ Men</th>
+                        <th class="tableHeader">x̄ Women</th>
+                        <th class="tableHeader">Significance</th>
+                        <th class="tableHeader">Men % Out</th>
+                        <th class="tableHeader">Women % Out</th>
+                    </tr>
+                    <tr class = "tableRow">
+                        <td class="tableRowID tableRowID_A">1</td>
+                        <td class="tableRower tableRower_A">Mean corposcular hemoglobin (pg). EDTA whole blood</td>
+                        <td class="tableCell tableCell_A">MCH</td>
+                        <td class="tableCell tableCell_A">pg</td>
+                        <td class="tableCell tableCell_A">26.08</td>
+                        <td class="tableCell tableCell_A">32.3</td>
+                        <td class="tableCell tableCell_A">26.08</td>
+                        <td class="tableCell tableCell_A">32.3</td>
+                        <td class="tableCell tableCell_A">29.25</td>
+                        <td class="tableCell tableCell_A">29.12</td>
+                        <td class="tableCell tableCell_A">ns</td>
+                        <td class="tableCell tableCell_A">2.2%</td>
+                        <td class="tableCell tableCell_A">5%</td>
+                    </tr>
+                    <tr class = "tableRow">
+                        <td class="tableRowID tableRowID_A">2</td>
+                        <td class="tableRower tableRower_A">Mean corposcular hemoglobin concentration (g/dL). EDTA whole blood</td>
+                        <td class="tableCell tableCell_A">MCHC</td>
+                        <td class="tableCell tableCell_A">g/dL</td>
+                        <td class="tableCell tableCell_A">32.23</td>
+                        <td class="tableCell tableCell_A">34.85</td>
+                        <td class="tableCell tableCell_A">32.23</td>
+                        <td class="tableCell tableCell_A">34.85</td>
+                        <td class="tableCell tableCell_A">33.68</td>
+                        <td class="tableCell tableCell_A">33.39</td>
+                        <td class="tableCell tableCell_A">****</td>
+                        <td class="tableCell tableCell_A">4.2%</td>
+                        <td class="tableCell tableCell_A">5.3%</td>
+                    </tr>
+                    <tr class = "tableRow">
+                        <td class="tableRowID tableRowID_A">3</td>
+                        <td class="tableRower tableRower_A">Mean corposcular volume (fl). EDTA whole blood</td>
+                        <td class="tableCell tableCell_A">MCV</td>
+                        <td class="tableCell tableCell_A">fl</td>
+                        <td class="tableCell tableCell_A">78.03</td>
+                        <td class="tableCell tableCell_A">95.53</td>
+                        <td class="tableCell tableCell_A">78.03</td>
+                        <td class="tableCell tableCell_A">95.53</td>
+                        <td class="tableCell tableCell_A">87.09</td>
+                        <td class="tableCell tableCell_A">86.43</td>
+                        <td class="tableCell tableCell_A">*</td>
+                        <td class="tableCell tableCell_A">2.1%</td>
+                        <td class="tableCell tableCell_A">5.8%</td>
+                    </tr>
+                    <tr class = "tableRow">
+                        <td class="tableRowID tableRowID_A">4</td>
+                        <td class="tableRower tableRower_A">Fe (µmol/L). Serum</td>
+                        <td class="tableCell tableCell_A">Fe</td>
+                        <td class="tableCell tableCell_A">umol/L</td>
+                        <td class="tableCell tableCell_A">2.09</td>
+                        <td class="tableCell tableCell_A">31.69</td>
+                        <td class="tableCell tableCell_A">2.09</td>
+                        <td class="tableCell tableCell_A">31.69</td>
+                        <td class="tableCell tableCell_A">18.47</td>
+                        <td class="tableCell tableCell_A">15.18</td>
+                        <td class="tableCell tableCell_A">****</td>
+                        <td class="tableCell tableCell_A">3.8%</td>
+                        <td class="tableCell tableCell_A">0.5%</td>
+                    </tr>
+                    <tr class = "tableRow">
+                        <td class="tableRowID tableRowID_B">5</td>
+                        <td class="tableRower tableRower_B">Ferritin (ug/L). Serum</td>
+                        <td class="tableCell tableCell_B">Ferritin</td>
+                        <td class="tableCell tableCell_B">ug/L</td>
+                        <td class="tableCell tableCell_B">-21.95</td>
+                        <td class="tableCell tableCell_B">112.37</td>
+                        <td class="tableCell tableCell_B">-21.95</td>
+                        <td class="tableCell tableCell_B">112.37</td>
+                        <td class="tableCell tableCell_B">57.6</td>
+                        <td class="tableCell tableCell_B">31.42</td>
+                        <td class="tableCell tableCell_B">****</td>
+                        <td class="tableCell tableCell_B">6.3%</td>
+                        <td class="tableCell tableCell_B">0%</td>
+                    </tr>
+                    <tr class = "tableRow">
+                        <td class="tableRowID tableRowID_B">6</td>
+                        <td class="tableRower tableRower_B">Transferrin (g/L). Serum</td>
+                        <td class="tableCell tableCell_B">Transferritin</td>
+                        <td class="tableCell tableCell_B">g/L</td>
+                        <td class="tableCell tableCell_B">2.04</td>
+                        <td class="tableCell tableCell_B">3.79</td>
+                        <td class="tableCell tableCell_B">2.04</td>
+                        <td class="tableCell tableCell_B">3.79</td>
+                        <td class="tableCell tableCell_B">2.83</td>
+                        <td class="tableCell tableCell_B">3.02</td>
+                        <td class="tableCell tableCell_B">****</td>
+                        <td class="tableCell tableCell_B">2.9%</td>
+                        <td class="tableCell tableCell_B">0.7%</td>
+                    </tr>
+                    <tr class = "tableRow">
+                        <td class="tableRowID tableRowID_B">7</td>
+                        <td class="tableRower tableRower_B">Total cholesterol (mmol/L). Serum</td>
+                        <td class="tableCell tableCell_B">Total cholesterol</td>
+                        <td class="tableCell tableCell_B">mmol/L</td>
+                        <td class="tableCell tableCell_B">2.54</td>
+                        <td class="tableCell tableCell_B">5.61</td>
+                        <td class="tableCell tableCell_B">2.54</td>
+                        <td class="tableCell tableCell_B">5.61</td>
+                        <td class="tableCell tableCell_B">3.91</td>
+                        <td class="tableCell tableCell_B">4.25</td>
+                        <td class="tableCell tableCell_B">****</td>
+                        <td class="tableCell tableCell_B">3.4%</td>
+                        <td class="tableCell tableCell_B">0.2%</td>
+                    </tr>
+                    <tr class = "tableRow">
+                        <td class="tableRowID tableRowID_B">8</td>
+                        <td class="tableRower tableRower_B">Triglycerides (mmol/L). Serum</td>
+                        <td class="tableCell tableCell_B">Tryglicerides</td>
+                        <td class="tableCell tableCell_B">mmol/L</td>
+                        <td class="tableCell tableCell_B">0.05</td>
+                        <td class="tableCell tableCell_B">2.13</td>
+                        <td class="tableCell tableCell_B">0.05</td>
+                        <td class="tableCell tableCell_B">2.13</td>
+                        <td class="tableCell tableCell_B">1.13</td>
+                        <td class="tableCell tableCell_B">1.05</td>
+                        <td class="tableCell tableCell_B">*</td>
+                        <td class="tableCell tableCell_B">5.9%</td>
+                        <td class="tableCell tableCell_B">0%</td>
+                    </tr>
+                    <tr class = "tableRow">
+                        <td class="tableRowID tableRowID_A">9</td>
+                        <td class="tableRower tableRower_A">Low density lipoprotein cholesterol (mmol/L). Serum</td>
+                        <td class="tableCell tableCell_A">LDL</td>
+                        <td class="tableCell tableCell_A">mmol/L</td>
+                        <td class="tableCell tableCell_A">1.01</td>
+                        <td class="tableCell tableCell_A">3.75</td>
+                        <td class="tableCell tableCell_A">1.01</td>
+                        <td class="tableCell tableCell_A">3.75</td>
+                        <td class="tableCell tableCell_A">2.3</td>
+                        <td class="tableCell tableCell_A">2.46</td>
+                        <td class="tableCell tableCell_A">***</td>
+                        <td class="tableCell tableCell_A">4%</td>
+                        <td class="tableCell tableCell_A">0.5%</td>
+                    </tr>
+                    <tr class = "tableRow">
+                        <td class="tableRowID tableRowID_A">10</td>
+                        <td class="tableRower tableRower_A">High density lipoprotein cholesterol (mmol/L). Serum</td>
+                        <td class="tableCell tableCell_A">HDL</td>
+                        <td class="tableCell tableCell_A">mmol/L</td>
+                        <td class="tableCell tableCell_A">0.7</td>
+                        <td class="tableCell tableCell_A">1.98</td>
+                        <td class="tableCell tableCell_A">0.7</td>
+                        <td class="tableCell tableCell_A">1.98</td>
+                        <td class="tableCell tableCell_A">1.24</td>
+                        <td class="tableCell tableCell_A">1.45</td>
+                        <td class="tableCell tableCell_A">****</td>
+                        <td class="tableCell tableCell_A">1.9%</td>
+                        <td class="tableCell tableCell_A">0.2%</td>
+                    </tr>
+                    <tr class = "tableRow">
+                        <td class="tableRowID tableRowID_A">11</td>
+                        <td class="tableRower tableRower_A">Calcium (mmol/L). Serum</td>
+                        <td class="tableCell tableCell_A">Calcium</td>
+                        <td class="tableCell tableCell_A">mmol/L</td>
+                        <td class="tableCell tableCell_A">2.15</td>
+                        <td class="tableCell tableCell_A">2.48</td>
+                        <td class="tableCell tableCell_A">2.15</td>
+                        <td class="tableCell tableCell_A">2.48</td>
+                        <td class="tableCell tableCell_A">2.34</td>
+                        <td class="tableCell tableCell_A">2.29</td>
+                        <td class="tableCell tableCell_A">****</td>
+                        <td class="tableCell tableCell_A">5.1%</td>
+                        <td class="tableCell tableCell_A">4.5%</td>
+                    </tr>
+                    <tr class = "tableRow">
+                        <td class="tableRowID tableRowID_A">12</td>
+                        <td class="tableRower tableRower_A">High-sensitive CRP. Serum</td>
+                        <td class="tableCell tableCell_A">hs-CRP</td>
+                        <td class="tableCell tableCell_A"></td>
+                        <td class="tableCell tableCell_A">-5.11</td>
+                        <td class="tableCell tableCell_A">8.15</td>
+                        <td class="tableCell tableCell_A">-5.11</td>
+                        <td class="tableCell tableCell_A">8.15</td>
+                        <td class="tableCell tableCell_A">1.49</td>
+                        <td class="tableCell tableCell_A">1.55</td>
+                        <td class="tableCell tableCell_A">ns</td>
+                        <td class="tableCell tableCell_A">3.6%</td>
+                        <td class="tableCell tableCell_A">0%</td>
+                    </tr>
+                    <tr class = "tableRow">
+                        <td class="tableRowID tableRowID_B">13</td>
+                        <td class="tableRower tableRower_B">Apolipoprotein A1 (g/L). Serum</td>
+                        <td class="tableCell tableCell_B">APO A</td>
+                        <td class="tableCell tableCell_B">g/L</td>
+                        <td class="tableCell tableCell_B">0.88</td>
+                        <td class="tableCell tableCell_B">1.71</td>
+                        <td class="tableCell tableCell_B">0.88</td>
+                        <td class="tableCell tableCell_B">1.71</td>
+                        <td class="tableCell tableCell_B">1.22</td>
+                        <td class="tableCell tableCell_B">1.37</td>
+                        <td class="tableCell tableCell_B">****</td>
+                        <td class="tableCell tableCell_B">3.8%</td>
+                        <td class="tableCell tableCell_B">0.7%</td>
+                    </tr>
+                    <tr class = "tableRow">
+                        <td class="tableRowID tableRowID_B">14</td>
+                        <td class="tableRower tableRower_B">Apolipoprotein B (g/L). Serum</td>
+                        <td class="tableCell tableCell_B">APO B</td>
+                        <td class="tableCell tableCell_B">g/L</td>
+                        <td class="tableCell tableCell_B">0.3</td>
+                        <td class="tableCell tableCell_B">0.97</td>
+                        <td class="tableCell tableCell_B">0.3</td>
+                        <td class="tableCell tableCell_B">0.97</td>
+                        <td class="tableCell tableCell_B">0.61</td>
+                        <td class="tableCell tableCell_B">0.66</td>
+                        <td class="tableCell tableCell_B">****</td>
+                        <td class="tableCell tableCell_B">3.8%</td>
+                        <td class="tableCell tableCell_B">0.2%</td>
+                    </tr>
+                    <tr class = "tableRow">
+                        <td class="tableRowID tableRowID_B">15</td>
+                        <td class="tableRower tableRower_B">Serum estradiol, E2 (nmol/L)</td>
+                        <td class="tableCell tableCell_B">Estradiol</td>
+                        <td class="tableCell tableCell_B">nmol/L</td>
+                        <td class="tableCell tableCell_B">-0.54</td>
+                        <td class="tableCell tableCell_B">0.93</td>
+                        <td class="tableCell tableCell_B">-0.54</td>
+                        <td class="tableCell tableCell_B">0.93</td>
+                        <td class="tableCell tableCell_B">0.11</td>
+                        <td class="tableCell tableCell_B">0.29</td>
+                        <td class="tableCell tableCell_B">****</td>
+                        <td class="tableCell tableCell_B">0%</td>
+                        <td class="tableCell tableCell_B">0%</td>
+                    </tr>
+                    <tr class = "tableRow">
+                        <td class="tableRowID tableRowID_B">16</td>
+                        <td class="tableRower tableRower_B">Serum progesterone (nmol/L)</td>
+                        <td class="tableCell tableCell_B">Progesterone</td>
+                        <td class="tableCell tableCell_B">nmol/L</td>
+                        <td class="tableCell tableCell_B">-9.19</td>
+                        <td class="tableCell tableCell_B">15.18</td>
+                        <td class="tableCell tableCell_B">-9.19</td>
+                        <td class="tableCell tableCell_B">15.18</td>
+                        <td class="tableCell tableCell_B">1.81</td>
+                        <td class="tableCell tableCell_B">4.32</td>
+                        <td class="tableCell tableCell_B">****</td>
+                        <td class="tableCell tableCell_B">0%</td>
+                        <td class="tableCell tableCell_B">0%</td>
+                    </tr>
+                    <tr class = "tableRow">
+                        <td class="tableRowID tableRowID_A">17</td>
+                        <td class="tableRower tableRower_A">Serum testosterone (nmol/L)</td>
+                        <td class="tableCell tableCell_A">Testosterone</td>
+                        <td class="tableCell tableCell_A">nmol/L</td>
+                        <td class="tableCell tableCell_A">-7.41</td>
+                        <td class="tableCell tableCell_A">24.23</td>
+                        <td class="tableCell tableCell_A">-7.41</td>
+                        <td class="tableCell tableCell_A">24.23</td>
+                        <td class="tableCell tableCell_A">15.12</td>
+                        <td class="tableCell tableCell_A">0.9</td>
+                        <td class="tableCell tableCell_A">****</td>
+                        <td class="tableCell tableCell_A">3.4%</td>
+                        <td class="tableCell tableCell_A">0%</td>
+                    </tr>
+                    <tr class = "tableRow">
+                        <td class="tableRowID tableRowID_A">18</td>
+                        <td class="tableRower tableRower_A">Serum dehydroepiandrostenedione sulphate (µmol/L)</td>
+                        <td class="tableCell tableCell_A">DHEA</td>
+                        <td class="tableCell tableCell_A">umol/L</td>
+                        <td class="tableCell tableCell_A">1.29</td>
+                        <td class="tableCell tableCell_A">11.83</td>
+                        <td class="tableCell tableCell_A">1.29</td>
+                        <td class="tableCell tableCell_A">11.83</td>
+                        <td class="tableCell tableCell_A">7.24</td>
+                        <td class="tableCell tableCell_A">5.8</td>
+                        <td class="tableCell tableCell_A">****</td>
+                        <td class="tableCell tableCell_A">6.5%</td>
+                        <td class="tableCell tableCell_A">0%</td>
+                    </tr>
+                    <tr class = "tableRow">
+                        <td class="tableRowID tableRowID_A">19</td>
+                        <td class="tableRower tableRower_A">Serum sex hormone binding globuline (SHBG) (nmol/L)</td>
+                        <td class="tableCell tableCell_A">SHBG</td>
+                        <td class="tableCell tableCell_A">nmol/L</td>
+                        <td class="tableCell tableCell_A">0</td>
+                        <td class="tableCell tableCell_A">200</td>
+                        <td class="tableCell tableCell_A">0</td>
+                        <td class="tableCell tableCell_A">200</td>
+                        <td class="tableCell tableCell_A">28.69</td>
+                        <td class="tableCell tableCell_A">66.61</td>
+                        <td class="tableCell tableCell_A">****</td>
+                        <td class="tableCell tableCell_A">0%</td>
+                        <td class="tableCell tableCell_A">0%</td>
+                    </tr>
+                    <tr class = "tableRow">
+                        <td class="tableRowID tableRowID_A">20</td>
+                        <td class="tableRower tableRower_A">Serum luteinizing hormone (LH) (IU/L)</td>
+                        <td class="tableCell tableCell_A">LH</td>
+                        <td class="tableCell tableCell_A">IU/L</td>
+                        <td class="tableCell tableCell_A">-4.88</td>
+                        <td class="tableCell tableCell_A">15.17</td>
+                        <td class="tableCell tableCell_A">-4.88</td>
+                        <td class="tableCell tableCell_A">15.17</td>
+                        <td class="tableCell tableCell_A">4.22</td>
+                        <td class="tableCell tableCell_A">6.18</td>
+                        <td class="tableCell tableCell_A">****</td>
+                        <td class="tableCell tableCell_A">0.2%</td>
+                        <td class="tableCell tableCell_A">0%</td>
+                    </tr>
+                    <tr class = "tableRow">
+                        <td class="tableRowID tableRowID_B">21</td>
+                        <td class="tableRower tableRower_B">Serum follicle-stimulating hormone (FSH) (IU/L)</td>
+                        <td class="tableCell tableCell_B">Follicle-stimulating hormone</td>
+                        <td class="tableCell tableCell_B">IU/L</td>
+                        <td class="tableCell tableCell_B">-1.03</td>
+                        <td class="tableCell tableCell_B">8.7</td>
+                        <td class="tableCell tableCell_B">-1.03</td>
+                        <td class="tableCell tableCell_B">8.7</td>
+                        <td class="tableCell tableCell_B">3.62</td>
+                        <td class="tableCell tableCell_B">4.07</td>
+                        <td class="tableCell tableCell_B">**</td>
+                        <td class="tableCell tableCell_B">2.2%</td>
+                        <td class="tableCell tableCell_B">0%</td>
+                    </tr>
+                    <tr class = "tableRow">
+                        <td class="tableRowID tableRowID_B">22</td>
+                        <td class="tableRower tableRower_B">Glucose (mmol/L). Non-fasting serum</td>
+                        <td class="tableCell tableCell_B">Glucose non fasting</td>
+                        <td class="tableCell tableCell_B">mmol/L</td>
+                        <td class="tableCell tableCell_B">4</td>
+                        <td class="tableCell tableCell_B">8</td>
+                        <td class="tableCell tableCell_B">4</td>
+                        <td class="tableCell tableCell_B">8</td>
+                        <td class="tableCell tableCell_B">5.16</td>
+                        <td class="tableCell tableCell_B">4.95</td>
+                        <td class="tableCell tableCell_B">***</td>
+                        <td class="tableCell tableCell_B">4.6%</td>
+                        <td class="tableCell tableCell_B">5.7%</td>
+                    </tr>
+                    <tr class = "tableRow">
+                        <td class="tableRowID tableRowID_B">23</td>
+                        <td class="tableRower tableRower_B">Glycated haemoglobin (%). EDTA whole blood</td>
+                        <td class="tableCell tableCell_B">HBA1C</td>
+                        <td class="tableCell tableCell_B">%</td>
+                        <td class="tableCell tableCell_B">4.65</td>
+                        <td class="tableCell tableCell_B">5.93</td>
+                        <td class="tableCell tableCell_B">4.65</td>
+                        <td class="tableCell tableCell_B">5.93</td>
+                        <td class="tableCell tableCell_B">5.29</td>
+                        <td class="tableCell tableCell_B">5.29</td>
+                        <td class="tableCell tableCell_B">ns</td>
+                        <td class="tableCell tableCell_B">1.9%</td>
+                        <td class="tableCell tableCell_B">1.5%</td>
+                    </tr>
+                    <tr class = "tableRow">
+                        <td class="tableRowID tableRowID_B">24</td>
+                        <td class="tableRower tableRower_B">Haemoglobin (g/dL). EDTA whole blood</td>
+                        <td class="tableCell tableCell_B">HBA</td>
+                        <td class="tableCell tableCell_B">g/dL</td>
+                        <td class="tableCell tableCell_B">10.98</td>
+                        <td class="tableCell tableCell_B">16.36</td>
+                        <td class="tableCell tableCell_B">10.98</td>
+                        <td class="tableCell tableCell_B">16.36</td>
+                        <td class="tableCell tableCell_B">14.59</td>
+                        <td class="tableCell tableCell_B">12.65</td>
+                        <td class="tableCell tableCell_B">****</td>
+                        <td class="tableCell tableCell_B">1.9%</td>
+                        <td class="tableCell tableCell_B">3.9%</td>
+                    </tr>
+                    <tr class = "tableRow">
+                        <td class="tableRowID tableRowID_A">25</td>
+                        <td class="tableRower tableRower_A">Albumin (g/L). Serum</td>
+                        <td class="tableCell tableCell_A">Albumin</td>
+                        <td class="tableCell tableCell_A">g/L</td>
+                        <td class="tableCell tableCell_A">40.62</td>
+                        <td class="tableCell tableCell_A">50.83</td>
+                        <td class="tableCell tableCell_A">40.62</td>
+                        <td class="tableCell tableCell_A">50.83</td>
+                        <td class="tableCell tableCell_A">46.85</td>
+                        <td class="tableCell tableCell_A">44.51</td>
+                        <td class="tableCell tableCell_A">****</td>
+                        <td class="tableCell tableCell_A">4.2%</td>
+                        <td class="tableCell tableCell_A">6.4%</td>
+                    </tr>
+                    <tr class = "tableRow">
+                        <td class="tableRowID tableRowID_A">26</td>
+                        <td class="tableRower tableRower_A">25(OH)D (nmol/L). Serum</td>
+                        <td class="tableCell tableCell_A">25(OH)D</td>
+                        <td class="tableCell tableCell_A">nmol/L</td>
+                        <td class="tableCell tableCell_A">0.42</td>
+                        <td class="tableCell tableCell_A">92.88</td>
+                        <td class="tableCell tableCell_A">0.42</td>
+                        <td class="tableCell tableCell_A">92.88</td>
+                        <td class="tableCell tableCell_A">40.13</td>
+                        <td class="tableCell tableCell_A">53.89</td>
+                        <td class="tableCell tableCell_A">****</td>
+                        <td class="tableCell tableCell_A">2.2%</td>
+                        <td class="tableCell tableCell_A">0%</td>
+                    </tr>
+                    <tr class = "tableRow">
+                        <td class="tableRowID tableRowID_A">27</td>
+                        <td class="tableRower tableRower_A">Retinol (µmol/L). Serum</td>
+                        <td class="tableCell tableCell_A">Retinol</td>
+                        <td class="tableCell tableCell_A">umol/L</td>
+                        <td class="tableCell tableCell_A">0.62</td>
+                        <td class="tableCell tableCell_A">4.32</td>
+                        <td class="tableCell tableCell_A">0.62</td>
+                        <td class="tableCell tableCell_A">4.32</td>
+                        <td class="tableCell tableCell_A">2.46</td>
+                        <td class="tableCell tableCell_A">2.49</td>
+                        <td class="tableCell tableCell_A">ns</td>
+                        <td class="tableCell tableCell_A">3.2%</td>
+                        <td class="tableCell tableCell_A">0.5%</td>
+                    </tr>
+                    <tr class = "tableRow">
+                        <td class="tableRowID tableRowID_A">28</td>
+                        <td class="tableRower tableRower_A">Plasma Parathyroid hormone (pmol/L)</td>
+                        <td class="tableCell tableCell_A">PTH</td>
+                        <td class="tableCell tableCell_A">pmol/L</td>
+                        <td class="tableCell tableCell_A">1.25</td>
+                        <td class="tableCell tableCell_A">7.19</td>
+                        <td class="tableCell tableCell_A">1.25</td>
+                        <td class="tableCell tableCell_A">7.19</td>
+                        <td class="tableCell tableCell_A">4.43</td>
+                        <td class="tableCell tableCell_A">3.99</td>
+                        <td class="tableCell tableCell_A">****</td>
+                        <td class="tableCell tableCell_A">5.1%</td>
+                        <td class="tableCell tableCell_A">0%</td>
+                    </tr>
+                    <tr class = "tableRow">
+                        <td class="tableRowID tableRowID_B">29</td>
+                        <td class="tableRower tableRower_B">FA C12:0 (mcg/ml). Serum</td>
+                        <td class="tableCell tableCell_B">FA C12:0</td>
+                        <td class="tableCell tableCell_B">mcg/ml</td>
+                        <td class="tableCell tableCell_B">-21.76</td>
+                        <td class="tableCell tableCell_B">32.95</td>
+                        <td class="tableCell tableCell_B">-21.76</td>
+                        <td class="tableCell tableCell_B">32.95</td>
+                        <td class="tableCell tableCell_B">5.71</td>
+                        <td class="tableCell tableCell_B">5.47</td>
+                        <td class="tableCell tableCell_B">ns</td>
+                        <td class="tableCell tableCell_B">1.6%</td>
+                        <td class="tableCell tableCell_B">0%</td>
+                    </tr>
+                    <tr class = "tableRow">
+                        <td class="tableRowID tableRowID_B">30</td>
+                        <td class="tableRower tableRower_B">FA C14:0 (mcg/ml). Serum</td>
+                        <td class="tableCell tableCell_B">FA C14:0</td>
+                        <td class="tableCell tableCell_B">mcg/ml</td>
+                        <td class="tableCell tableCell_B">-10.61</td>
+                        <td class="tableCell tableCell_B">72.5</td>
+                        <td class="tableCell tableCell_B">-10.61</td>
+                        <td class="tableCell tableCell_B">72.5</td>
+                        <td class="tableCell tableCell_B">30.9</td>
+                        <td class="tableCell tableCell_B">30.99</td>
+                        <td class="tableCell tableCell_B">ns</td>
+                        <td class="tableCell tableCell_B">4.1%</td>
+                        <td class="tableCell tableCell_B">0%</td>
+                    </tr>
+                    <tr class = "tableRow">
+                        <td class="tableRowID tableRowID_B">31</td>
+                        <td class="tableRower tableRower_B">FA C15:0 (mcg/ml). Serum</td>
+                        <td class="tableCell tableCell_B">FA C15:0</td>
+                        <td class="tableCell tableCell_B">mcg/ml</td>
+                        <td class="tableCell tableCell_B">1.07</td>
+                        <td class="tableCell tableCell_B">9.86</td>
+                        <td class="tableCell tableCell_B">1.07</td>
+                        <td class="tableCell tableCell_B">9.86</td>
+                        <td class="tableCell tableCell_B">5.45</td>
+                        <td class="tableCell tableCell_B">5.48</td>
+                        <td class="tableCell tableCell_B">ns</td>
+                        <td class="tableCell tableCell_B">3.2%</td>
+                        <td class="tableCell tableCell_B">0%</td>
+                    </tr>
+                    <tr class = "tableRow">
+                        <td class="tableRowID tableRowID_B">32</td>
+                        <td class="tableRower tableRower_B">FA C16:0 (mcg/ml). Serum</td>
+                        <td class="tableCell tableCell_B">FA C16:0</td>
+                        <td class="tableCell tableCell_B">mcg/ml</td>
+                        <td class="tableCell tableCell_B">191.56</td>
+                        <td class="tableCell tableCell_B">960.72</td>
+                        <td class="tableCell tableCell_B">191.56</td>
+                        <td class="tableCell tableCell_B">960.72</td>
+                        <td class="tableCell tableCell_B">564.26</td>
+                        <td class="tableCell tableCell_B">589.33</td>
+                        <td class="tableCell tableCell_B">*</td>
+                        <td class="tableCell tableCell_B">4.9%</td>
+                        <td class="tableCell tableCell_B">0.7%</td>
+                    </tr>
+                    <tr class = "tableRow">
+                        <td class="tableRowID tableRowID_A">33</td>
+                        <td class="tableRower tableRower_A">FA C16:1 n-7 (mcg/ml). Serum</td>
+                        <td class="tableCell tableCell_A">FA C16:1 n-7</td>
+                        <td class="tableCell tableCell_A">mcg/ml</td>
+                        <td class="tableCell tableCell_A">-7.29</td>
+                        <td class="tableCell tableCell_A">106.81</td>
+                        <td class="tableCell tableCell_A">-7.29</td>
+                        <td class="tableCell tableCell_A">106.81</td>
+                        <td class="tableCell tableCell_A">46.61</td>
+                        <td class="tableCell tableCell_A">53.26</td>
+                        <td class="tableCell tableCell_A">***</td>
+                        <td class="tableCell tableCell_A">3%</td>
+                        <td class="tableCell tableCell_A">0%</td>
+                    </tr>
+                    <tr class = "tableRow">
+                        <td class="tableRowID tableRowID_A">34</td>
+                        <td class="tableRower tableRower_A">FA C18:0 (mcg/ml). Serum</td>
+                        <td class="tableCell tableCell_A">FA C18:0</td>
+                        <td class="tableCell tableCell_A">mcg/ml</td>
+                        <td class="tableCell tableCell_A">76.01</td>
+                        <td class="tableCell tableCell_A">322.85</td>
+                        <td class="tableCell tableCell_A">76.01</td>
+                        <td class="tableCell tableCell_A">322.85</td>
+                        <td class="tableCell tableCell_A">195.89</td>
+                        <td class="tableCell tableCell_A">203.35</td>
+                        <td class="tableCell tableCell_A">ns</td>
+                        <td class="tableCell tableCell_A">4.3%</td>
+                        <td class="tableCell tableCell_A">1.6%</td>
+                    </tr>
+                    <tr class = "tableRow">
+                        <td class="tableRowID tableRowID_A">35</td>
+                        <td class="tableRower tableRower_A">FA C18:1 t6-11 (mcg/ml). Serum</td>
+                        <td class="tableCell tableCell_A">FA C18:1 t6-11</td>
+                        <td class="tableCell tableCell_A">mcg/ml</td>
+                        <td class="tableCell tableCell_A">-6.12</td>
+                        <td class="tableCell tableCell_A">47.68</td>
+                        <td class="tableCell tableCell_A">-6.12</td>
+                        <td class="tableCell tableCell_A">47.68</td>
+                        <td class="tableCell tableCell_A">20.95</td>
+                        <td class="tableCell tableCell_A">20.59</td>
+                        <td class="tableCell tableCell_A">ns</td>
+                        <td class="tableCell tableCell_A">4.5%</td>
+                        <td class="tableCell tableCell_A">0%</td>
+                    </tr>
+                    <tr class = "tableRow">
+                        <td class="tableRowID tableRowID_A">36</td>
+                        <td class="tableRower tableRower_A">FA C18:1 c-9 (mcg/ml). Serum</td>
+                        <td class="tableCell tableCell_A">FA C18:1 c-9</td>
+                        <td class="tableCell tableCell_A">mcg/ml</td>
+                        <td class="tableCell tableCell_A">132.36</td>
+                        <td class="tableCell tableCell_A">926.21</td>
+                        <td class="tableCell tableCell_A">132.36</td>
+                        <td class="tableCell tableCell_A">926.21</td>
+                        <td class="tableCell tableCell_A">537.94</td>
+                        <td class="tableCell tableCell_A">519.67</td>
+                        <td class="tableCell tableCell_A">ns</td>
+                        <td class="tableCell tableCell_A">5.1%</td>
+                        <td class="tableCell tableCell_A">0.2%</td>
+                    </tr>
+                    <tr class = "tableRow">
+                        <td class="tableRowID tableRowID_B">37</td>
+                        <td class="tableRower tableRower_B">FA C18:1 c-11(mcg/ml). Serum</td>
+                        <td class="tableCell tableCell_B">FA C18:1 c-11</td>
+                        <td class="tableCell tableCell_B">mcg/ml</td>
+                        <td class="tableCell tableCell_B">11.53</td>
+                        <td class="tableCell tableCell_B">63.91</td>
+                        <td class="tableCell tableCell_B">11.53</td>
+                        <td class="tableCell tableCell_B">63.91</td>
+                        <td class="tableCell tableCell_B">36.78</td>
+                        <td class="tableCell tableCell_B">38.76</td>
+                        <td class="tableCell tableCell_B">*</td>
+                        <td class="tableCell tableCell_B">4.1%</td>
+                        <td class="tableCell tableCell_B">0.2%</td>
+                    </tr>
+                    <tr class = "tableRow">
+                        <td class="tableRowID tableRowID_B">38</td>
+                        <td class="tableRower tableRower_B">FA C18:2 n-6 (mcg/ml). Serum</td>
+                        <td class="tableCell tableCell_B">FA C18:2 n-6</td>
+                        <td class="tableCell tableCell_B">mcg/ml</td>
+                        <td class="tableCell tableCell_B">310.87</td>
+                        <td class="tableCell tableCell_B">1022.44</td>
+                        <td class="tableCell tableCell_B">310.87</td>
+                        <td class="tableCell tableCell_B">1022.44</td>
+                        <td class="tableCell tableCell_B">645.65</td>
+                        <td class="tableCell tableCell_B">689.97</td>
+                        <td class="tableCell tableCell_B">***</td>
+                        <td class="tableCell tableCell_B">3.2%</td>
+                        <td class="tableCell tableCell_B">1.8%</td>
+                    </tr>
+                    <tr class = "tableRow">
+                        <td class="tableRowID tableRowID_B">39</td>
+                        <td class="tableRower tableRower_B">FA C20:0 (mcg/ml). Serum</td>
+                        <td class="tableCell tableCell_B">FA C20:0</td>
+                        <td class="tableCell tableCell_B">mcg/ml</td>
+                        <td class="tableCell tableCell_B">2.39</td>
+                        <td class="tableCell tableCell_B">14.16</td>
+                        <td class="tableCell tableCell_B">2.39</td>
+                        <td class="tableCell tableCell_B">14.16</td>
+                        <td class="tableCell tableCell_B">7.56</td>
+                        <td class="tableCell tableCell_B">9.07</td>
+                        <td class="tableCell tableCell_B">****</td>
+                        <td class="tableCell tableCell_B">2.6%</td>
+                        <td class="tableCell tableCell_B">0.9%</td>
+                    </tr>
+                    <tr class = "tableRow">
+                        <td class="tableRowID tableRowID_B">40</td>
+                        <td class="tableRower tableRower_B">FA C18:3 n-6 (mcg/ml). Serum</td>
+                        <td class="tableCell tableCell_B">FA C18:3 n-6</td>
+                        <td class="tableCell tableCell_B">mcg/ml</td>
+                        <td class="tableCell tableCell_B">-1.41</td>
+                        <td class="tableCell tableCell_B">17.68</td>
+                        <td class="tableCell tableCell_B">-1.41</td>
+                        <td class="tableCell tableCell_B">17.68</td>
+                        <td class="tableCell tableCell_B">8.23</td>
+                        <td class="tableCell tableCell_B">8.04</td>
+                        <td class="tableCell tableCell_B">ns</td>
+                        <td class="tableCell tableCell_B">4.1%</td>
+                        <td class="tableCell tableCell_B">0%</td>
+                    </tr>
+                    <tr class = "tableRow">
+                        <td class="tableRowID tableRowID_A">41</td>
+                        <td class="tableRower tableRower_A">FA C18:3 n-3 (mcg/ml). Serum</td>
+                        <td class="tableCell tableCell_A">FA C18:3 n-3</td>
+                        <td class="tableCell tableCell_A">mcg/ml</td>
+                        <td class="tableCell tableCell_A">-3.45</td>
+                        <td class="tableCell tableCell_A">38.63</td>
+                        <td class="tableCell tableCell_A">-3.45</td>
+                        <td class="tableCell tableCell_A">38.63</td>
+                        <td class="tableCell tableCell_A">17.98</td>
+                        <td class="tableCell tableCell_A">17.16</td>
+                        <td class="tableCell tableCell_A">ns</td>
+                        <td class="tableCell tableCell_A">4.7%</td>
+                        <td class="tableCell tableCell_A">0%</td>
+                    </tr>
+                    <tr class = "tableRow">
+                        <td class="tableRowID tableRowID_A">42</td>
+                        <td class="tableRower tableRower_A">FA C20:1 n-9 (mcg/ml). Serum</td>
+                        <td class="tableCell tableCell_A">FA C20:1 n-9</td>
+                        <td class="tableCell tableCell_A">mcg/ml</td>
+                        <td class="tableCell tableCell_A">0.03</td>
+                        <td class="tableCell tableCell_A">7.2</td>
+                        <td class="tableCell tableCell_A">0.03</td>
+                        <td class="tableCell tableCell_A">7.2</td>
+                        <td class="tableCell tableCell_A">3.63</td>
+                        <td class="tableCell tableCell_A">3.6</td>
+                        <td class="tableCell tableCell_A">ns</td>
+                        <td class="tableCell tableCell_A">4.1%</td>
+                        <td class="tableCell tableCell_A">0%</td>
+                    </tr>
+                    <tr class = "tableRow">
+                        <td class="tableRowID tableRowID_A">43</td>
+                        <td class="tableRower tableRower_A">FA C20:2 n-6 (mcg/ml). Serum</td>
+                        <td class="tableCell tableCell_A">FA C20:2 n-6</td>
+                        <td class="tableCell tableCell_A">mcg/ml</td>
+                        <td class="tableCell tableCell_A">1.06</td>
+                        <td class="tableCell tableCell_A">8.46</td>
+                        <td class="tableCell tableCell_A">1.06</td>
+                        <td class="tableCell tableCell_A">8.46</td>
+                        <td class="tableCell tableCell_A">4.51</td>
+                        <td class="tableCell tableCell_A">5.03</td>
+                        <td class="tableCell tableCell_A">****</td>
+                        <td class="tableCell tableCell_A">2.2%</td>
+                        <td class="tableCell tableCell_A">0.2%</td>
+                    </tr>
+                    <tr class = "tableRow">
+                        <td class="tableRowID tableRowID_A">44</td>
+                        <td class="tableRower tableRower_A">FA C22:0 (mcg/ml). Serum</td>
+                        <td class="tableCell tableCell_A">FA C22:0</td>
+                        <td class="tableCell tableCell_A">mcg/ml</td>
+                        <td class="tableCell tableCell_A">7.73</td>
+                        <td class="tableCell tableCell_A">26.89</td>
+                        <td class="tableCell tableCell_A">7.73</td>
+                        <td class="tableCell tableCell_A">26.89</td>
+                        <td class="tableCell tableCell_A">16.29</td>
+                        <td class="tableCell tableCell_A">18.44</td>
+                        <td class="tableCell tableCell_A">****</td>
+                        <td class="tableCell tableCell_A">2%</td>
+                        <td class="tableCell tableCell_A">2.5%</td>
+                    </tr>
+                    <tr class = "tableRow">
+                        <td class="tableRowID tableRowID_B">45</td>
+                        <td class="tableRower tableRower_B">FA C20:3 n-6 (mcg/ml). Serum</td>
+                        <td class="tableCell tableCell_B">FA C20:3 n-6</td>
+                        <td class="tableCell tableCell_B">mcg/ml</td>
+                        <td class="tableCell tableCell_B">9.08</td>
+                        <td class="tableCell tableCell_B">65.8</td>
+                        <td class="tableCell tableCell_B">9.08</td>
+                        <td class="tableCell tableCell_B">65.8</td>
+                        <td class="tableCell tableCell_B">36.59</td>
+                        <td class="tableCell tableCell_B">38.38</td>
+                        <td class="tableCell tableCell_B">ns</td>
+                        <td class="tableCell tableCell_B">2.4%</td>
+                        <td class="tableCell tableCell_B">0.5%</td>
+                    </tr>
+                    <tr class = "tableRow">
+                        <td class="tableRowID tableRowID_B">46</td>
+                        <td class="tableRower tableRower_B">FA C20:4 n-6 (mcg/ml). Serum</td>
+                        <td class="tableCell tableCell_B">FA C20:4 n-6</td>
+                        <td class="tableCell tableCell_B">mcg/ml</td>
+                        <td class="tableCell tableCell_B">53.09</td>
+                        <td class="tableCell tableCell_B">199.38</td>
+                        <td class="tableCell tableCell_B">53.09</td>
+                        <td class="tableCell tableCell_B">199.38</td>
+                        <td class="tableCell tableCell_B">122.54</td>
+                        <td class="tableCell tableCell_B">130.34</td>
+                        <td class="tableCell tableCell_B">**</td>
+                        <td class="tableCell tableCell_B">3.7%</td>
+                        <td class="tableCell tableCell_B">1.6%</td>
+                    </tr>
+                    <tr class = "tableRow">
+                        <td class="tableRowID tableRowID_B">47</td>
+                        <td class="tableRower tableRower_B">FA C23:0 (mcg/ml). Serum</td>
+                        <td class="tableCell tableCell_B">FA C23:0</td>
+                        <td class="tableCell tableCell_B">mcg/ml</td>
+                        <td class="tableCell tableCell_B">2.97</td>
+                        <td class="tableCell tableCell_B">11.23</td>
+                        <td class="tableCell tableCell_B">2.97</td>
+                        <td class="tableCell tableCell_B">11.23</td>
+                        <td class="tableCell tableCell_B">6.6</td>
+                        <td class="tableCell tableCell_B">7.65</td>
+                        <td class="tableCell tableCell_B">****</td>
+                        <td class="tableCell tableCell_B">1.8%</td>
+                        <td class="tableCell tableCell_B">1.4%</td>
+                    </tr>
+                    <tr class = "tableRow">
+                        <td class="tableRowID tableRowID_B">48</td>
+                        <td class="tableRower tableRower_B">FA C20:5 n-3 (mcg/ml). Serum</td>
+                        <td class="tableCell tableCell_B">FA C20:5 n-3</td>
+                        <td class="tableCell tableCell_B">mcg/ml</td>
+                        <td class="tableCell tableCell_B">-8.06</td>
+                        <td class="tableCell tableCell_B">46.77</td>
+                        <td class="tableCell tableCell_B">-8.06</td>
+                        <td class="tableCell tableCell_B">46.77</td>
+                        <td class="tableCell tableCell_B">18.51</td>
+                        <td class="tableCell tableCell_B">20.3</td>
+                        <td class="tableCell tableCell_B">*</td>
+                        <td class="tableCell tableCell_B">3.9%</td>
+                        <td class="tableCell tableCell_B">0%</td>
+                    </tr>
+                    <tr class = "tableRow">
+                        <td class="tableRowID tableRowID_A">49</td>
+                        <td class="tableRower tableRower_A">FA C24:0 (mcg/ml). Serum</td>
+                        <td class="tableCell tableCell_A">FA C24:0</td>
+                        <td class="tableCell tableCell_A">mcg/ml</td>
+                        <td class="tableCell tableCell_A">6.8</td>
+                        <td class="tableCell tableCell_A">24.82</td>
+                        <td class="tableCell tableCell_A">6.8</td>
+                        <td class="tableCell tableCell_A">24.82</td>
+                        <td class="tableCell tableCell_A">15.25</td>
+                        <td class="tableCell tableCell_A">16.43</td>
+                        <td class="tableCell tableCell_A">****</td>
+                        <td class="tableCell tableCell_A">2.2%</td>
+                        <td class="tableCell tableCell_A">2.3%</td>
+                    </tr>
+                    <tr class = "tableRow">
+                        <td class="tableRowID tableRowID_A">50</td>
+                        <td class="tableRower tableRower_A">FA C24:1 (mcg/ml). Serum</td>
+                        <td class="tableCell tableCell_A">FA C24:1</td>
+                        <td class="tableCell tableCell_A">mcg/ml</td>
+                        <td class="tableCell tableCell_A">13.93</td>
+                        <td class="tableCell tableCell_A">44.18</td>
+                        <td class="tableCell tableCell_A">13.93</td>
+                        <td class="tableCell tableCell_A">44.18</td>
+                        <td class="tableCell tableCell_A">27.34</td>
+                        <td class="tableCell tableCell_A">30.95</td>
+                        <td class="tableCell tableCell_A">****</td>
+                        <td class="tableCell tableCell_A">2.4%</td>
+                        <td class="tableCell tableCell_A">2%</td>
+                    </tr>
+                    <tr class = "tableRow">
+                        <td class="tableRowID tableRowID_A">51</td>
+                        <td class="tableRower tableRower_A">FA C22:5 n-3 (mcg/ml). Serum</td>
+                        <td class="tableCell tableCell_A">FA C22:5 n-3</td>
+                        <td class="tableCell tableCell_A">mcg/ml</td>
+                        <td class="tableCell tableCell_A">4.25</td>
+                        <td class="tableCell tableCell_A">21.44</td>
+                        <td class="tableCell tableCell_A">4.25</td>
+                        <td class="tableCell tableCell_A">21.44</td>
+                        <td class="tableCell tableCell_A">13.26</td>
+                        <td class="tableCell tableCell_A">12.39</td>
+                        <td class="tableCell tableCell_A">**</td>
+                        <td class="tableCell tableCell_A">4.9%</td>
+                        <td class="tableCell tableCell_A">1.4%</td>
+                    </tr>
+                    <tr class = "tableRow">
+                        <td class="tableRowID tableRowID_A">52</td>
+                        <td class="tableRower tableRower_A">FA C22:6 n-3 (mcg/ml). Serum</td>
+                        <td class="tableCell tableCell_A">FA C22:6 n-3</td>
+                        <td class="tableCell tableCell_A">mcg/ml</td>
+                        <td class="tableCell tableCell_A">11.93</td>
+                        <td class="tableCell tableCell_A">94.5</td>
+                        <td class="tableCell tableCell_A">11.93</td>
+                        <td class="tableCell tableCell_A">94.5</td>
+                        <td class="tableCell tableCell_A">49.07</td>
+                        <td class="tableCell tableCell_A">57.82</td>
+                        <td class="tableCell tableCell_A">****</td>
+                        <td class="tableCell tableCell_A">3%</td>
+                        <td class="tableCell tableCell_A">0.2%</td>
+                    </tr>
+                    <tr class = "tableRow">
+                        <td class="tableRowID tableRowID_B">53</td>
+                        <td class="tableRower tableRower_B">FA C12:0 (weight% of Fatty Acid Methyl Esters). Serum</td>
+                        <td class="tableCell tableCell_B">wFA C12:0</td>
+                        <td class="tableCell tableCell_B">w%</td>
+                        <td class="tableCell tableCell_B">-0.5</td>
+                        <td class="tableCell tableCell_B">0.89</td>
+                        <td class="tableCell tableCell_B">-0.5</td>
+                        <td class="tableCell tableCell_B">0.89</td>
+                        <td class="tableCell tableCell_B">0.2</td>
+                        <td class="tableCell tableCell_B">0.19</td>
+                        <td class="tableCell tableCell_B">ns</td>
+                        <td class="tableCell tableCell_B">1.6%</td>
+                        <td class="tableCell tableCell_B">0%</td>
+                    </tr>
+                    <tr class = "tableRow">
+                        <td class="tableRowID tableRowID_B">54</td>
+                        <td class="tableRower tableRower_B">FA C14:0 (weight% of Fatty Acid Methyl Esters). Serum</td>
+                        <td class="tableCell tableCell_B">wFA C14:0</td>
+                        <td class="tableCell tableCell_B">w%</td>
+                        <td class="tableCell tableCell_B">0.12</td>
+                        <td class="tableCell tableCell_B">2.13</td>
+                        <td class="tableCell tableCell_B">0.12</td>
+                        <td class="tableCell tableCell_B">2.13</td>
+                        <td class="tableCell tableCell_B">1.15</td>
+                        <td class="tableCell tableCell_B">1.1</td>
+                        <td class="tableCell tableCell_B">ns</td>
+                        <td class="tableCell tableCell_B">5.3%</td>
+                        <td class="tableCell tableCell_B">0%</td>
+                    </tr>
+                    <tr class = "tableRow">
+                        <td class="tableRowID tableRowID_B">55</td>
+                        <td class="tableRower tableRower_B">FA C15:0 (weight% of Fatty Acid Methyl Esters). Serum</td>
+                        <td class="tableCell tableCell_B">wFA C15:0</td>
+                        <td class="tableCell tableCell_B">w%</td>
+                        <td class="tableCell tableCell_B">0.12</td>
+                        <td class="tableCell tableCell_B">0.3</td>
+                        <td class="tableCell tableCell_B">0.12</td>
+                        <td class="tableCell tableCell_B">0.3</td>
+                        <td class="tableCell tableCell_B">0.21</td>
+                        <td class="tableCell tableCell_B">0.2</td>
+                        <td class="tableCell tableCell_B">**</td>
+                        <td class="tableCell tableCell_B">6.1%</td>
+                        <td class="tableCell tableCell_B">0.2%</td>
+                    </tr>
+                    <tr class = "tableRow">
+                        <td class="tableRowID tableRowID_B">56</td>
+                        <td class="tableRower tableRower_B">FA C16:0 (weight% of Fatty Acid Methyl Esters). Serum</td>
+                        <td class="tableCell tableCell_B">wFA C16:0</td>
+                        <td class="tableCell tableCell_B">w%</td>
+                        <td class="tableCell tableCell_B">18.57</td>
+                        <td class="tableCell tableCell_B">25.28</td>
+                        <td class="tableCell tableCell_B">18.57</td>
+                        <td class="tableCell tableCell_B">25.28</td>
+                        <td class="tableCell tableCell_B">21.88</td>
+                        <td class="tableCell tableCell_B">21.97</td>
+                        <td class="tableCell tableCell_B">ns</td>
+                        <td class="tableCell tableCell_B">4.7%</td>
+                        <td class="tableCell tableCell_B">0.9%</td>
+                    </tr>
+                    <tr class = "tableRow">
+                        <td class="tableRowID tableRowID_A">57</td>
+                        <td class="tableRower tableRower_A">FA C16:1 n-7 (weight% of Fatty Acid Methyl Esters). Serum</td>
+                        <td class="tableCell tableCell_A">wFA C16:1 n-7</td>
+                        <td class="tableCell tableCell_A">w%</td>
+                        <td class="tableCell tableCell_A">0.59</td>
+                        <td class="tableCell tableCell_A">3.1</td>
+                        <td class="tableCell tableCell_A">0.59</td>
+                        <td class="tableCell tableCell_A">3.1</td>
+                        <td class="tableCell tableCell_A">1.77</td>
+                        <td class="tableCell tableCell_A">1.93</td>
+                        <td class="tableCell tableCell_A">****</td>
+                        <td class="tableCell tableCell_A">3.2%</td>
+                        <td class="tableCell tableCell_A">0%</td>
+                    </tr>
+                    <tr class = "tableRow">
+                        <td class="tableRowID tableRowID_A">58</td>
+                        <td class="tableRower tableRower_A">FA C18:0 (weight% of Fatty Acid Methyl Esters). Serum</td>
+                        <td class="tableCell tableCell_A">wFA C18:0</td>
+                        <td class="tableCell tableCell_A">w%</td>
+                        <td class="tableCell tableCell_A">5.93</td>
+                        <td class="tableCell tableCell_A">9.37</td>
+                        <td class="tableCell tableCell_A">5.93</td>
+                        <td class="tableCell tableCell_A">9.37</td>
+                        <td class="tableCell tableCell_A">7.66</td>
+                        <td class="tableCell tableCell_A">7.64</td>
+                        <td class="tableCell tableCell_A">ns</td>
+                        <td class="tableCell tableCell_A">3.7%</td>
+                        <td class="tableCell tableCell_A">2%</td>
+                    </tr>
+                    <tr class = "tableRow">
+                        <td class="tableRowID tableRowID_A">59</td>
+                        <td class="tableRower tableRower_A">FA C18:1 t6-11 (weight% of Fatty Acid Methyl Esters). Serum</td>
+                        <td class="tableCell tableCell_A">wFA C18:1 t6-11 </td>
+                        <td class="tableCell tableCell_A">w%</td>
+                        <td class="tableCell tableCell_A">0.03</td>
+                        <td class="tableCell tableCell_A">1.5</td>
+                        <td class="tableCell tableCell_A">0.03</td>
+                        <td class="tableCell tableCell_A">1.5</td>
+                        <td class="tableCell tableCell_A">0.79</td>
+                        <td class="tableCell tableCell_A">0.74</td>
+                        <td class="tableCell tableCell_A">*</td>
+                        <td class="tableCell tableCell_A">6.9%</td>
+                        <td class="tableCell tableCell_A">0%</td>
+                    </tr>
+                    <tr class = "tableRow">
+                        <td class="tableRowID tableRowID_A">60</td>
+                        <td class="tableRower tableRower_A">FA C18:1 c-9 (weight% of Fatty Acid Methyl Esters). Serum</td>
+                        <td class="tableCell tableCell_A">wFA C18:1 c-9</td>
+                        <td class="tableCell tableCell_A">w%</td>
+                        <td class="tableCell tableCell_A">14.3</td>
+                        <td class="tableCell tableCell_A">25.8</td>
+                        <td class="tableCell tableCell_A">14.3</td>
+                        <td class="tableCell tableCell_A">25.8</td>
+                        <td class="tableCell tableCell_A">20.68</td>
+                        <td class="tableCell tableCell_A">19.34</td>
+                        <td class="tableCell tableCell_A">****</td>
+                        <td class="tableCell tableCell_A">5.5%</td>
+                        <td class="tableCell tableCell_A">1.6%</td>
+                    </tr>
+                    <tr class = "tableRow">
+                        <td class="tableRowID tableRowID_B">61</td>
+                        <td class="tableRower tableRower_B">FA C18:1 c-11(weight% of Fatty Acid Methyl Esters). Serum</td>
+                        <td class="tableCell tableCell_B">wFA C18:1 c-11</td>
+                        <td class="tableCell tableCell_B">w%</td>
+                        <td class="tableCell tableCell_B">0.96</td>
+                        <td class="tableCell tableCell_B">1.93</td>
+                        <td class="tableCell tableCell_B">0.96</td>
+                        <td class="tableCell tableCell_B">1.93</td>
+                        <td class="tableCell tableCell_B">1.44</td>
+                        <td class="tableCell tableCell_B">1.46</td>
+                        <td class="tableCell tableCell_B">ns</td>
+                        <td class="tableCell tableCell_B">3.2%</td>
+                        <td class="tableCell tableCell_B">0.9%</td>
+                    </tr>
+                    <tr class = "tableRow">
+                        <td class="tableRowID tableRowID_B">62</td>
+                        <td class="tableRower tableRower_B">FA C18:2 n-6 (weight% of Fatty Acid Methyl Esters). Serum</td>
+                        <td class="tableCell tableCell_B">wFA C18:2 n-6</td>
+                        <td class="tableCell tableCell_B">w%</td>
+                        <td class="tableCell tableCell_B">19.15</td>
+                        <td class="tableCell tableCell_B">32.66</td>
+                        <td class="tableCell tableCell_B">19.15</td>
+                        <td class="tableCell tableCell_B">32.66</td>
+                        <td class="tableCell tableCell_B">25.58</td>
+                        <td class="tableCell tableCell_B">26.26</td>
+                        <td class="tableCell tableCell_B">**</td>
+                        <td class="tableCell tableCell_B">5.5%</td>
+                        <td class="tableCell tableCell_B">2%</td>
+                    </tr>
+                    <tr class = "tableRow">
+                        <td class="tableRowID tableRowID_B">63</td>
+                        <td class="tableRower tableRower_B">FA C20:0 (weight% of Fatty Acid Methyl Esters). Serum</td>
+                        <td class="tableCell tableCell_B">wFA C20:0</td>
+                        <td class="tableCell tableCell_B">w%</td>
+                        <td class="tableCell tableCell_B">0.17</td>
+                        <td class="tableCell tableCell_B">0.47</td>
+                        <td class="tableCell tableCell_B">0.17</td>
+                        <td class="tableCell tableCell_B">0.47</td>
+                        <td class="tableCell tableCell_B">0.3</td>
+                        <td class="tableCell tableCell_B">0.34</td>
+                        <td class="tableCell tableCell_B">****</td>
+                        <td class="tableCell tableCell_B">2.6%</td>
+                        <td class="tableCell tableCell_B">0%</td>
+                    </tr>
+                    <tr class = "tableRow">
+                        <td class="tableRowID tableRowID_B">64</td>
+                        <td class="tableRower tableRower_B">FA C18:3 n-6 (weight% of Fatty Acid Methyl Esters). Serum</td>
+                        <td class="tableCell tableCell_B">wFA C18:3 n-6</td>
+                        <td class="tableCell tableCell_B">w%</td>
+                        <td class="tableCell tableCell_B">0.03</td>
+                        <td class="tableCell tableCell_B">0.58</td>
+                        <td class="tableCell tableCell_B">0.03</td>
+                        <td class="tableCell tableCell_B">0.58</td>
+                        <td class="tableCell tableCell_B">0.32</td>
+                        <td class="tableCell tableCell_B">0.3</td>
+                        <td class="tableCell tableCell_B">*</td>
+                        <td class="tableCell tableCell_B">5.1%</td>
+                        <td class="tableCell tableCell_B">0.5%</td>
+                    </tr>
+                    <tr class = "tableRow">
+                        <td class="tableRowID tableRowID_A">65</td>
+                        <td class="tableRower tableRower_A">FA C18:3 n-3 (weight% of Fatty Acid Methyl Esters). Serum</td>
+                        <td class="tableCell tableCell_A">wFA C18:3 n-3</td>
+                        <td class="tableCell tableCell_A">w%</td>
+                        <td class="tableCell tableCell_A">0.14</td>
+                        <td class="tableCell tableCell_A">1.17</td>
+                        <td class="tableCell tableCell_A">0.14</td>
+                        <td class="tableCell tableCell_A">1.17</td>
+                        <td class="tableCell tableCell_A">0.68</td>
+                        <td class="tableCell tableCell_A">0.63</td>
+                        <td class="tableCell tableCell_A">**</td>
+                        <td class="tableCell tableCell_A">5.9%</td>
+                        <td class="tableCell tableCell_A">0%</td>
+                    </tr>
+                    <tr class = "tableRow">
+                        <td class="tableRowID tableRowID_A">66</td>
+                        <td class="tableRower tableRower_A">FA C20:1 n-9 (weight% of Fatty Acid Methyl Esters) Serum</td>
+                        <td class="tableCell tableCell_A">wFA C20:1 n-9</td>
+                        <td class="tableCell tableCell_A">w%</td>
+                        <td class="tableCell tableCell_A">0.04</td>
+                        <td class="tableCell tableCell_A">0.23</td>
+                        <td class="tableCell tableCell_A">0.04</td>
+                        <td class="tableCell tableCell_A">0.23</td>
+                        <td class="tableCell tableCell_A">0.14</td>
+                        <td class="tableCell tableCell_A">0.13</td>
+                        <td class="tableCell tableCell_A">*</td>
+                        <td class="tableCell tableCell_A">3%</td>
+                        <td class="tableCell tableCell_A">0%</td>
+                    </tr>
+                    <tr class = "tableRow">
+                        <td class="tableRowID tableRowID_A">67</td>
+                        <td class="tableRower tableRower_A">FA C20:2 n-6 (weight% of Fatty Acid Methyl Esters) Serum</td>
+                        <td class="tableCell tableCell_A">wFA C20:2 n-6</td>
+                        <td class="tableCell tableCell_A">w%</td>
+                        <td class="tableCell tableCell_A">0.11</td>
+                        <td class="tableCell tableCell_A">0.26</td>
+                        <td class="tableCell tableCell_A">0.11</td>
+                        <td class="tableCell tableCell_A">0.26</td>
+                        <td class="tableCell tableCell_A">0.18</td>
+                        <td class="tableCell tableCell_A">0.19</td>
+                        <td class="tableCell tableCell_A">****</td>
+                        <td class="tableCell tableCell_A">2%</td>
+                        <td class="tableCell tableCell_A">0%</td>
+                    </tr>
+                    <tr class = "tableRow">
+                        <td class="tableRowID tableRowID_A">68</td>
+                        <td class="tableRower tableRower_A">FA C22:0 (weight% of Fatty Acid Methyl Esters) Serum</td>
+                        <td class="tableCell tableCell_A">wFA C22:0</td>
+                        <td class="tableCell tableCell_A">w%</td>
+                        <td class="tableCell tableCell_A">0.41</td>
+                        <td class="tableCell tableCell_A">0.94</td>
+                        <td class="tableCell tableCell_A">0.41</td>
+                        <td class="tableCell tableCell_A">0.94</td>
+                        <td class="tableCell tableCell_A">0.65</td>
+                        <td class="tableCell tableCell_A">0.7</td>
+                        <td class="tableCell tableCell_A">****</td>
+                        <td class="tableCell tableCell_A">5.5%</td>
+                        <td class="tableCell tableCell_A">0.2%</td>
+                    </tr>
+                    <tr class = "tableRow">
+                        <td class="tableRowID tableRowID_B">69</td>
+                        <td class="tableRower tableRower_B">FA C20:3 n-6 (weight% of Fatty Acid Methyl Esters) Serum</td>
+                        <td class="tableCell tableCell_B">wFA C20:3 n-6</td>
+                        <td class="tableCell tableCell_B">w%</td>
+                        <td class="tableCell tableCell_B">0.81</td>
+                        <td class="tableCell tableCell_B">2.06</td>
+                        <td class="tableCell tableCell_B">0.81</td>
+                        <td class="tableCell tableCell_B">2.06</td>
+                        <td class="tableCell tableCell_B">1.44</td>
+                        <td class="tableCell tableCell_B">1.43</td>
+                        <td class="tableCell tableCell_B">ns</td>
+                        <td class="tableCell tableCell_B">5.5%</td>
+                        <td class="tableCell tableCell_B">2%</td>
+                    </tr>
+                    <tr class = "tableRow">
+                        <td class="tableRowID tableRowID_B">70</td>
+                        <td class="tableRower tableRower_B">FA C20:4 n-6 (weight% of Fatty Acid Methyl Esters) Serum</td>
+                        <td class="tableCell tableCell_B">wFA C20:4 n-6</td>
+                        <td class="tableCell tableCell_B">w%</td>
+                        <td class="tableCell tableCell_B">2.93</td>
+                        <td class="tableCell tableCell_B">6.95</td>
+                        <td class="tableCell tableCell_B">2.93</td>
+                        <td class="tableCell tableCell_B">6.95</td>
+                        <td class="tableCell tableCell_B">4.9</td>
+                        <td class="tableCell tableCell_B">4.98</td>
+                        <td class="tableCell tableCell_B">ns</td>
+                        <td class="tableCell tableCell_B">4.7%</td>
+                        <td class="tableCell tableCell_B">0.2%</td>
+                    </tr>
+                    <tr class = "tableRow">
+                        <td class="tableRowID tableRowID_B">71</td>
+                        <td class="tableRower tableRower_B">FA C23:0 (weight% of Fatty Acid Methyl Esters) Serum</td>
+                        <td class="tableCell tableCell_B">wFA C23:0</td>
+                        <td class="tableCell tableCell_B">w%</td>
+                        <td class="tableCell tableCell_B">0.16</td>
+                        <td class="tableCell tableCell_B">0.39</td>
+                        <td class="tableCell tableCell_B">0.16</td>
+                        <td class="tableCell tableCell_B">0.39</td>
+                        <td class="tableCell tableCell_B">0.26</td>
+                        <td class="tableCell tableCell_B">0.29</td>
+                        <td class="tableCell tableCell_B">****</td>
+                        <td class="tableCell tableCell_B">3.4%</td>
+                        <td class="tableCell tableCell_B">0.5%</td>
+                    </tr>
+                    <tr class = "tableRow">
+                        <td class="tableRowID tableRowID_B">72</td>
+                        <td class="tableRower tableRower_B">FA C20:5 n-3 (weight% of Fatty Acid Methyl Esters) Serum</td>
+                        <td class="tableCell tableCell_B">wFA C20:5 n-3</td>
+                        <td class="tableCell tableCell_B">w%</td>
+                        <td class="tableCell tableCell_B">-0.32</td>
+                        <td class="tableCell tableCell_B">1.84</td>
+                        <td class="tableCell tableCell_B">-0.32</td>
+                        <td class="tableCell tableCell_B">1.84</td>
+                        <td class="tableCell tableCell_B">0.74</td>
+                        <td class="tableCell tableCell_B">0.78</td>
+                        <td class="tableCell tableCell_B">ns</td>
+                        <td class="tableCell tableCell_B">3.7%</td>
+                        <td class="tableCell tableCell_B">0%</td>
+                    </tr>
+                    <tr class = "tableRow">
+                        <td class="tableRowID tableRowID_A">73</td>
+                        <td class="tableRower tableRower_A">FA C24:0 (weight% of Fatty Acid Methyl Esters) Serum</td>
+                        <td class="tableCell tableCell_A">wFA C24:0</td>
+                        <td class="tableCell tableCell_A">w%</td>
+                        <td class="tableCell tableCell_A">0.35</td>
+                        <td class="tableCell tableCell_A">0.88</td>
+                        <td class="tableCell tableCell_A">0.35</td>
+                        <td class="tableCell tableCell_A">0.88</td>
+                        <td class="tableCell tableCell_A">0.61</td>
+                        <td class="tableCell tableCell_A">0.63</td>
+                        <td class="tableCell tableCell_A">ns</td>
+                        <td class="tableCell tableCell_A">3.7%</td>
+                        <td class="tableCell tableCell_A">0.5%</td>
+                    </tr>
+                    <tr class = "tableRow">
+                        <td class="tableRowID tableRowID_A">74</td>
+                        <td class="tableRower tableRower_A">FA C24:1 (weight% of Fatty Acid Methyl Esters) Serum</td>
+                        <td class="tableCell tableCell_A">wFA C24:1</td>
+                        <td class="tableCell tableCell_A">w%</td>
+                        <td class="tableCell tableCell_A">0.64</td>
+                        <td class="tableCell tableCell_A">1.65</td>
+                        <td class="tableCell tableCell_A">0.64</td>
+                        <td class="tableCell tableCell_A">1.65</td>
+                        <td class="tableCell tableCell_A">1.11</td>
+                        <td class="tableCell tableCell_A">1.19</td>
+                        <td class="tableCell tableCell_A">****</td>
+                        <td class="tableCell tableCell_A">4.7%</td>
+                        <td class="tableCell tableCell_A">0.5%</td>
+                    </tr>
+                    <tr class = "tableRow">
+                        <td class="tableRowID tableRowID_A">75</td>
+                        <td class="tableRower tableRower_A">FA C22:5 n-3 (weight% of Fatty Acid Methyl Esters) Serum</td>
+                        <td class="tableCell tableCell_A">wFA C22:5 n-3</td>
+                        <td class="tableCell tableCell_A">w%</td>
+                        <td class="tableCell tableCell_A">0.26</td>
+                        <td class="tableCell tableCell_A">0.74</td>
+                        <td class="tableCell tableCell_A">0.26</td>
+                        <td class="tableCell tableCell_A">0.74</td>
+                        <td class="tableCell tableCell_A">0.52</td>
+                        <td class="tableCell tableCell_A">0.47</td>
+                        <td class="tableCell tableCell_A">****</td>
+                        <td class="tableCell tableCell_A">4.3%</td>
+                        <td class="tableCell tableCell_A">2.7%</td>
+                    </tr>
+                    <tr class = "tableRow">
+                        <td class="tableRowID tableRowID_A">76</td>
+                        <td class="tableRower tableRower_A">FA C22:6 n-3 (weight% of Fatty Acid Methyl Esters) Serum</td>
+                        <td class="tableCell tableCell_A">wFA C22:6 n-3</td>
+                        <td class="tableCell tableCell_A">w%</td>
+                        <td class="tableCell tableCell_A">0.68</td>
+                        <td class="tableCell tableCell_A">3.49</td>
+                        <td class="tableCell tableCell_A">0.68</td>
+                        <td class="tableCell tableCell_A">3.49</td>
+                        <td class="tableCell tableCell_A">1.97</td>
+                        <td class="tableCell tableCell_A">2.21</td>
+                        <td class="tableCell tableCell_A">****</td>
+                        <td class="tableCell tableCell_A">3%</td>
+                        <td class="tableCell tableCell_A">0%</td>
+                    </tr>
+            </table>
+        </div>
+        </div>
+
+        <div class="image-overall" id="CombinedAbsBarplot_sexBloodSummmaryDF_BloodLevel_Type.png">
+            <div class="image-description-box">
+                <div class="image-title">
+                    <p>Ratio of averages for men and women</p>
+                </div>
+                <div class="image-verbose">
+                    <p>This image shows the differences in blood serum levels in
+                                between men and women. Each bar shows the ratio between
+                                the greatest average between the lowest average. Bars to
+                                the left shows ratios in which men have higher average,
+                                while bars to the rights shows ratios in which women have
+                                gretest average. If there is a statistically significant 
+                                difference (p-value < 0.05) the bar is collored with a 
+                                higher saturated color. Sex hormones, particullary
+                                testosterone shows the greatest ratio differences.</p>
+                </div>
+            </div>
+            <img src="/home/gromenawer/Desktop/Amalgamlab/mimisbrunnr/results/biomarkers/images/blood/CombinedAbsBarplot_sexBloodSummmaryDF_BloodLevel_Type.png" width="50%" height="50%" />
+        </div>
+
+        
+        
+
+@@@CENTERCONTENT@@@				
+				
+			</div>
+
+			
+		</div>
+
+	</body>
+
+</html> 

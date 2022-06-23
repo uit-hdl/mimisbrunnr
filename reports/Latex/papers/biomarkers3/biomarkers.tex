@@ -1,0 +1,374 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Wenneker Article
+% LaTeX Template
+% Version 2.0 (28/2/17)
+%
+% This template was downloaded from:
+% http://www.LaTeXTemplates.com
+%
+% Authors:
+% Vel (vel@LaTeXTemplates.com)
+% Frits Wenneker
+%
+% License:
+% CC BY-NC-SA 3.0 (http://creativecommons.org/licenses/by-nc-sa/3.0/)
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\documentclass[10pt, a4paper, onecolumn]{article} % 10pt font size (11 and 12 also possible), A4 paper (letterpaper for US letter) and two column layout (remove for one column)
+
+\input{structure.tex} % Specifies the document structure and loads requires packages
+
+%----------------------------------------------------------------------------------------
+%	ARTICLE INFORMATION
+%----------------------------------------------------------------------------------------
+
+\title{{Obesity and social network influence in inflammatory biomarkers in a general youth population}} % The article title
+
+\author{
+	\authorstyle{Dina B. Stensen, MD\textsuperscript{1,2,$\dagger$} , Rafael A. Nozal Cañadas, MSc\textsuperscript{3}, Christopher Sivert Nielsen, PhD \textsuperscript{4,5}, Anne Merethe Hanssen, PhD \textsuperscript{6}, Lars Ailo Bongo, PhD \textsuperscript{3}, Anne-Sofie Furberg, PhD \textsuperscript{7,8}} % Authors
+	\newline\newline % Space before institutions
+	\textsuperscript{1}\institution{Department of Community Medicine, Faculty of Health Sciences, UiT The Arctic University of Norway, Hansine Hansens veg 18, 9019 Tromsø, Norway}\\ 
+	\textsuperscript{2}\institution{Division of Internal Medicine, University Hospital of North Norway, Sykehusvegen 38, 9019 Tromsø, Norway}\\ 
+	\textsuperscript{3}\institution{Department of Computer Science, UiT The Arctic University of Norway, Hansine Hansens veg 54, 9019 Tromsø, Norway}\\ 
+	\textsuperscript{4}\institution{Department of Chronic Diseases and Ageing, Norwegian Institute of Public Health, Marcus Thranes gate 6, 0473 Oslo, Norway}\\ 
+	\textsuperscript{5}\institution{Department of Pain Management and Research, Division of Emergencies and Critical Care, Oslo University Hospital, Postboks 4956 Nydalen, 0424 Oslo, Norway  }\\ 			
+	\textsuperscript{6}\institution{Department of Pain Management and Research, Division of Emergencies and Critical Care, Oslo University Hospital, Postboks 4956 Nydalen, 0424 Oslo, Norway  }\\ 	
+	\textsuperscript{7}\institution{Department of Microbiology and Infection Control, Division of Internal Medicine, University Hospital of North Norway, Sykehusvegen 38, 9019 Tromsø, Norway}\\ 		
+	\textsuperscript{8}\institution{Faculty of Health and Social Sciences, Molde University College, Britvegen 2, 6410 Molde, Norway}\\
+	\textsuperscript{$\dagger$}\institution{Corresponding author: dina.b.stensen@uit.no }\\ }
+
+
+\date{\today} % Add a date here if you would like one to appear underneath the title block, use \today for the current date, leave empty for no date
+
+%----------------------------------------------------------------------------------------
+
+\begin{document}
+
+\maketitle % Print the title
+
+\thispagestyle{firstpage} % Apply the page style for the first page (no headers and footers)
+
+%----------------------------------------------------------------------------------------
+%	List of todos
+%----------------------------------------------------------------------------------------
+
+\listoftodos[Notes]
+
+%----------------------------------------------------------------------------------------
+%	List of tables and figures
+%----------------------------------------------------------------------------------------
+\listoffigures
+\listoftables
+
+%----------------------------------------------------------------------------------------
+%	ABSTRACT
+%----------------------------------------------------------------------------------------
+
+\section{Abstract}
+
+\subsection{Methods}
+
+The Fit Futures 1 study collected interview data on social contact among 1038 first level students in the same high school district in Norway. In this context, we also collected blood samples (n = 937), OLINK inflamatory proteomic data (n = 936) and did antropomorphic measurements (n = 1034). Social networks were constructed from self-reported social contact between participants.\\
+
+All statistics summary things goes here. \\
+
+\subsection{Findings}
+
+There is an association between lifestyle factors, diseases, vitamim D levels and social interaction with several biomarkers.\\
+
+\subsection{Interpretation}
+
+We found results that might suggest that people in your social network may influence your inflammatory response.\\
+
+\subsection{Funding}
+
+The Northern Norway regional Health Authorities (grant number HNF1457-19) funded this study.\\
+
+
+%----------------------------------------------------------------------------------------
+%	Introduction
+%----------------------------------------------------------------------------------------
+ 
+\section{Introduction}
+
+Obesity is a condition associated with several health problems including the number one cause of death in almost every socio-economic group, cardiovascular diseases, as well as many types of cancers and other complications.\\
+
+While there are genetic conditions associated with it, the most common causes of obesity are excessive food consumption or a lack of exercise. In simple terms your amount of body fat is simply the difference between your energy intake and energy output. These two factors are heavily influenced by your lifestyle, which in term are impacted by your friends. Obesity, despite not been caused by a viral, bacterial, or parasitic agent, is nevertheless contagious among close group of friends ~\cite{ref:MainObesityArticle}. Even though it is impossible for an individual to perform lipogenesis with what somebody else eats, people tend to behave in the same way to their peers, and end up eating and exercising similarly as their direct contact network.\\
+
+Obesity is associated with the inflammatory response of your immune system. While the exact mechanism is unclear, it might be due that a poor immune response that otherwise would have curled the infiltration of opportunistic bacteria, thus causing an unwelcome inflammatory response. In this study we explore the possibility that people in the same social network can influence your influence response, as well as how much these biomarkers are expressed with respect to your anthropometric variables. Answering two fundamental questions:\\
+
+\begin{itemize}
+
+  \item Does the spread of levels of obesity also spread the biomarkers levels?\\
+  
+  \item How does the average proteomic profile compare between different categories of obesity?
+  
+\end{itemize}
+
+
+%----------------------------------------------------------------------------------------
+%	Methods
+%----------------------------------------------------------------------------------------
+ 
+
+\section{Methods}
+
+\subsection{Population and study design}
+
+The Tromsø Study Fit Futures 1 (TFF1) is a health survey conducted from 2010 to 2011 in the duration of 8 months. All first-year high school students in the municipalities of Tromsø and Balsfjord, Norway were invited. TFF1 included students from eight schools consecutively. A total of 1117 youths were invited and 93\% attended, 508 girls and 530 boys.\\
+ 
+Participants had a one-day visit at The Clinical Research Unit at the University Hospital of North Norway (UNN), including clinical examinations, microbiological samples, blood samples, a web-based general questionnaire, and an interview ~\cite{ref:FitFutures}. All procedures were performed by trained research nurses.\\
+
+\subsection{Host risk factors}
+
+Height and weight were measured on an electronic scale with participants wearing light clothing and no footwear. BMI was calculated as weight (kg) divided by the squared height ($m^{2}$). From the web-based questionnaire we got information about lifestyle including, sex, age, type of studies and recreational physical activity. \\
+
+HERE SOME INFORMATION ABOUT HOW THE BLOOD WAS EXTRACTED IS MISSING.\\
+
+\subsection{Olink Target 96 Inflammation} 
+
+The 92 bioarkers were analyzed at the Clinical Biomarkers Facility, SciLifeLab, (Uppsala, Sweden), using the Target 96 Inflammation panel from OLINK Holding AB (Uppsala, Sweden) ~\cite{ref:OlinkInflammation} . From these 92 biomarkers we have two different values. The LOD (Limit of Detection) value, and the NDL ( I still don’t know what NDL actually means ) value. The LOD level is the lowest value that can be detected, so any number lower than that is censored to the left. The NDL is the real value measured by the machine and can be under the LOD level. When this happens, it cannot be guaranteed that the value is correct.\\
+
+All the biomarkers detailed information, can be found in ~\ref{table:SuplementaryAllBiomarkers} on page~\pageref{table:SuplementaryAllBiomarkers}.\\
+
+\subsection{Social network analysis}
+
+The social network was constructed based on the following question in the interview: “Which students have you had most contact with the last week? Name up to 5 students at your own school or other schools in Tromsø and Balsfjord.”. Reciprocity in the nomination was not mandatory. For each of the nominations, five “yes/no” questions assessed the type of contact they had with their nominations: “Do you have physical contact?”, “Are you together at school?”, “Are you together at sports?”, “Are you together at home?”, “Are you together at other places?”. This resulted in five social networks: Physical Network, School Network, Sport Network, Home Network, and Other Network (Supplementary Figure 2). Adding all the relationships together formed a sixth network that was called the Overall Network. To evaluate if the friends mentioned were representative for the participants´ social network, the following question was asked: “To what degree does this table of friends give an overview of your social network? Please indicate on a scale from 0 (small degree) to 10 (high degree).”  Nominated friends that did not participate in TFF1 were excluded from the analysis (n=134). Each student is represented by one node in the network. Each relationship is represented by an undirected edge, i.e., line, in the network.\\
+
+\subsection{Statistical analysis} 
+
+\subsubsection{Software}
+
+Statistical analyses was performed by using R version 3.6.3 and R Studio 1.3.1093. Noticeable libraries were "igraph" ~\cite{ref:igraph} "statnet" (sna, egrm) ~\cite{ref:statnet} for linear autocorrelation and EGRM analysis, and “ggraph” ~\cite{ref:ggraph} for display of results.\\
+
+
+\subsubsection{Host factors}
+
+For the evaluation of host risk factors for any categorical data, we applied Xi-square test, with Yates's correction for 2x2 tables and Fisher correction when applicable. In all cases, all the assumptions for the Xi-square test applied.\\
+
+\subsubsection{Social influence}
+
+PROPER CITATIONS HERE
+
+The connection between nodes was analyzed using ERGM or Additive and Multiplicative Effects models (Supplementary Table 1 and Supplementary Figure 5). Patterns of connections (non-carriers connected to non-carriers, non-carriers connected to carriers, carriers connected to carriers) were analyzed by using Simulation Investigation for Empirical Network Analysis, an autocorrelation model [28] (Table 5). Further analysis was done with bootstrapping simulated networks against the observed network (Tables 2, 3 and Supplementary Table 2), descriptive analysis (Supplementary Table 3), and logistic regression (Supplementary Table 4, Figure 4). The mathematical background for the statistical methods is described in the supplementary material.\\
+
+\subsubsection{Ethics}
+ 
+A declaration of consent was signed by each participant in TFF1, participants younger than 16 years of age had to bring written consent from a parent or guardian. TFF1 was approved by The Regional Committee of Medical and Health Research Ethics (REK) and the Norwegian Data Protection Authority. The present study was approved by REK North, reference 2018/1975/REK Nord. \\
+
+%----------------------------------------------------------------------------------------
+%	Results
+%----------------------------------------------------------------------------------------
+
+\section{Results}
+
+\subsection{Host factors}
+
+There are 3 major groups of variables that we are stuying:\\
+
+\begin{itemize}
+
+  \item \textbf{Antropometric variables:} Waist and hip circunference (cm), height (cm), weight (kg), BMI ($km/m^{2}$), heart rate (bpm), systolic and diastolic blood preasure (mmHg) \\
+  
+  \item\textbf{ Questionary data:} Sex, self reported general health, recreational drugs frequency (cigarretes, snuff and alcohol), frequency of sport activity outside school hours, method of transportation to and from school during summer and winter, screen time (computer, tv, mobile phone or tablet), frequency of dietary habits (lean fish, fat fish, cheese, chocolate, fruits, vegetables, dairy products, fruit juice without sugar, fruit juice with sugar, other sugar drinks, water) and highschool affiliation.
+
+  \item\textbf{ Staphilococcus Aureus carrier status:} We measure the carrier status in the nose and throat, with both a direct culture and enrich broth (REFERENCE TO THE SA Study here)\\
+    
+  \item \textbf{Blood variables:} Please refer to supplementary table for a detailed summary\\
+  
+\end{itemize}
+
+\subsection{Summary statistics}
+
+\subsubsection{Sex differences}
+
+Men and women have different biological processes that affect the biomarkers levels, regardless of their social network or their current health status. This is appreciated in figure \ref{fig:BiomarkersBySexDifference} and supplementary table \ref{table:SexDifferencesBiomakers} where we provide an overview of all biomarkers with respect sex. Because the difference between sex is sustancial, we stratified the analysis with respect sex.\\
+
+\input{../../../../results/biomarkers/images/general/CombinedAbsBarplot_sexInflamatorySummmaryDF_Protein_Type.tex}	
+
+Furthermore, we can also appreciate the antropometric differences in waist perimeter, height, and weight, in table \ref{table:SexDifferencesAntropometryTable} and supplementary figure \ref{fig:AntropometryBySexDifference} .\\
+
+\input{../../../../results/biomarkers/tables/LatexTable_SexDifferencesAntropometryTable.tex}	
+
+There are also some significant differences between each of the categorical variables in the host factor, summarized in \ref{table:SexDifferencesHostFactorsTable} , detailed information for each variable can be found in tables across supplementary chapter \ref{supplementaryHostFactors}. \\
+
+\input{../../../../results/biomarkers/tables/LatexTable_SexDifferencesHostFactorsTable.tex}	
+
+Finally, summarized information about the blood data can be found in \ref{supplementaryBlood}.\\
+
+\subsubsection{LOD vs NDL}
+
+In figure \ref{fig:LODLevelsOverview} we see an overview of all biomarkers levels. Since most of the collected values are well above the LOD, we decided to run all the analysis usind the NDL values. However, please notice that for biomarkers with very high proportion of Under LOD values, the result of the analysis is not guaranteed.\\
+
+\input{../../../../results/biomarkers/images/general/CombinedRelBarplot_longLODStats_Type_Protein.tex}	
+
+
+\subsection{Biomarkers}
+
+In this section, we show all different test done for each host factor with respect the 92 biomarkers.\\
+
+\subsubsection{Categorical host factors and biomarkers}
+
+We performed simple t-testing to find out if there is any association between the categorical data in the host factors and the biomarkers. In this section we only show the results that are statistically significant for either men or women, corrected for both Benjamini in table \ref{table:BiomarkersBothPBenjamini} and Bonferroni in table \ref{table:BiomarkersBothPBonferroni}. You can find results that weren't corrected in supplementary materials in section \ref{biomarkersSimplePvalues}. \\
+
+\input{../../../../results/biomarkers/tables/LatexTable_BiomarkersBothPBenjamini.tex}	
+
+\input{../../../../results/biomarkers/tables/LatexTable_BiomarkersBothPBonferroni.tex}	
+
+\subsubsection{Antropometry and biomarkers}
+
+We performed simple F-statistics againts all antrometric variables. Only values significant after bonferroni are shown.\\
+
+\input{../../../../results/biomarkers/tables/LatexTable_BiomarkersAntropometryBonferroniMen.tex}	
+
+\input{../../../../results/biomarkers/tables/LatexTable_BiomarkersAntropometryBonferroniWomen.tex}	
+
+\subsubsection{Blood and biomarkers}
+
+Same as before, we performed simple F-statistics againts all numerical variables related with blood. Only values significant after bonferroni are shown.\\
+
+\input{../../../../results/biomarkers/tables/LatexTable_BiomarkersBloodBonferroniMen.tex}	
+
+\input{../../../../results/biomarkers/tables/LatexTable_BiomarkersBloodBonferroniWomen.tex}	
+
+\subsection{Social Influence}
+
+\subsubsection{Bootstrapping and simulation}
+
+\subsubsection{Principal component analysis}
+
+\subsubsection{Friendship distance matrix}
+
+We did a selection of people in the social network. For each person who has at least 2 friends of the same sex, and using the network of same sex only, we measure the distance between people who are friends and compared againts people who are not friend. We compared for signicant between the diferences of distance averages of each biomarker, meaning that if there is significance, your friends and your biomarkers tend to converge to a similar value, hence affecting each others.\\
+
+
+
+\subsection{Biomarkers and diseases}
+
+\subsection{Biomarkers and medicine}
+
+
+
+
+%---------------------------------------------------------------------------------------------
+%	Discussion
+%---------------------------------------------------------------------------------------------
+
+\section{Discussion}
+
+
+
+
+%---------------------------------------------------------------------------------------------
+%	Filler section, this does nothing for the article, is just so you can test and run things
+%---------------------------------------------------------------------------------------------
+
+\input{toysection.tex}
+
+%----------------------------------------------------------------------------------------
+%	BIBLIOGRAPHY
+%----------------------------------------------------------------------------------------
+
+\bibliography{bibliography} 
+\bibliographystyle{ieeetr}
+
+
+%----------------------------------------------------------------------------------------
+
+%----------------------------------------------------------------------------------------
+%	Supplementary material
+%----------------------------------------------------------------------------------------
+
+\onecolumn
+
+\section{Suplementary material}
+
+In this section, we present some useful extra information\\
+
+\subsection{Biomarkers}
+
+\input{../../../../results/biomarkers/tables/LatexTable_SuplementaryAllBiomarkers.tex}	
+
+\input{../../../../results/biomarkers/tables/LatexTable_SexDifferencesBiomakers.tex}	
+
+\subsection{Antropometry}
+
+\input{../../../../results/biomarkers/images/antropometry/AntropometryGrid.tex}
+
+\subsection{Host factors tables}
+
+\label{supplementaryHostFactors}
+
+\input{../../../../results/biomarkers/tables/LatexTable_CategoricalSexDifferencesSex.tex}
+\input{../../../../results/biomarkers/tables/LatexTable_CategoricalSexDifferencesGeneralHealth.tex}
+\input{../../../../results/biomarkers/tables/LatexTable_CategoricalSexDifferencesBMICategorical.tex}
+\input{../../../../results/biomarkers/tables/LatexTable_CategoricalSexDifferencesSmoke.tex}
+\input{../../../../results/biomarkers/tables/LatexTable_CategoricalSexDifferencesSnuff.tex}
+\input{../../../../results/biomarkers/tables/LatexTable_CategoricalSexDifferencesAlcohol.tex}
+\input{../../../../results/biomarkers/tables/LatexTable_CategoricalSexDifferencesSportsLeisure.tex}
+\input{../../../../results/biomarkers/tables/LatexTable_CategoricalSexDifferencesSummerTransport.tex}
+\input{../../../../results/biomarkers/tables/LatexTable_CategoricalSexDifferencesWinterTransport.tex}
+\input{../../../../results/biomarkers/tables/LatexTable_CategoricalSexDifferencesScreenTime.tex}
+\input{../../../../results/biomarkers/tables/LatexTable_CategoricalSexDifferencesLeanFishFrequency.tex}
+\input{../../../../results/biomarkers/tables/LatexTable_CategoricalSexDifferencesFatFishFrequency.tex}
+\input{../../../../results/biomarkers/tables/LatexTable_CategoricalSexDifferencesCheeseFrequency.tex}
+\input{../../../../results/biomarkers/tables/LatexTable_CategoricalSexDifferencesChocolateFrequency.tex}
+\input{../../../../results/biomarkers/tables/LatexTable_CategoricalSexDifferencesFruitsFrequency.tex}
+\input{../../../../results/biomarkers/tables/LatexTable_CategoricalSexDifferencesVegetablesFrequency.tex}
+\input{../../../../results/biomarkers/tables/LatexTable_CategoricalSexDifferencesDairyFrequency.tex}
+\input{../../../../results/biomarkers/tables/LatexTable_CategoricalSexDifferencesFruitJuiceFrequency.tex}
+\input{../../../../results/biomarkers/tables/LatexTable_CategoricalSexDifferencesSugarJuiceFrequency.tex}
+\input{../../../../results/biomarkers/tables/LatexTable_CategoricalSexDifferencesSugarDrinkFrequency.tex}
+\input{../../../../results/biomarkers/tables/LatexTable_CategoricalSexDifferencesSweetenerDrinkFrequency.tex}
+\input{../../../../results/biomarkers/tables/LatexTable_CategoricalSexDifferencesWaterFrequency.tex}
+\input{../../../../results/biomarkers/tables/LatexTable_CategoricalSexDifferencesHighSchool.tex}
+%\input{../../../../results/biomarkers/tables/LatexTable_CategoricalSexDifferencesD_NasalCarrier.tex}
+%\input{../../../../results/biomarkers/tables/LatexTable_CategoricalSexDifferencesD_ThroatCarrier.tex}
+%\input{../../../../results/biomarkers/tables/LatexTable_CategoricalSexDifferencesE_NasalCarrier.tex}
+%\input{../../../../results/biomarkers/tables/LatexTable_CategoricalSexDifferencesE_ThroatCarrier.tex}
+
+\subsection{Blood}
+\label{supplementaryBlood}
+
+\input{../../../../results/biomarkers/tables/LatexTable_SummaryBloodVariablesTable.tex}
+
+
+\subsection{Biomarkers signficance without correction}
+\label{biomarkersSimplePvalues}
+
+\input{../../../../results/biomarkers/tables/LatexTable_BiomarkersBothPSimple1.tex}
+\input{../../../../results/biomarkers/tables/LatexTable_BiomarkersBothPSimple2.tex}
+\input{../../../../results/biomarkers/tables/LatexTable_BiomarkersBothPSimple3.tex}
+\input{../../../../results/biomarkers/tables/LatexTable_BiomarkersBothPSimple4.tex}
+\input{../../../../results/biomarkers/tables/LatexTable_BiomarkersBothPSimple5.tex}
+\input{../../../../results/biomarkers/tables/LatexTable_BiomarkersBothPSimple6.tex}
+\input{../../../../results/biomarkers/tables/LatexTable_BiomarkersBothPSimple7.tex}
+\input{../../../../results/biomarkers/tables/LatexTable_BiomarkersBothPSimple8.tex}
+
+\newpage
+
+\twocolumn
+
+\section{Change History}
+
+This section helps keeping track of all the changes done in the document. Here is where all the TODO notes go when they are resolved. And you would find something like this so it is not repeated again\\
+
+\subsection*{0.1}
+
+Something changed for the first time, and here is why it happens
+
+\subsection*{0.2}
+
+The change was bad. Somebody suggested that we undo the change and just clarify the second paragraph.
+
+\subsection*{0.22}
+
+We decided that dogs should not also be included in the results part, the article will talk only about humans from now on.
+
+
+\end{document}

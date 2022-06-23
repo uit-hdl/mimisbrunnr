@@ -1,0 +1,766 @@
+%*****************************************
+\chapter{Metadata}\label{ch:metadata}
+%*****************************************
+
+
+\section{Intro}
+
+This chapter describes all the data we have in the original files. It does not cover any transformation or cleaning of the data, this will be explained in the next chapter. \vspace{3 mm}
+
+\section{Original files}
+
+The data use in the analysis comes from several different original files that we merge together. Here we describe the originins of each file and a brief description of what it contains. A detailed description for each variable is found in the next section of this document.\vspace{3 mm}
+
+All of these files were converted into a more user friendly CSV format without any modification to the data itself. We build upon these CSV files later on to apply all the transformations. Notice that some of the variables are repeated and contained across these files. In here we only list the first instance in which we encounter them.\vspace{3 mm}
+
+\subsection{Basic information}
+
+\begin{table}[H]
+    \centering
+
+    \label{table:Original_Files}
+    
+	\renewcommand{\arraystretch}{1.5}
+
+    \begin{tabular}{| l | p{5cm}  l | l}
+        \hline
+        \rowcolor[HTML]{FFAAAA}
+
+        \textbf{Filename} & \textbf{Description} & \textbf{Date received} \\ 
+        \hline 
+
+        \multicolumn{1}{l|}{\detokenize{PERSKEY_Rafael_s aureus_19022020.xls}} & For the FF1 period only, all the S.Aureus information regarding direct cultures and enrichment broths, SPA types and dates of cultures. All the social network information including network representativeness grading. Some phenotypes variables: ID, sex, age, highschool information, smoking habit, snuff habits, sports habits, BMI, use of actibiotics including frequency and brand & 2020/02/21\\ 
+        
+        \multicolumn{1}{l|}{\detokenize{data_ut_11Juni2019.dta}} & For the FF1 period: Antropometry data, diseases, some medication usage, menstruation cycle, hormonal contraceptive information, some of the blood serum analysis variables, and puberty development. For the FF11 and FF12 periods, the follow up status on colonization. & 2021/02/26 \\
+         
+        \multicolumn{1}{l|}{\detokenize{eutro_rafael_paakoblet.sav}} & For the FF1 period only. Full medication data, full blood serum, full biomarkers, household information, etchnicity, hygiene and sunbathing & 2021/08/04 \\ 
+        
+        \multicolumn{1}{l|}{\detokenize{eutro.sav}} & For FF1 period, diet information. For FF12 period, follow up in the social network information.  & 2021/10/05  \\ 
+
+        \multicolumn{1}{l|}{\detokenize{eutro.sav}} & For FF2 period, basic anthropometry variables (no DEXA scans available so far for any period).  & 2021/10/05  \\ 
+
+    \end{tabular}%
+
+    \caption{Summary of the available Fit future data and received date.}
+    
+\end{table}
+
+
+The original file with all the metadata for the phenotype is called \detokenize{"20180601-Komplett Metadata FF1.xls"}, in here we can find 1514 different variables about many different topics. Furthermore, this file doesn't contain all the possible variables as we will see later; for example the high school ID is not described here.\vspace{3 mm}
+
+The file for the S.Aureus metadata is named \detokenize{metadata_nasal_throat_swabs_FF1_20022020.xlsx}. We only have access to a subset of all those variables.\vspace{3 mm}
+
+The first file where the actual data is stored is called \detokenize{"PERSKEY_Rafael_s aureus_19022020.xls"} , regarding the phenotypes, network, and S.Aureus. This however is a proprietary file of ".xls" format that can't be read directly by many programs without a proper transformation. To solve that, I converted that file into a ".csv" file which is a better standard for the computers. The file that I use to read all the data that we use in the scripts is located in: \vspace{3 mm}
+
+\detokenize{"../data/aureus/csv/saureus_19022020.csv"} \vspace{3 mm}
+
+with SHA1: \vspace{3 mm}
+
+c4d047e998dd5d3701f4ce416b4fbebcd2da37a0 \vspace{3 mm}
+
+The second file that contain actual info is called \detokenize{"data_ut_11Juni2019.dta"}, and this contain redundant data which we partially have in the previous file, plus the variables regarding anthropometry, medicine use, contraceptive use, and some limited biomarkers. Again, this .dta file is proprietary, and popular with Stata users. So I converted this into another csv file:\vspace{3 mm}
+
+\detokenize{"../data/hc/csv/data_ut_11Juni2019.csv"} \vspace{3 mm}
+
+with SHA1: \vspace{3 mm}
+
+be0593bf4d5e62bcf92ca523ced0a12225a8a02a \vspace{3 mm}
+
+So far, all these data files contain data which is still "dirty". Meaning that we have numbers instead of categories for each variable (what does 1 means? man or woman?), everything is mixed together, there are a lot of missing numbers that indicates that something is unknown, and so  on. \vspace{3 mm}
+
+In order to clean the data, I use the script "dataCleaning.R". Later on I will explain what this script does specifically in another section of this document. Once the data is "clean" and we filter out the values that we don't want, then we can proceed with our analysis.\vspace{3 mm}
+
+For now, let focus on describing the actual variables we have in these files. The following tables are divided by topic, so variables related to the same topic are in the same table.\vspace{3 mm}
+
+\section{Data description}
+
+\subsection{Personal key}
+
+Each individual have a personal key described in the \detokenize{"pers_key_ff1"} variable. The original key looks like this: "12345678" and is simply a 8 digit unique key for each of the 1038 individuals in that file. \vspace{3 mm}
+
+\subsection{Basic information}
+
+\begin{table}[H]
+    \centering
+
+    \label{table:Basic_info_Original_Data}
+    
+	\renewcommand{\arraystretch}{1.5}
+
+    \begin{tabular}{| l | p{5cm}  l }
+        \hline
+        \rowcolor[HTML]{FFAAAA}
+
+        \textbf{Name} & \textbf{Description} \\ 
+        \hline 
+
+        \multicolumn{1}{l|}{\detokenize{SEX_FF1}} & Sex                           \\ 
+        \multicolumn{1}{l|}{\detokenize{AGE_FF1}} & Age at the time of screening  \\ 
+
+
+    \end{tabular}%
+
+    \caption{Table with the original data for the basic information variables. Note that we don't have a date of birth, so the age variable is a very limited numerical variable.}
+    
+\end{table}
+
+\subsection{School and education}
+
+\begin{table}[H]
+    \centering
+
+    \label{table:school_and_education_Original_Data}
+
+	\renewcommand{\arraystretch}{1.5}
+
+    \begin{tabular}{| l | l }
+        \hline
+        \rowcolor[HTML]{FFAAAA}
+
+        \textbf{Name} & \textbf{Description} \\ 
+        \hline 
+
+        \multicolumn{1}{l|}{\detokenize{HIGH_SCHOOL_NAME_FF1}}         & School ID  (Not described in the metadata.) \\ 
+        \multicolumn{1}{l|}{\detokenize{HIGH_SCHOOL_CLASS_FF1}}        & Class ID   (Not described in the metadata.) \\ 
+        \multicolumn{1}{l|}{\detokenize{HIGH_SCHOOL_PROGRAMME_FF1}}    & Study subprogram  (Not described in the metadata.) \\ 
+        \multicolumn{1}{l|}{\detokenize{HIGH_SCHOOL_MAIN_PROGRAM_FF1}} & Main high school program (vocational program)  \\ 
+
+    \end{tabular}%
+    
+
+    \caption{Table with the original data for the education variables.}
+    
+\end{table}
+
+\subsection{Recreational Drugs}
+
+\begin{table}[H]
+    \centering
+
+    \label{table:Recreational_drugs_info_Original_Data}
+    
+	\renewcommand{\arraystretch}{1.5}
+
+    \begin{tabular}{| l | l }
+        \hline
+        \rowcolor[HTML]{FFAAAA}
+
+        \textbf{Name} & \textbf{Description} \\ 
+        \hline 
+
+        \multicolumn{1}{l|}{\detokenize{SMOKE_FF1}} & Do you smoke?     \\ 
+        \multicolumn{1}{l|}{\detokenize{SNUFF_FF1}} & Do you use snuff? \\ 
+        \multicolumn{1}{l|}{\detokenize{ALCOHOL_FREQUENCY_FF1}} & How often do you drink alcohol? \\ 
+
+    \end{tabular}%
+
+    \caption{Table with the original data for the recreational drugs variables.}
+    
+\end{table}
+
+\subsection{Physical Activity}
+
+\begin{table}[H]
+    \centering
+
+    \label{table:Physical_activity_info_Original_Data}
+    
+	\renewcommand{\arraystretch}{1.5}
+
+    \begin{tabular}{| l | p{10cm}  l }
+        \hline
+        \rowcolor[HTML]{FFAAAA}
+
+        \textbf{Name} & \textbf{Description} \\ 
+        \hline 
+
+        \multicolumn{1}{l|}{\detokenize{PHYS_ACT_LEISURE_FF1}}         & Exercise and physical exertion in leisure time. If your activity varies much, for example between summer and winter, then give an average. The question refer only to the last twelve months. \\ 
+		\multicolumn{1}{l|}{\detokenize{PHYS_ACT_OUTSIDE_SCHOOL_FF1}}  & Are you actively doing sports or physical activity (e.g. skateboarding, football, dancing, running) outside school hours? \\ 
+
+    \end{tabular}%
+
+    \caption{Table with the original data for the physical information variables.}
+    
+\end{table}
+
+\subsection{Anthropometry}
+
+\begin{table}[H]
+    \centering
+
+    \label{table:Anthropometry_original_data}
+    
+	\renewcommand{\arraystretch}{1.5}
+
+    \begin{tabular}{| l | l }
+        \hline
+        \rowcolor[HTML]{FFAAAA}
+
+        \textbf{Name} & \textbf{Description} \\ 
+        \hline 
+
+        \multicolumn{1}{l|}{\detokenize{HEIGHT_FF1}} & Body height in cm measured at screening       \\
+        \multicolumn{1}{l|}{\detokenize{WEIGHT_FF1}} & Body weight in kg measured at screening       \\         
+        \multicolumn{1}{l|}{\detokenize{WAIST1_FF1}} & Waist circumference, first measurement (cm )  \\         
+        \multicolumn{1}{l|}{\detokenize{HIP1_FF1}}   & Hip circumference, first measurement (cm)     \\         
+        \multicolumn{1}{l|}{\detokenize{WAIST2_FF1}} & Waist circumference, second measurement (cm)  \\         
+        \multicolumn{1}{l|}{\detokenize{HIP2_FF1}}   & Hip circumference, second measurement (cm)    \\         
+        \multicolumn{1}{l|}{\detokenize{BMI_FF1}}    & BMI at the time of screening                 (Not described in the metadata.) \\ 
+        
+            
+    \end{tabular}%
+
+    \caption{Table with the original data for anthropometric variables. Note that in the TSD we have extended information about the DXA scans.}
+
+\end{table}
+
+
+\subsection{Medicines}
+
+\begin{table}[H]
+    \centering
+
+    \label{table:Medicines_original_data}
+    
+	\renewcommand{\arraystretch}{1.5}
+
+    \begin{tabular}{| l | p{10cm}  l }
+        \hline
+        \rowcolor[HTML]{FFAAAA}
+
+        \textbf{Name} & \textbf{Description} \\ 
+        \hline 
+
+
+		\multicolumn{1}{l|}{\detokenize{ANTIBIOTICS_FF1}}
+		& Have you taken any antibiotics (tablets or oral suspensions, nasal ointments, eye drops or eye ointment applicated in the nose/eye) the last 24 hours? \\ 
+		
+		\multicolumn{1}{l|}{\detokenize{ANTIBIOTICS_BRAND1_FF1}}
+		& If you have taken any antibiotics the last 24 hours, what brand (inc.strength) did you take? \\ 
+		
+		\multicolumn{1}{l|}{\detokenize{ANTIBIOTICS_ATC1_FF1}}
+		& If you have taken any antibiotics the last 24 hours, ATC-code? \\
+		
+		\multicolumn{1}{l|}{\detokenize{ANTIBIOTICS_BRAND2_FF1}}
+		& If you have taken any antibiotics the last 24 hours, what brand (inc.strength) did you take? \\
+		
+		\multicolumn{1}{l|}{\detokenize{ANTIBIOTICS_ATC2_FF1}}
+		& If you have taken any antibiotics the last 24 hours, ATC-code? \\ 
+
+		\multicolumn{1}{l|}{\detokenize{MEDICATION_DAILY_FF1}}
+		& Do you take any medicine daily or regularly? \\
+		
+		\multicolumn{1}{l|}{\detokenize{MEDICATION_BRAND1_FF1}}
+		& If you take any medication, what brand (inc.strength) do you take - 1? \\ 
+
+		\multicolumn{1}{l|}{\detokenize{MEDICATION_ATC1_FF1}}
+		& If you take any medication, ATC-code - 1? \\ 
+		
+		\multicolumn{1}{l|}{\detokenize{MEDICATION_REGULAR1_FF1}}
+		& How frequent do you take the medication - 1? \\ 
+
+        \multicolumn{1}{l|}{\detokenize{ -- Rest of regular medicines --}}
+        & The previous rows repeat for Regular medicines 1, 2, 3, 4, and 5.\\		
+
+		\multicolumn{1}{l|}{\detokenize{MEDICATION_OTHER_FF1}}
+		& If you take any medication, unknown or not listed brand? \\ 
+
+		\multicolumn{1}{l|}{\detokenize{MEDICATION_OTHER_DESC_FF1}}
+		& If you take any medication, unknown or not listed medicine description \\ 
+
+    \end{tabular}%
+
+    \caption{Table with the original data for medicine intake related variables. Contraceptives are also medicine, but we explore then in a different section specifically through out the whole document.}
+
+\end{table}
+
+
+\subsection{Diseases}
+
+\begin{table}[H]
+    \centering
+
+    \label{table:Diseases_original_data}
+    
+	\renewcommand{\arraystretch}{1.5}
+
+    \begin{tabular}{| l | p{10cm}  l }
+        \hline
+        \rowcolor[HTML]{FFAAAA}
+
+        \textbf{Name} & \textbf{Description} \\ 
+        \hline 
+
+
+		\multicolumn{1}{l|}{\detokenize{CHRONIC_DISEASE_FF1}}
+		& Do you have any chronic or persistent disease? \\ 
+		
+		\multicolumn{1}{l|}{\detokenize{DIAGNOSIS_CHRONIC_DISEASE1_FF1}}
+		& If you have any chronic or persistent disease, what diagnosis - 1? \\ 
+		
+		\multicolumn{1}{l|}{\detokenize{ICD10_CHRONIC_DISEASE1_FF1}}
+		& If you have any chronic or persistent disease, ICD10 -code 1? \\
+		
+        \multicolumn{1}{l|}{\detokenize{ -- Rest of Chronic Diseases --}}
+        & The previous rows repeat for Chronic Disease 1, 2, 3, 4, and 5.\\		
+
+		\multicolumn{1}{l|}{\detokenize{CHRONIC_DISEASE_OTHER_FF1}}
+		& If you have any chronic or persistent disease, other symptoms? \\ 
+		
+		\multicolumn{1}{l|}{\detokenize{CHRONIC_DISEASE_OTHER_DESC_FF1}}
+		& If you have any chronic or persistent disease, other chronic symptom description? \\
+
+		\multicolumn{1}{l|}{\detokenize{DIABETES_FF1}}
+		& Do you have diabetes? \\
+
+            
+
+
+
+		\multicolumn{1}{l|}{\detokenize{ICHY_SKIN_FF1}}
+		& Have you had ichy skin rash during the last 12 months? \\ 
+		
+		\multicolumn{1}{l|}{\detokenize{ICHY_SKIN_LOCATION_FF1}}
+		& If you have had ichy skin rash during the last 12 months, did the skin rash affect the following locations: round your neck, around your ears or eyes, in the crook of your elbows, on your bottocks, behind your knees, or at the front of your ankles? \\ 
+		
+		\multicolumn{1}{l|}{\detokenize{PSORIASIS_LIFETIME_FF1}}
+		& Do you have or have you ever had psoriasis? \\
+		
+        \multicolumn{1}{l|}{\detokenize{PSORIASIS_SEVERITY_FF1}}
+        & If you have or have ever had psoriasis, how severe is your psoriasis today? Please, indicate on a scale from 0 (no disease symptoms ) to 10 (most severe disease symptoms).\\		
+
+		\multicolumn{1}{l|}{\detokenize{ALLERGIC_RHINITIS_FF1}}
+		& Have a doctor ever said that you have hay-fever or allergic rhinitis? \\ 
+		
+		\multicolumn{1}{l|}{\detokenize{ASTHMA_FF1}}
+		& Have a doctor ever said that you have asthma? \\
+
+		\multicolumn{1}{l|}{\detokenize{ATOPIC_ECZEMA_FF1}}
+		& Have a doctor ever said that you have children's eczema or atopic eczema? \\
+
+
+
+            
+            
+    \end{tabular}%
+
+    \caption{Table with the original data for diseases related variables.}
+
+\end{table}
+
+
+
+\subsection{Menstrual information}
+
+\begin{table}[H]
+    \centering
+
+    \label{table:Menstrual_info_Original_Data}
+    
+	\renewcommand{\arraystretch}{1.5}
+
+    \begin{tabular}{| l | p{10cm}  l }
+        \hline
+        \rowcolor[HTML]{FFAAAA}
+
+        \textbf{Name} & \textbf{Description} \\ 
+        \hline 
+
+        \multicolumn{1}{l|}{\detokenize{MENSES_FF1}}
+        & Have you started menstruating? \\ 
+        \multicolumn{1}{l|}{\detokenize{MENSES_REGULARITY_FF1}}
+        & If you have started menstruating; how regular are your periods?  \\ 
+        \multicolumn{1}{l|}{\detokenize{MENSES_CYCLE_LENGTH_FF1}}
+        & If you have started menstruating and your cycles always or usually are regular; what is the usual number of days between start of each period? \\ 
+        \multicolumn{1}{l|}{\detokenize{MENSES_START_DATE_CERTAIN_FF1}}
+        & If you have started menstruating; do you know the date of the start of your last menstruation?  \\ 
+        \multicolumn{1}{l|}{\detokenize{MENSES_START_DATE_FF1}}
+        & If you have started menstruating and if you know the date of your last menstruation; what was the date of the first day of your last menstruation?? \\ 
+
+
+        \multicolumn{1}{l|}{\detokenize{CHANCE_PREGNANT_FF1}}
+        & If you have started menstruating; Is there any chance that you may be pregnant? \\ 
+        \multicolumn{1}{l|}{\detokenize{PREGNANCY_TEST_RESULT_FF1}}
+        & If pregnancy consent; - pregnancy test result \\ 
+
+
+    \end{tabular}%
+
+    \caption{Table with the original data for the menstrual variables.}
+    
+\end{table}
+
+
+
+\subsection{Puberty}
+
+\begin{table}[H]
+    \centering
+
+    \label{table:Puberty_info_Original_Data}
+    
+	\renewcommand{\arraystretch}{1.5}
+
+    \begin{tabular}{| l | p{10cm}  l }
+        \hline
+        \rowcolor[HTML]{FFAAAA}
+
+        \textbf{Name} & \textbf{Description} \\ 
+        \hline 
+
+        \multicolumn{1}{l|}{\detokenize{MENARCHE_FF1}}
+        & Girls: have you started menstruating? \\ 
+        \multicolumn{1}{l|}{\detokenize{MENARCHE_AGE_YEAR_FF1}}
+        & Girls: if you have started menstruating, how old were you when you had your first menstrual period? Years \\        
+        \multicolumn{1}{l|}{\detokenize{MENARCHE_AGE_MONTH_FF1}}
+        & Girls: if you have started menstruating, how old were you when you had your first menstrual period? Months  \\ 
+        \multicolumn{1}{l|}{\detokenize{PUBIC_HAIR_FEMALE_FF1}}
+        & Girls: if you have not started menstruating, have you got or started to get pubic hair? \\ 
+        \multicolumn{1}{l|}{\detokenize{BREASTS_FEMALE_FF1}}
+        & Girls: if you have not started menstruating, have your breasts enlarged or started to enlarge?  \\ 
+        
+        
+        \multicolumn{1}{l|}{\detokenize{PUBIC_HAIR_MALE_FF1}}
+        & Boys: have you got or started to get pubic hair? \\ 
+        \multicolumn{1}{l|}{\detokenize{PUBIC_HAIR_AGE_MALE_FF1}}
+        & Boys: if you have got or started to get pubic hair, how old were you when you started to get pubic hair? \\ 
+        \multicolumn{1}{l|}{\detokenize{PUBERTY_BOYS_HEIGHT_FF1}}
+        & Boys: Would you say that your growth in height, \\ 
+	    \multicolumn{1}{l|}{\detokenize{PUBERTY_BOYS_HAIR_BODY_FF1}}
+        & Boys: Would you say that your body hair growth, \\ 
+        \multicolumn{1}{l|}{\detokenize{PUBERTY_BOYS_VOICE_FF1}}
+        & Boys: Have you noticed a deepening of your voice? \\ 
+        \multicolumn{1}{l|}{\detokenize{PUBERTY_BOYS_HAIR_FACE_FF1}}
+        & Boys: Have you begun to grow hair on your face? \\ 
+
+
+    \end{tabular}%
+
+    \caption{Table with the original data for the puberty variables.}
+    
+\end{table}
+
+
+\subsection{Nutrition}
+
+\begin{table}[H]
+    \centering
+
+    \label{table:Nutrition_info_Original_Data}
+    
+	\renewcommand{\arraystretch}{1.5}
+
+    \begin{tabular}{| l | l }
+        \hline
+        \rowcolor[HTML]{FFAAAA}
+
+        \textbf{Name} & \textbf{Description} \\ 
+        \hline 
+
+        \multicolumn{1}{l|}{\detokenize{FAT_FISH_FF1}} & How often do you usually eat fat fish (e.g. salmon, trout, mackerel, herring)     \\ 
+        \multicolumn{1}{l|}{\detokenize{LEAN_FISH_FF1}} & How often do you usually eat lean fish (e.g. cod, saithe, haddock ) \\ 
+        \multicolumn{1}{l|}{\detokenize{SEAGULL_EGGS_FF1}} & How often do you usually eat seagull eggs? \\
+        
+        \multicolumn{1}{l|}{\detokenize{REINDEER_FF1}} & How often do you usually eat reindeer meat? \\ 
+
+    \end{tabular}%
+
+    \caption{Table with the original data for diet and nutrition. The TSD variable contain about 75 variables in total regarding eating habits. }
+    
+\end{table}
+
+
+\subsection{Biomarkers}
+
+\begin{table}[H]
+    \centering
+
+    \label{table:Biomarkers_info_Original_Data}
+    
+	\renewcommand{\arraystretch}{1.5}
+
+    \begin{tabular}{| l | p{10cm}  l }
+        \hline
+        \rowcolor[HTML]{FFAAAA}
+
+        \textbf{Name} & \textbf{Description} \\ 
+        \hline 
+
+        \multicolumn{1}{l|}{\detokenize{S_ESTRADIOL_FF1}}    & Serum estradiol, E2 (nmol/L) \\ 
+        \multicolumn{1}{l|}{\detokenize{S_PROGESTERONE_FF1}} & Serum progesterone (nmol/L)  \\ 
+        \multicolumn{1}{l|}{\detokenize{S_TESTOSTERONE_FF1}} & Serum testosterone (nmol/L) \\ 
+        \multicolumn{1}{l|}{\detokenize{S_SHBG_FF1}}         & Serum sex hormone binding globuline (SHBG) (nmol/L)  \\ 
+
+        
+        \multicolumn{1}{l|}{\detokenize{S_LH_FF1}}    & Serum luteinizing hormone (LH) (IU/L) \\ 
+        \multicolumn{1}{l|}{\detokenize{S_FSH_FF1}}   & Serum follicle-stimulating hormone (FSH) (IU/L)  \\ 
+        \multicolumn{1}{l|}{\detokenize{S_HBA1C_FF1}} & Glycated haemoglobin (\%). EDTA whole blood \\ 
+        \multicolumn{1}{l|}{\detokenize{ALBUMIN_FF1}} & Albumin (g/L). Serum  \\ 
+        
+
+        \multicolumn{1}{l|}{\detokenize{S_25_VITD_FF1}} & 25(OH)D (nmol/L). Serum \\ 
+        \multicolumn{1}{l|}{\detokenize{S_TESTOSTERON_LCMSMS_FF1}} & Serum testosterone (nmol/L), analyzed by LC-MSMS  \\ 
+        \multicolumn{1}{l|}{\detokenize{S_ANDROSTENDION_LCMSMS_FF1}} & Serum androstendione (nmol/L), analyzed by LC-MSMS \\ 
+        \multicolumn{1}{l|}{\detokenize{S_17OHPROG_LCMSMS_FF1}} & Serum 17-hydroxyprogesterone (nmol/L), analyzed by LC-MSMS \\ 
+        
+
+		\multicolumn{1}{l|}{\detokenize{S_PROGESTERON_LCMSMS_FF1}} & Serum progesterone (nmol/L), analyzed by LC-MSMS \\ 
+        \multicolumn{1}{l|}{\detokenize{S_ESTRADIOL_LCMSMS_FF1}}   & Serum estradiol (pmol/L), analyzed by LC-MSMS  \\ 
+        
+        
+        
+        
+        \multicolumn{1}{l|}{\detokenize{S_E2_BELOW_LIMIT_FF1}}   & Serum estradiol below 0,10 nmol/L  \\ 
+ 		\multicolumn{1}{l|}{\detokenize{S_PROG_BELOW_LIMIT_FF1}} & Serum progesterone below 1 nmol/L  \\ 
+ 		\multicolumn{1}{l|}{\detokenize{S_SHBG_ABOVE_LIMIT_FF1}} & Serum sex hormone binding globuline (SHBG) above 200 nmol/L  \\ 
+
+
+        \multicolumn{1}{l|}{\detokenize{S_LH_BELOW_LIMIT_FF1}}  & Serum luteinizing hormone below 0,5 IU/L  \\ 
+ 		\multicolumn{1}{l|}{\detokenize{S_FSH_BELOW_LIMIT_FF1}} & Serum follicle-stimulating hormone below 0,5 IU/L  \\ 
+ 		\multicolumn{1}{l|}{\detokenize{S_SHBG_ABOVE_LIMIT_FF1}} & Serum sex hormone binding globuline (SHBG) above 200 nmol/L  \\
+
+
+        \multicolumn{1}{l|}{\detokenize{S_PROG_BELOW_LMT_LCMSMS_FF1}}  & Serum progesteronoe below 0,5 (nmol/L), analyzed by LC-MSMS  \\ 
+ 		\multicolumn{1}{l|}{\detokenize{S_ESTR_BELOW_LMT_LCMSMS_FF1}} & Serum follicle-stimulating hormone below 0,5 IU/L  \\ 
+
+
+
+    \end{tabular}%
+
+    \caption{Table with the original data for the biomarkers information variables. Note that in the TSD we have extended information regarding fatty acids, iron related variables, calcium, and much more.}
+    
+\end{table}
+
+
+
+\subsection{Contraceptives}
+
+\begin{table}[H]
+    \centering
+
+    \label{table:Contraceptives_info_Original_Data}
+    
+	\renewcommand{\arraystretch}{1.5}
+
+    \begin{tabular}{| l | p{10cm}  l }
+        \hline
+        \rowcolor[HTML]{FFAAAA}
+
+        \textbf{Name} & \textbf{Description} \\ 
+        \hline 
+
+        \multicolumn{1}{l|}{\detokenize{CONTRACEPTIVES_FF1}}
+        & If you have started menstruating; do you use any kind of contraceptives? \\
+        \multicolumn{1}{l|}{\detokenize{CONTRACEPTIVES_TYPE_FF1}}
+        & If you use any kind of contraceptives; what types?  \\
+        
+        \multicolumn{1}{l|}{\detokenize{ORAL_CONTRACEPT_NAME_FF1}}
+        & If you use any oral contraceptive pill, what is the name of the medicine? \\        
+        \multicolumn{1}{l|}{\detokenize{INJECTED_CONTRACEPT_NAME_FF1}}
+        & If you use any injected contraceptive, what is the name of the medicine?  \\ 
+        \multicolumn{1}{l|}{\detokenize{SUBDERMAL_CONTRACEPT_NAME_FF1}}
+        & If you use any hormonal contraceptive subdermal implant, what is the name of the medicine? \\ 
+        \multicolumn{1}{l|}{\detokenize{CONTRACEP_SKIN_PATCH_NAME_FF1}}
+        & If you use any hormonal contraceptive skin patch, what is the name of the medicine?  \\ 
+        \multicolumn{1}{l|}{\detokenize{VAGINAL_CONTRACEPT_NAME_FF1}}
+        & If you use any vaginal contraceptive ring, what is the name of the medicine? \\ 
+
+        \multicolumn{1}{l|}{\detokenize{ORAL_CONTRACEPT_ATC_FF1}}
+        & If you use any oral contraceptive pill, what is the ATC-code of the medicine? \\        
+        \multicolumn{1}{l|}{\detokenize{INJECTED_CONTRACEPT_ATC_FF1}}
+        & If you use any injected contraceptive, what is the ATC-code of the medicine?  \\ 
+        \multicolumn{1}{l|}{\detokenize{SUBDERMAL_CONTRACEPT_ATC_FF1}}
+        & If you use any hormonal contraceptive subdermal implant, what is the ATC-code of the medicine? \\ 
+        \multicolumn{1}{l|}{\detokenize{CONTRACEP_SKIN_PATCH_ATC_FF1}}
+        & If you use any hormonal contraceptive skin patch, what is the ATC-code of the medicine?  \\ 
+        \multicolumn{1}{l|}{\detokenize{VAGINAL_CONTRACEPT_ATC_FF1}}
+        & If you use any vaginal contraceptive ring, what is the ATC-code of the medicine? \\         
+
+
+
+    \end{tabular}%
+
+    \caption{Table with the original data for the use of contraceptives variables. The contraceptives are linked only to girls who started menstruating.}
+    
+\end{table}
+
+
+
+\subsection{Sociology}
+
+\begin{table}[H]
+    \centering
+
+    \label{table:Sociology_info_Original_Data}
+    
+	\renewcommand{\arraystretch}{1.5}
+
+    \begin{tabular}{| l | p{5cm}  l }
+        \hline
+        \rowcolor[HTML]{FFAAAA}
+
+        \textbf{Name} & \textbf{Description} \\ 
+        \hline 
+
+        \multicolumn{1}{l|}{\detokenize{HOUSHOLD_SIBS1TO2_FF1}}  & Who do you live with now: 1-2 siblings? \\ 
+        \multicolumn{1}{l|}{\detokenize{HOUSHOLD_SIBS3PLUS_FF1}} & Who do you live with now: 3 or more siblings? \\ 
+        \multicolumn{1}{l|}{\detokenize{HOUSHOLD_FRIENDS_FF1}}   & Who do you live with now: Friends? \\ 
+
+
+    \end{tabular}%
+
+    \caption{Table with the original data for the basic information variables. The TSD contain hundreds more variables.}
+    
+\end{table}
+
+
+
+
+
+\subsection{Network}
+
+\begin{table}[H]
+    \centering
+
+    \label{table:Network_Original_Data}
+    
+	\renewcommand{\arraystretch}{1.5}
+
+    \begin{tabular}{| l | p{10cm}  l }
+        \hline
+        \rowcolor[HTML]{FF9999}
+
+        \textbf{Name} & \textbf{Description} \\ 
+        \hline 
+
+        \multicolumn{1}{l|}{\detokenize{FRIEND_1_FF1}}
+        & Which students have you had most contact with the last week? Name up to 5 students at your own school or other schools in Tromsø and Balsfjord. \\ 
+        
+        \multicolumn{1}{l|}{\detokenize{FRIEND1_PHYSICAL_CONTACT_FF1}}
+        & Do you have physical contact? \\
+        
+        \multicolumn{1}{l|}{\detokenize{FRIEND1_CONTACT_SCHOOL_FF1}}
+        & Are you together at school? \\
+        
+        \multicolumn{1}{l|}{\detokenize{FRIEND1_CONTACT_SPORT_FF1}}
+        & Are you together at sports? \\ 
+        
+        \multicolumn{1}{l|}{\detokenize{FRIEND1_CONTACT_HOME_FF1}}
+        & Are you together at home? \\ 
+        
+        \multicolumn{1}{l|}{\detokenize{FRIEND1_CONTACT_OTHER_FF1}}
+        & Are you together at other places? \\
+        
+        \multicolumn{1}{l|}{\detokenize{ -- Rest of friends --}}
+        & The previous rows repeat for FRIEND2, FRIEND3, FRIEND4 and FRIEND5 \\
+        
+        \multicolumn{1}{l|}{\detokenize{NETWORK_DATE_FF1}}
+        & Network date (When the interview for the network was recorded).\\ 
+        
+        \multicolumn{1}{l|}{\detokenize{NETWORK_SIGNATURE_FF1}}
+        & Network signature (Who recorded the interview).\\ 
+        
+        \multicolumn{1}{l|}{\detokenize{NETWORK_OVERVIEW_FF1}}
+        & To what degree does this table of friends give an overview of your social network? Please, indicate on a scale from 0 (small degree) to 10 (high degree). \\
+        
+        \multicolumn{1}{l|}{\detokenize{NETWORK_COMMENT_FF1}}
+        & Comments network - friends. For example "Ingen kontakt pga vinterferie." \\ 
+        
+        
+    \end{tabular}%
+
+    \caption{Table with the original data for the network variables.}
+    
+\end{table}
+
+
+\subsection{S.Aureus}
+
+\begin{table}[H]
+    \centering
+
+    \label{table:SA_Original_Data_1}
+    
+	\renewcommand{\arraystretch}{1.5}
+
+    \begin{tabular}{| l | p{10cm} }
+        \hline
+        \rowcolor[HTML]{FFAAAA}
+
+        \textbf{Name} & \textbf{Description} \\ 
+        \hline 
+        
+        \multicolumn{1}{l|}{\detokenize{DATE_CULTURE_DAY0_FF1}}
+        & Nasal and Throat swabs: Date of culturing in the laboratory. \\         
+        \multicolumn{1}{l|}{\detokenize{CONTROL_NASAL_DAY2_FF1}}
+        & Nasal swab: Any growth of bacterial colonies on control agar plate.  \\         
+        \multicolumn{1}{l|}{\detokenize{CONTROL_THROAT_DAY2_FF1}}
+        & Throat swab: Any growth of bacterial colonies on control agar plate. \\
+        \multicolumn{1}{l|}{\detokenize{STAPH_NASAL_DAY2_FF1}}
+        & Nasal swab: Any growth of bacterial colonies on Staphylococcus aureus selective agar plate. \\       
+
+        \multicolumn{1}{l|}{\detokenize{STAPH_GROWTH_NASAL_DAY2_FF1}}
+        & Nasal swab: Classification of growth of bacterial colonies on Staphylococcus aureus selective agar plate.  \\         
+        \multicolumn{1}{l|}{\detokenize{STAPH_THROAT_DAY2_FF1}}
+        & Throat swab: Any growth of bacterial colonies on Staphylococcus aureus selective agar plate.\\         
+        \multicolumn{1}{l|}{\detokenize{STAPH_GROWTH_THROAT_DAY2_FF1}}
+        & Throat swab: Classification of growth of bacterial colonies on Staphylococcus aureus selective agar plate\\         
+        \multicolumn{1}{l|}{\detokenize{STAPH_NASAL_ENRICH_FF1}}
+        & Nasal swab in enrichment broth: Any growth on Staphylococcus aureus selective agar plate after enrichment\\         
+        
+        \multicolumn{1}{l|}{\detokenize{STAPH_GROWTH_NASAL_ENRICH_FF1}}
+        & Nasal swab  in enrichment broth: Classification of growth of bacterial colonies on Staphylococcus aureus selective agar plate after enrichment.\\
+        \multicolumn{1}{l|}{\detokenize{STAPH_THROAT_ENRICH_FF1}}
+        & Throat swab  in enrichment broth: Any growth on Staphylococcus aureus selective agar plate after enrichment\\
+        \multicolumn{1}{l|}{\detokenize{STAPH_GROWTH_THROAT_ENRICH_FF1}}
+        & Throat swab  in enrichment broth: Classification of growth of bacterial colonies on Staphylococcus aureus selective agar plate after enrichment\\
+        \multicolumn{1}{l|}{\detokenize{STAPH_COAGULASE_NASAL_FF1}}
+        & Nasal swab: Coagulase test. \\         
+        
+        \multicolumn{1}{l|}{\detokenize{STAPH_COAG_NASAL_ENRICH_FF1}}
+        & Nasal swab in enrichment broth: Coagulase test.\\         
+        \multicolumn{1}{l|}{\detokenize{STAPH_COAGULASE_THROAT_FF1}}
+        & Throat swab: Coagulase test\\         
+        \multicolumn{1}{l|}{\detokenize{STAPH_COAG_THROAT_ENRICH_FF1}}
+        & Throat swab in enrichment broth: Coagulase test \\                 
+            
+    \end{tabular}%
+
+    \caption{Table with the original data for the S.Aureus variables. 1/2}
+    
+\end{table}
+
+\clearpage
+
+
+\begin{table}[H]
+    \centering
+
+    \label{table:SA_Original_Data_2}
+    
+	\renewcommand{\arraystretch}{1.5}
+
+    \begin{tabular}{| l | p{5cm}  p{5cm} }
+        \hline
+        \rowcolor[HTML]{FFAAAA}
+
+        \textbf{Name} & \textbf{Description} \\ 
+        \hline 
+
+        \multicolumn{1}{l|}{\detokenize{SPA_THROAT1_FF1}}& Throat swab: Spa-type of S. aureus isolate. \\         
+        \multicolumn{1}{l|}{\detokenize{CCN_THROAT1_FF1}}&  (Not described in the metadata). \\         
+        \multicolumn{1}{l|}{\detokenize{CC_THROAT1_FF1}} & Throat swab: S. aureus clonal complex based on spa-type.\\         
+        \multicolumn{1}{l|}{\detokenize{SPA_NASAL1_FF1}} & Nasal swab: Spa-type of S. aureus isolate.\\         
+        \multicolumn{1}{l|}{\detokenize{SPA_NASAL2_FF1}} & Second nasal swab: Spa-type of S. aureus isolate.\\         
+        \multicolumn{1}{l|}{\detokenize{SPA_THROAT2_FF1}}& (Not described in the metadata). \\         
+        
+            
+    \end{tabular}%
+
+    \caption{Table with the original data for the S.Aureus 2/2}
+    
+\end{table}
+
+
+\clearpage
+

@@ -1,0 +1,61 @@
+This is BibTeX, Version 0.99d
+Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
+The top-level auxiliary file: report.aux
+Reallocating 'name_of_file' (item size: 1) to 26 items.
+A level-1 auxiliary file: Chapters/ChapterINTRO.aux
+Reallocating 'name_of_file' (item size: 1) to 11 items.
+Reallocating 'name_of_file' (item size: 1) to 7 items.
+The style file: ieeetr.bst
+Database file #1: references.bib
+Warning--entry type for "ref:larsab" isn't style-file defined
+--line 5 of file references.bib
+Warning--entry type for "ref:annesofie" isn't style-file defined
+--line 13 of file references.bib
+Warning--entry type for "ref:latexintro" isn't style-file defined
+--line 21 of file references.bib
+Warning--entry type for "ref:wysiwyg" isn't style-file defined
+--line 29 of file references.bib
+Warning--entry type for "ref:spss" isn't style-file defined
+--line 37 of file references.bib
+You've used 5 entries,
+            1876 wiz_defined-function locations,
+            495 strings with 3924 characters,
+and the built_in function-call counts, 557 in all, are:
+= -- 50
+> -- 5
+< -- 0
++ -- 5
+- -- 0
+* -- 32
+:= -- 61
+add.period$ -- 5
+call.type$ -- 5
+change.case$ -- 5
+chr.to.int$ -- 0
+cite$ -- 5
+duplicate$ -- 20
+empty$ -- 91
+format.name$ -- 0
+if$ -- 151
+int.to.chr$ -- 0
+int.to.str$ -- 5
+missing$ -- 0
+newline$ -- 18
+num.names$ -- 0
+pop$ -- 35
+preamble$ -- 1
+purify$ -- 0
+quote$ -- 0
+skip$ -- 20
+stack$ -- 0
+substring$ -- 0
+swap$ -- 0
+text.length$ -- 0
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 0
+warning$ -- 0
+while$ -- 0
+width$ -- 6
+write$ -- 37
+(There were 5 warnings)

@@ -1,0 +1,186 @@
+%\ (!!) You need to compile twice to make the internal references to work
+
+%******************************************
+%    All the libraries and includes
+%******************************************
+
+\documentclass[a4paper,10pt]{report}
+%\documentclass[a4paper,10pt]{scrartcl}
+
+\usepackage[utf8]{inputenc}        %\ UTF8 encoding for characters
+\usepackage[T1]{fontenc}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{graphicx}              %\ Allows Images
+\usepackage{hyperref}
+\usepackage{url}                   %\ Allows URLs in the PDF document
+\usepackage{listings}
+\usepackage{float}
+\usepackage{makeidx}               %\ Make the index automatically
+\usepackage[table,xcdraw]{xcolor}  %\ Allows colors in tables
+\usepackage{listings}
+\usepackage{helvet}                %\ Arial font
+\usepackage{longtable}             %\ Longtables across pages
+\usepackage{subcaption}            %\ Matrix of images
+
+\usepackage[a4paper, total={6in, 8in}]{geometry} %\ Geometry for the border of the document
+\usepackage{geometry}
+\geometry{
+	a4paper,
+	total={170mm,257mm},
+	left=20mm,
+	top=20mm,
+}
+
+\usepackage{adjustbox} %\ Multirows
+\usepackage{multirow}
+
+
+%\ Define internal colors of the document
+\usepackage{color}
+\definecolor{gray}{rgb}{0.4,0.4,0.4}
+\definecolor{darkblue}{rgb}{0.0,0.0,0.6}
+\definecolor{cyan}{rgb}{0.0,0.6,0.6}
+\definecolor{maroon}{rgb}{0.5,0,0}
+\definecolor{darkgreen}{rgb}{0,0.5,0}
+
+\definecolor{redLow}{RGB}{253,  212, 158}
+\definecolor{redMed}{RGB}{252,  141, 89}
+\definecolor{redHig}{RGB}{215,  48,  31}
+\definecolor{blueLow}{RGB}{208, 209, 230}
+\definecolor{blueMed}{RGB}{116, 169, 207}
+\definecolor{blueHig}{RGB}{5,   112, 176}
+
+
+
+%\ No hyphenation
+\tolerance=1
+\emergencystretch=\maxdimen
+\hyphenpenalty=10000
+\hbadness=10000
+
+\lstset{
+  basicstyle=\ttfamily,
+  breaklines=true,
+  columns=fullflexible,
+  showstringspaces=false,
+  commentstyle=\color{gray}\upshape
+}
+
+
+%\ Nice looking XML code
+\lstdefinelanguage{XML}
+{
+  morestring=[b]",
+  morestring=[s]{>}{<},
+  morecomment=[s]{<?}{?>},
+  stringstyle=\color{black},
+  identifierstyle=\color{darkblue},
+  keywordstyle=\color{cyan},
+  morekeywords={xmlns,version,type,soap,doc}
+}
+
+
+\title{Automatic Report}
+\author{Rafael Adolfo Nozal Cañadas}
+\date{\today}		
+
+\pdfinfo{%
+  /Title    (Automatic Report)
+  /Author   (Rafael Adolfo Nozal Cañadas)
+  /Subject  (Fit futures report)
+  /Keywords (Health data, Fit futures 1, report, statistics)
+}
+
+\makeindex
+
+\begin{document}
+
+%******************************************
+%    TITLE PAGE
+%******************************************
+
+
+\begin{titlepage}
+	\centering
+	\includegraphics[width=0.35\textwidth]{../img/others/UIT_logo.jpeg}\par\vspace{1cm}
+	{\scshape\LARGE UiT: The Artic University of Norway \par}
+	\vspace{1.5cm}
+	{\huge\bfseries Fit Futures 1\par}
+	\vspace{2cm}
+	{\Large\itshape Rafael Adolfo Nozal Cañadas\par}
+	
+	\vfill
+	
+	supervised by
+	
+    \begin{flushleft}
+
+	\hspace{55mm}	 Prof.~Anne-Sophie \textsc{FURBERG}\par
+	\hspace{55mm}	 Prof.~Anne-Sophie \textsc{FURBERG}\par
+
+    \end{flushleft}
+
+	\vfill
+
+% Bottom of the page
+	{\large \today\par}
+\end{titlepage}
+
+
+%******************************************
+%    TABLE OF CONTENTS
+%******************************************
+
+%\ Arial font default AFTER the cover
+\renewcommand{\familydefault}{\sfdefault}
+
+%\section{Table of Contents}
+
+  \tableofcontents
+
+
+%******************************************
+%    LIST OF FIGURES/IMAGES
+%******************************************
+
+%\section{List of figures}
+
+  \listoffigures
+
+
+%******************************************
+%    LIST OF TABLES
+%******************************************
+
+	\listoftables
+
+%******************************************
+%    BLANK PAGE ON PORPUSE
+%******************************************
+
+    \newpage
+
+%******************************************
+%    CHAPTERS
+%******************************************
+
+%\include{Chapters/ChapterINTRO}
+%\include{Chapters/ChapterMETADATA}
+%\include{Chapters/ChapterDATACLEANING}
+%\include{Chapters/ChapterFILTERING}
+
+\include{Chapters/ChapterGENERAL}
+%\include{Chapters/ChapterVARIABLES}
+
+
+\newpage
+
+\printindex
+
+\newpage
+
+\end{document}
+
+
+%\ (!!) You need to compile twice to make the internal references to work

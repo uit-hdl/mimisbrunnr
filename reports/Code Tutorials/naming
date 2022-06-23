@@ -1,0 +1,126 @@
+--------------------------------
+NAMING STANDARD
+--------------------------------
+
+- There are no spaces in the filenames.
+
+- There is always underscores in between each variable name or plot name
+
+- Each word starts with uppercase.
+
+- You always get the X axys first in the name. (generally the grouping variable)
+
+- Then the Y axys. (generally the counting variable)
+
+- Lastly whatever subgrouping you have. (generally the sub-grouping variable)
+
+
+
+
+
+--------------------------------
+TYPES AND FILE EXTENSIONS
+--------------------------------
+
+You can have two types of file extensions:
+
+    .png = images with plots
+
+    .txt = plain text files with a summary of the plot
+
+    .tex = LaTex format text, generally with an image and a table under it.
+           The image includes the filepath and the caption. While the table
+           is the summary of whatever is on the image.
+
+
+
+
+
+--------------------------------
+CATEGORICAL PLOTS AND TABLES
+--------------------------------
+
+Summary statistics:
+
+    For each category:
+
+        - Absolute frequency with AbsBarplots
+        - Relative frequency with RelBarplots
+
+	For each two categories:
+
+	For each numerical:
+
+	For each two numerical:
+
+	For each numerical and category:
+
+	For two numerical and category:
+
+	Special statistics:
+
+
+
+
+-- Bar plots with absolute frequency
+
+    <Variable Name> + "_" + <Dataframe Name> + "_Abs" + "Barplot" + <file extension>
+
+-- Bar plots with relative frequency
+
+    <Variable Name> + "_" + <Dataframe Name> + "_Rel" + "Barplot" + <file extension>
+
+-- Network plots
+
+    <Edges Name> + "_" + <Highlighs Name> + "_" + <Rim Name> + "_" + <Graph Layout>  + "_" + Graph" + <file extension>
+
+    (note that the rim name is almost never use)
+
+    <Graph Layout> = {ff , kk , mds}
+                      ff:  Fruchterman - Reingold (keep related vertices close)
+                      kk:  Kamada and Kaway (emphasizes distance as information)
+                      mds: Multidimensional Scaling (try to balance everything)
+
+
+--------------------------------
+NUMERICAL PLOTS AND TABLES
+--------------------------------
+
+Summary statistics:
+
+    For each variable
+
+        - Average
+        - Standard deviation
+        - Median ( see boxplot also )
+        - IQR
+        - Normality test (TODO: Which one? sapphiro?)
+
+
+
+
+
+--------------------------------
+COMBINATION OF BOTH
+--------------------------------
+
+    --------------------------------
+    CATEGORICAl WITH CATEGORICAL
+    --------------------------------
+
+    --------------------------------
+    CATEGORICAl WITH NUMERICAL
+    --------------------------------
+
+    --------------------------------
+    NUMERICAL WITH NUMERICAL
+    --------------------------------
+
+
+--------------------------------
+SPECIAL PLOTS
+--------------------------------
+
+-- BMI (density plot with the BMI categories in the background)
+
+    <Variable Name> + "BMI" + <file extension>

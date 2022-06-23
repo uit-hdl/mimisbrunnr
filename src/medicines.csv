@@ -1,0 +1,696 @@
+"ID";"Type";"Brand";"ATC";"Regularity";"Content"
+20000204;"Respiratory system";"Cetrizin";"R06A";"Unknown";""
+20000406;"Dermatologicals";"Roaccutan";"D10BA";"Regularly";""
+20000406;"Respiratory system";"Kestine";"R06A";"Occasionally";""
+20000406;"Respiratory system";"Cetrizin";"R06A";"Occasionally";""
+20000608;"Nervous system";"Paracetamol";"N02BE";"Occasionally";""
+20001407;"Musculo-skeletal system";"Ibux 200 mg";"M01A";"Occasionally";""
+20001912;"Respiratory system";"Ventolin";"R03AC";"Unknown";""
+20002004;"Nervous system";"Paracetamol";"N02BE";"Occasionally";""
+20002206;"Dermatologicals";"Locoid";"D07A";"Occasionally";""
+20002206;"Respiratory system";"Zyrtec";"R06A";"Occasionally";""
+20002206;"Respiratory system";"Cetrizin";"R06A";"Occasionally";""
+20002307;"Respiratory system";"Cetrizin";"R06A";"Regularly";""
+20002408;"Nervous system";"Paracetamol";"N02BE";"Occasionally";""
+20002408;"Musculo-skeletal system";"Ibux 200 mg";"M01A";"Occasionally";""
+20002913;"Respiratory system";"Ventolin";"R03AC";"Occasionally";""
+20002913;"Musculo-skeletal system";"Voltaren";"M01A";"Occasionally";""
+20003005;"Respiratory system";"Ventolin";"R03AC";"Occasionally";""
+20004107;"Musculo-skeletal system";"Ibux 200 mg";"M01A";"Occasionally";""
+20004107;"Respiratory system";"Zyrtec";"R06A";"Occasionally";""
+20004410;"Musculo-skeletal system";"Ibux 400 mg";"M01A";"Occasionally";""
+20004410;"Nervous system";"Paracetamol";"N02BE";"Occasionally";""
+20004511;"Respiratory system";"Kestine";"R06A";"Occasionally";""
+20004915;"Nervous system";"Paracetamol";"N02BE";"Occasionally";""
+20005108;"Respiratory system";"Zyrtec";"R06A";"Occasionally";""
+20005108;"Respiratory system";"Aerius";"R06A";"Regularly";""
+20005108;"Musculo-skeletal system";"Ibux 200 mg";"M01A";"Occasionally";""
+20005108;"Nervous system";"Paracetamol";"N02BE";"Unknown";""
+20005209;"Dermatologicals";"Apolar";"D07A";"Unknown";""
+20005209;"Dermatologicals";"Betnovat";"D07A";"Unknown";""
+20006513;"Respiratory system";"Ventolin";"R03AC";"Occasionally";""
+20009920;"Musculo-skeletal system";"Ibux 200 mg";"M01A";"Occasionally";""
+20010003;"Nervous system";"Paracetamol";"N02BE";"Occasionally";""
+20010811;"Respiratory system";"Zyrtec";"R06A";"Occasionally";""
+20011105;"Respiratory system";"Zyrtec";"R06A";"Occasionally";""
+20011610;"Respiratory system";"Cetrizin";"R06A";"Regularly";""
+20012207;"Respiratory system";"Zyrtec";"R06A";"Occasionally";""
+20012308;"Respiratory system";"Zyrtec";"R06A";"Occasionally";""
+20013006;"Dermatologicals";"Roaccutan";"D10BA";"Regularly";""
+20013107;"Nervous system";"Paracetamol";"N02BE";"Occasionally";""
+20013107;"Musculo-skeletal system";"Ibux 200 mg";"M01A";"Occasionally";""
+20013410;"Musculo-skeletal system";"Ibux 200 mg";"M01A";"Occasionally";""
+20013410;"Nervous system";"Paracetamol";"N02BE";"Unknown";""
+20013814;"Nervous system";"Ritalin";"N06BA";"Unknown";""
+20014411;"Nervous system";"Paracetamol";"N02BE";"Occasionally";""
+20014613;"Respiratory system";"Cetrizin";"R06A";"Occasionally";""
+20015412;"Respiratory system";"Cetrizin";"R06A";"Occasionally";""
+20015614;"Respiratory system";"Zyrtec";"R06A";"Occasionally";""
+20015917;"Nervous system";"Ritalin";"N06BA";"Regularly";""
+20016514;"Musculo-skeletal system";"Ibux 200 mg";"M01A";"Occasionally";""
+20016615;"Nervous system";"Paracetamol";"N02BE";"Occasionally";""
+20016615;"Musculo-skeletal system";"Ibux 200 mg";"M01A";"Occasionally";""
+20016918;"Respiratory system";"Ventolin";"R03AC";"Unknown";""
+20016918;"Respiratory system";"Singulair";"R03DC";"Unknown";""
+20016918;"Respiratory system";"Symbicort";"R03AK";"Unknown";""
+20017111;"Respiratory system";"Ventolin";"R03AC";"Occasionally";""
+20017111;"Respiratory system";"Zyrtec";"R06A";"Occasionally";""
+20017414;"Respiratory system";"Ventolin";"R03AC";"Unknown";""
+20017717;"Nervous system";"Paracetamol";"N02BE";"Occasionally";""
+20018314;"Respiratory system";"Ventolin";"R03AC";"Occasionally";""
+20019012;"Nervous system";"Paracetamol";"N02BE";"Occasionally";""
+20019315;"Respiratory system";"Cetrizin";"R06A";"Occasionally";""
+20021207;"Respiratory system";"Cetrizin";"R06A";"Occasionally";""
+20021308;"Respiratory system";"Cetrizin";"R06A";"Occasionally";""
+20021409;"Nervous system";"Concerta";"N06BA";"Unknown";""
+20021813;"Respiratory system";"Ventolin";"R03AC";"Occasionally";""
+20021813;"Respiratory system";"Seretide";"R03AK";"Regularly";""
+20022208;"Respiratory system";"Symbicort";"R03AK";"Regularly";""
+20022208;"Respiratory system";"Zyrtec";"R06A";"Regularly";""
+20022208;"Nervous system";"Paracetamol";"N02BE";"Occasionally";""
+20022511;"Respiratory system";"Zyrtec";"R06A";"Regularly";""
+20022713;"Nervous system";"Paracetamol";"N02BE";"Regularly";""
+20022915;"Musculo-skeletal system";"Ibux 200 mg";"M01A";"Occasionally";""
+20023815;"Respiratory system";"Ventolin";"R03AC";"Occasionally";""
+20023815;"Nervous system";"Paracetamol";"N02BE";"Occasionally";""
+20023815;"Respiratory system";"Otrivin";"R01AA";"Occasionally";""
+20024109;"Respiratory system";"Zyrtec";"R06A";"Occasionally";""
+20024614;"Musculo-skeletal system";"Ibux 200 mg";"M01A";"Occasionally";""
+20024816;"Respiratory system";"Ventolin";"R03AC";"Occasionally";""
+20024816;"Musculo-skeletal system";"Ibux 200 mg";"M01A";"Occasionally";""
+20024816;"Nervous system";"Paracetamol";"N02BE";"Occasionally";""
+20025716;"Respiratory system";"Ventolin";"R03AC";"Occasionally";""
+20026010;"Respiratory system";"Cetrizin";"R06A";"Occasionally";""
+20026616;"Respiratory system";"Flutide";"R03BA";"Regularly";""
+20026919;"Nervous system";"Paracetamol";"N02BE";"Occasionally";""
+20028315;"Nervous system";"Imigran";"N02CC";"Unknown";""
+20028315;"Respiratory system";"Zyrtec";"R06A";"Unknown";""
+20028820;"Respiratory system";"Zyrtec";"R06A";"Occasionally";""
+20029821;"Musculo-skeletal system";"Ibux 200 mg";"M01A";"Occasionally";""
+20030409;"Respiratory system";"Ventolin";"R03AC";"Occasionally";""
+20031915;"Musculo-skeletal system";"Voltaren";"M01A";"Unknown";""
+20032310;"Nervous system";"Paracetamol";"N02BE";"Occasionally";""
+20032310;"Musculo-skeletal system";"Ibux 400 mg";"M01A";"Occasionally";""
+20032613;"Respiratory system";"Seretide";"R03AK";"Regularly";""
+20032613;"Respiratory system";"Clarityn";"R06A";"Occasionally";""
+20033008;"Nervous system";"Paracetamol";"N02BE";"Occasionally";""
+20033614;"Respiratory system";"Zyrtec";"R06A";"Regularly";""
+20033917;"Alimentary tract and metabolism";"Insulin";"A10A";"Regularly";""
+20034009;"Respiratory system";"Zyrtec";"R06A";"Occasionally";""
+20034009;"Respiratory system";"Livostin";"R01AC";"Occasionally";""
+20034615;"Respiratory system";"Zyrtec";"R06A";"Occasionally";""
+20034716;"Respiratory system";"Bricanyl";"R03AC";"Regularly";""
+20034817;"Nervous system";"Paracetamol";"N02BE";"Occasionally";""
+20034817;"Musculo-skeletal system";"Ibux 200 mg";"M01A";"Occasionally";""
+20035010;"Musculo-skeletal system";"Ibux 200 mg";"M01A";"Occasionally";""
+20035212;"Respiratory system";"Aerius";"R06A";"Occasionally";""
+20035919;"Dermatologicals";"Roaccutan";"D10BA";"Regularly";""
+20036617;"Respiratory system";"Symbicort";"R03AK";"Regularly";""
+20036617;"Respiratory system";"Singulair";"R03DC";"Regularly";""
+20037113;"Respiratory system";"Zyrtec";"R06A";"Occasionally";""
+20037214;"Respiratory system";"Zyrtec";"R06A";"Occasionally";""
+20037214;"Dermatologicals";"Roaccutan";"D10BA";"Regularly";""
+20037517;"Nervous system";"Imigran";"N02CC";"Occasionally";""
+20037921;"Musculo-skeletal system";"Ibux 200 mg";"M01A";"Occasionally";""
+20037921;"Nervous system";"Paracetamol";"N02BE";"Occasionally";""
+20038013;"Nervous system";"Paralgin forte";"N02AA59";"Regularly";""
+20039923;"Nervous system";"Ritalin";"N06BA";"Unknown";""
+20039923;"Nervous system";"Concerta";"N06BA";"Unknown";""
+20040107;"Nervous system";"Paracetamol";"N02BE";"Occasionally";""
+20040107;"Respiratory system";"Otrivin";"R01AA";"Occasionally";""
+20040511;"Nervous system";"Paracetamol";"N02BE";"Occasionally";""
+20040915;"Nervous system";"Paracetamol";"N02BE";"Occasionally";""
+20041108;"Respiratory system";"Zyrtec";"R06A";"Occasionally";""
+20042210;"Respiratory system";"Zyrtec";"R06A";"Occasionally";""
+20042311;"Dermatologicals";"Roaccutan";"D10BA";"Regularly";""
+20042311;"Respiratory system";"Zyrtec";"R06A";"Occasionally";""
+20042412;"Respiratory system";"Zyrtec";"R06A";"Occasionally";""
+20042614;"Musculo-skeletal system";"Ibux 200 mg";"M01A";"Occasionally";""
+20042614;"Nervous system";"Paracetamol";"N02BE";"Occasionally";""
+20043110;"Respiratory system";"Zyrtec";"R06A";"Occasionally";""
+20043918;"Respiratory system";"Cetrizin";"R06A";"Occasionally";""
+20044414;"Respiratory system";"Ventolin";"R03AC";"Regularly";""
+20044414;"Dermatologicals";"Apolar";"D07A";"Regularly";""
+20044717;"Respiratory system";"Ventolin";"R03AC";"Occasionally";""
+20044717;"Respiratory system";"Zyrtec";"R06A";"Occasionally";""
+20045011;"Respiratory system";"Zyrtec";"R06A";"Occasionally";""
+20045011;"Respiratory system";"Livostin";"R01AC";"Occasionally";""
+20045011;"Respiratory system";"Rhinox";"R01AA";"Occasionally";""
+20045011;"Nervous system";"Paracetamol";"N02BE";"Occasionally";""
+20045011;"Musculo-skeletal system";"Ibux 400 mg";"M01A";"Occasionally";""
+20045920;"Antiinfectives for systemic use";"Teralysal";"J01AA";"Regularly";""
+20046012;"Nervous system";"Paracetamol";"N02BE";"Occasionally";""
+20046921;"Nervous system";"Paracetamol";"N02BE";"Occasionally";""
+20046921;"Musculo-skeletal system";"Ibux 400 mg";"M01A";"Occasionally";""
+20047114;"Respiratory system";"Ventolin";"R03AC";"Unknown";""
+20047922;"Respiratory system";"Zyrtec";"R06A";"Occasionally";""
+20047922;"Respiratory system";"Cetrizin";"R06A";"Occasionally";""
+20048317;"Nervous system";"Trimonil";"N03A";"Regularly";""
+20048317;"Nervous system";"Stesolid";"N05B";"Occasionally";""
+20049015;"Respiratory system";"Symbicort";"R03AK";"Regularly";""
+20049015;"Respiratory system";"Bricanyl";"R03AC";"Regularly";""
+20049318;"Musculo-skeletal system";"Ibux 200 mg";"M01A";"Occasionally";""
+20049318;"Nervous system";"Paracetamol";"N02BE";"Occasionally";""
+20050007;"Respiratory system";"Ventolin";"R03AC";"Occasionally";""
+20050007;"Respiratory system";"Cetrizin";"R06A";"Occasionally";""
+20050007;"Dermatologicals";"Mildison";"D07A";"Occasionally";""
+20050007;"Dermatologicals";"Locoid";"D07A";"Occasionally";""
+20050209;"Respiratory system";"Zyrtec";"R06A";"Occasionally";""
+20050815;"Respiratory system";"Cetrizin";"R06A";"Occasionally";""
+20050815;"Respiratory system";"Flutide nasal";"R01AD";"Occasionally";""
+20050815;"Respiratory system";"Lomudal";"R01AC";"Occasionally";""
+20051715;"Musculo-skeletal system";"Ibux 200 mg";"M01A";"Occasionally";""
+20051715;"Nervous system";"Paracetamol";"N02BE";"Occasionally";""
+20052413;"Nervous system";"Paracetamol";"N02BE";"Occasionally";""
+20052413;"Musculo-skeletal system";"Ibux 200 mg";"M01A";"Occasionally";""
+20052514;"Respiratory system";"Ventolin";"R03AC";"Occasionally";""
+20052514;"Respiratory system";"Zyrtec";"R06A";"Occasionally";""
+20052615;"Respiratory system";"Flutide";"R03BA";"Regularly";""
+20052615;"Respiratory system";"Ventolin";"R03AC";"Occasionally";""
+20052615;"Nervous system";"Paracetamol";"N02BE";"Occasionally";""
+20052615;"Musculo-skeletal system";"Ibux 400 mg";"M01A";"Occasionally";""
+20052918;"Respiratory system";"Cetrizin";"R06A";"Occasionally";""
+20053212;"Respiratory system";"Symbicort";"R03AK";"Regularly";""
+20053212;"Respiratory system";"Ventolin";"R03AC";"Occasionally";""
+20053212;"Respiratory system";"Bricanyl";"R03AC";"Occasionally";""
+20053919;"Musculo-skeletal system";"Ibux 200 mg";"M01A";"Occasionally";""
+20053919;"Nervous system";"Paracetamol";"N02BE";"Occasionally";""
+20054819;"Respiratory system";"Cetrizin";"R06A";"Occasionally";""
+20056114;"Respiratory system";"Zyrtec";"R06A";"Occasionally";""
+20056922;"Nervous system";"Paracetamol";"N02BE";"Occasionally";""
+20056922;"Musculo-skeletal system";"Ibux 200 mg";"M01A";"Occasionally";""
+20057115;"Respiratory system";"Zyrtec";"R06A";"Occasionally";""
+20057216;"Respiratory system";"Livostin";"R01AC";"Occasionally";""
+20057721;"Respiratory system";"Flutide";"R03BA";"Unknown";""
+20057721;"Respiratory system";"Ventolin";"R03AC";"Unknown";""
+20057721;"Respiratory system";"Loratadin";"R06A";"Unknown";""
+20058520;"Respiratory system";"Cetrizin";"R06A";"Occasionally";""
+20058520;"Musculo-skeletal system";"Ibux 200 mg";"M01A";"Occasionally";""
+20058520;"Nervous system";"Paracetamol";"N02BE";"Occasionally";""
+20059420;"Respiratory system";"Zyrtec";"R06A";"Occasionally";""
+20059824;"Musculo-skeletal system";"Ibux 200 mg";"M01A";"Occasionally";""
+20059824;"Nervous system";"Paracetamol";"N02BE";"Occasionally";""
+20059824;"Nervous system";"Imigran";"N02CC";"Occasionally";""
+20059925;"Musculo-skeletal system";"Ibux 400 mg";"M01A";"Occasionally";""
+20059925;"Nervous system";"Paracetamol";"N02BE";"Occasionally";""
+20060210;"Antiinfectives for systemic use";"Teralysal";"J01AA";"Regularly";""
+20061413;"Nervous system";"Paracetamol";"N02BE";"Occasionally";""
+20061413;"Musculo-skeletal system";"Ibux 200 mg";"M01A";"Occasionally";""
+20061716;"Nervous system";"Paracetamol";"N02BE";"Occasionally";""
+20061716;"Musculo-skeletal system";"Ibux 200 mg";"M01A";"Occasionally";""
+20062515;"Nervous system";"Paracetamol";"N02BE";"Occasionally";""
+20062515;"Musculo-skeletal system";"Ibux 200 mg";"M01A";"Occasionally";""
+20063920;"Nervous system";"Paracetamol";"N02BE";"Occasionally";""
+20065821;"Nervous system";"Paracetamol";"N02BE";"Occasionally";""
+20065821;"Musculo-skeletal system";"Ibux 200 mg";"M01A";"Occasionally";""
+20065821;"Respiratory system";"Zyrtec";"R06A";"Occasionally";""
+20065922;"Respiratory system";"Ventolin";"R03AC";"Occasionally";""
+20065922;"Respiratory system";"Cetrizin";"R06A";"Regularly";""
+20065922;"Respiratory system";"Zyrtec";"R06A";"Regularly";""
+20067116;"Antiinfectives for systemic use";"Teralysal";"J01AA";"Regularly";""
+20067217;"Respiratory system";"Flutide";"R03BA";"Unknown";""
+20067217;"Respiratory system";"Cetrizin";"R06A";"Regularly";""
+20067217;"Respiratory system";"Ventolin";"R03AC";"Unknown";""
+20067520;"Nervous system";"Lamictal";"N03A";"Regularly";""
+20068117;"Musculo-skeletal system";"Ibux 600 mg";"M01A";"Occasionally";""
+20068117;"Nervous system";"Paracetamol";"N02BE";"Occasionally";""
+20068218;"Nervous system";"Paracetamol";"N02BE";"Occasionally";""
+20068218;"Musculo-skeletal system";"Ibux 200 mg";"M01A";"Occasionally";""
+20068218;"Respiratory system";"Ventolin";"R03AC";"Occasionally";""
+20068723;"Musculo-skeletal system";"Ibux 400 mg";"M01A";"Occasionally";""
+20068723;"Nervous system";"Paracetamol";"N02BE";"Occasionally";""
+20068824;"Nervous system";"Paracetamol";"N02BE";"Occasionally";""
+20068824;"Musculo-skeletal system";"Ibux 200 mg";"M01A";"Occasionally";""
+20069219;"Respiratory system";"Cetrizin";"R06A";"Regularly";""
+20069724;"Blood and blood forming organs";"Ferromax";"B03A";"Regularly";""
+20070009;"Respiratory system";"Cetrizin";"R06A";"Unknown";""
+20070110;"Respiratory system";"Symbicort";"R03AK";"Regularly";""
+20070110;"Respiratory system";"Flutide nasal";"R01AD";"Regularly";""
+20070110;"Respiratory system";"Cetrizin";"R06A";"Occasionally";""
+20070615;"Nervous system";"Ritalin";"N06BA";"Regularly";""
+20070615;"Respiratory system";"Cetrizin";"R06A";"Regularly";""
+20070817;"Respiratory system";"Cetrizin";"R06A";"Occasionally";""
+20070817;"Respiratory system";"Livostin";"R01AC";"Occasionally";""
+20071313;"Nervous system";"Paracetamol";"N02BE";"Occasionally";""
+20071313;"Musculo-skeletal system";"Ibux 200 mg";"M01A";"Occasionally";""
+20071717;"Nervous system";"Concerta";"N06BA";"Regularly";""
+20071919;"Respiratory system";"Ventolin";"R03AC";"Occasionally";""
+20073315;"Respiratory system";"Seretide";"R03AK";"Unknown";""
+20073315;"Respiratory system";"Ventolin";"R03AC";"Unknown";""
+20073820;"Respiratory system";"Loratadin";"R06A";"Occasionally";""
+20073820;"Respiratory system";"Livostin";"R01AC";"Occasionally";""
+20074013;"Respiratory system";"Ventolin";"R03AC";"Occasionally";""
+20074417;"Nervous system";"Paracetamol";"N02BE";"Occasionally";""
+20074417;"Musculo-skeletal system";"Ibux 400 mg";"M01A";"Occasionally";""
+20074417;"Nervous system";"Fenazon";"N02BB";"Occasionally";""
+20074619;"Nervous system";"Paracetamol";"N02BE";"Occasionally";""
+20075014;"Dermatologicals";"Roaccutan";"D10BA";"Regularly";""
+20075317;"Respiratory system";"Zyrtec";"R06A";"Occasionally";""
+20075519;"Nervous system";"Paracetamol";"N02BE";"Occasionally";""
+20075519;"Musculo-skeletal system";"Ibux 400 mg";"M01A";"Occasionally";""
+20076318;"Nervous system";"Paracetamol";"N02BE";"Occasionally";""
+20076318;"Musculo-skeletal system";"Ibux 200 mg";"M01A";"Occasionally";""
+20076722;"Respiratory system";"Otrivin";"R01AA";"Occasionally";""
+20076823;"Nervous system";"Paracetamol";"N02BE";"Occasionally";""
+20076823;"Musculo-skeletal system";"Ibux 400 mg";"M01A";"Occasionally";""
+20077723;"Musculo-skeletal system";"Ibux 200 mg";"M01A";"Unknown";""
+20078118;"Respiratory system";"Rhinox";"R01AA";"Occasionally";""
+20078118;"Respiratory system";"Cetrizin";"R06A";"Occasionally";""
+20079119;"Musculo-skeletal system";"Ibux 200 mg";"M01A";"Occasionally";""
+20079119;"Nervous system";"Paracetamol";"N02BE";"Occasionally";""
+20079523;"Respiratory system";"Cetrizin";"R06A";"Regularly";""
+20079523;"Musculo-skeletal system";"Ibux 600 mg";"M01A";"Occasionally";""
+20079523;"Nervous system";"Paralgin forte";"N02AA59";"Occasionally";""
+20079624;"Respiratory system";"Rhinocort";"R01AD";"Occasionally";""
+20079624;"Respiratory system";"Ventolin";"R03AC";"Occasionally";""
+20079725;"Musculo-skeletal system";"Ibux 400 mg";"M01A";"Regularly";""
+20080313;"Nervous system";"Imigran";"N02CC";"Occasionally";""
+20080414;"Musculo-skeletal system";"Ibux 200 mg";"M01A";"Occasionally";""
+20080414;"Musculo-skeletal system";"Naprosyn";"M01A";"Occasionally";""
+20080818;"Musculo-skeletal system";"Ibux 200 mg";"M01A";"Occasionally";""
+20081112;"Musculo-skeletal system";"Ibux 200 mg";"M01A";"Occasionally";""
+20081112;"Nervous system";"Paracetamol";"N02BE";"Occasionally";""
+20081314;"Musculo-skeletal system";"Ibux 200 mg";"M01A";"Occasionally";""
+20081718;"Nervous system";"Concerta";"N06BA";"Regularly";""
+20081819;"Respiratory system";"Ventolin";"R03AC";"Occasionally";""
+20082214;"Respiratory system";"Cetrizin";"R06A";"Occasionally";""
+20082618;"Respiratory system";"Zyrtec";"R06A";"Occasionally";""
+20082719;"Nervous system";"Efexor";"N06AX16";"Regularly";""
+20082719;"Nervous system";"Seroquel";"N05AH04";"Regularly";""
+20083013;"Nervous system";"Paracetamol";"N02BE";"Occasionally";""
+20083013;"Musculo-skeletal system";"Ibux 200 mg";"M01A";"Occasionally";""
+20083316;"Nervous system";"Paracetamol";"N02BE";"Occasionally";""
+20083518;"Respiratory system";"Livostin";"R01AC";"Occasionally";""
+20085621;"Respiratory system";"Ventolin";"R03AC";"Occasionally";""
+20086016;"Dermatologicals";"Roaccutan";"D10BA";"Regularly";""
+20086016;"Respiratory system";"Cetrizin";"R06A";"Occasionally";""
+20086117;"Respiratory system";"Bricanyl";"R03AC";"Occasionally";""
+20086319;"Nervous system";"Cipralex";"N06AB10";"Regularly";""
+20088220;"Musculo-skeletal system";"Diclofenac";"M01A";"Occasionally";""
+20088220;"Respiratory system";"Ventolin";"R03AC";"Occasionally";""
+20088624;"Musculo-skeletal system";"Ibux 200 mg";"M01A";"Occasionally";""
+20089423;"Respiratory system";"Zyrtec";"R06A";"Occasionally";""
+20089928;"Respiratory system";"Flutide";"R03BA";"Occasionally";""
+20089928;"Dermatologicals";"Hydrokortison";"D07A";"Occasionally";""
+20090011;"Nervous system";"Imigran";"N02CC";"Occasionally";""
+20090516;"Respiratory system";"Cetrizin";"R06A";"Occasionally";""
+20090617;"Nervous system";"Paracetamol";"N02BE";"Occasionally";""
+20090718;"Respiratory system";"Ventolin";"R03AC";"Occasionally";""
+20091214;"Nervous system";"Paracetamol";"N02BE";"Unknown";""
+20091214;"Musculo-skeletal system";"Ibux 600 mg";"M01A";"Unknown";""
+20091921;"Musculo-skeletal system";"Ibux 200 mg";"M01A";"Occasionally";""
+20092215;"Respiratory system";"Zyrtec";"R06A";"Occasionally";""
+20092215;"Respiratory system";"Cetrizin";"R06A";"Occasionally";""
+20093014;"Musculo-skeletal system";"Ibux 600 mg";"M01A";"Occasionally";""
+20093418;"Nervous system";"Paracetamol";"N02BE";"Occasionally";""
+20093418;"Musculo-skeletal system";"Ibux 400 mg";"M01A";"Occasionally";""
+20094116;"Respiratory system";"Seretide";"R03AK";"Unknown";""
+20094116;"Respiratory system";"Ventolin";"R03AC";"Unknown";""
+20094823;"Nervous system";"Paracetamol";"N02BE";"Occasionally";""
+20095319;"Respiratory system";"Ventolin";"R03AC";"Occasionally";""
+20095723;"Respiratory system";"Ventolin";"R03AC";"Occasionally";""
+20095723;"Musculo-skeletal system";"Ibux 400 mg";"M01A";"Occasionally";""
+20095723;"Nervous system";"Pinex";"N02BE";"Occasionally";""
+20096522;"Respiratory system";"Singulair";"R03DC";"Regularly";""
+20096522;"Systemic hormonal preparations, excluding sex hormones and insulins";"Prednisolon";"H02A";"Regularly";""
+20096522;"Respiratory system";"Seretide";"R03AK";"Regularly";""
+20096623;"Respiratory system";"Ventolin";"R03AC";"Occasionally";""
+20096623;"Respiratory system";"Zyrtec";"R06A";"Occasionally";""
+20096724;"Nervous system";"Paracetamol";"N02BE";"Occasionally";""
+20097220;"Nervous system";"Paracetamol";"N02BE";"Occasionally";""
+20097220;"Nervous system";"Pinex";"N02BE";"Occasionally";""
+20098322;"Nervous system";"Lamictal";"N03A";"Regularly";""
+20098322;"Musculo-skeletal system";"Ibux 400 mg";"M01A";"Occasionally";""
+20098625;"Nervous system";"Paracetamol";"N02BE";"Occasionally";""
+20098726;"Nervous system";"Ritalin";"N06BA";"Regularly";""
+20098726;"Nervous system";"Concerta";"N06BA";"Regularly";""
+20099323;"Musculo-skeletal system";"Ibux 200 mg";"M01A";"Occasionally";""
+20099323;"Nervous system";"Paracetamol";"N02BE";"Occasionally";""
+20100407;"Musculo-skeletal system";"Ibux 200 mg";"M01A";"Occasionally";""
+20101206;"Musculo-skeletal system";"Ibux 200 mg";"M01A";"Occasionally";""
+20101206;"Nervous system";"Paracetamol";"N02BE";"Occasionally";""
+20101307;"Respiratory system";"Pulmicort";"R03BA";"Unknown";""
+20101307;"Respiratory system";"Ventolin";"R03AC";"Unknown";""
+20101408;"Musculo-skeletal system";"Ibux 400 mg";"M01A";"Occasionally";""
+20101408;"Nervous system";"Paracetamol";"N02BE";"Occasionally";""
+20101509;"Nervous system";"Paracetamol";"N02BE";"Occasionally";""
+20101711;"Respiratory system";"Flutide nasal";"R01AD";"Regularly";""
+20101711;"Respiratory system";"Ventolin";"R03AC";"Occasionally";""
+20103006;"Nervous system";"Paracetamol";"N02BE";"Occasionally";""
+20103006;"Musculo-skeletal system";"Ibux 200 mg";"M01A";"Occasionally";""
+20103107;"Respiratory system";"Cetrizin";"R06A";"Occasionally";""
+20103410;"Respiratory system";"Seretide";"R03AK";"Regularly";""
+20103410;"Respiratory system";"Ventolin";"R03AC";"Occasionally";""
+20103612;"Respiratory system";"Symbicort";"R03AK";"Regularly";""
+20103612;"Respiratory system";"Ventolin";"R03AC";"Occasionally";""
+20103612;"Dermatologicals";"Hydrokortison";"D07A";"Occasionally";""
+20103612;"Respiratory system";"Cetrizin";"R06A";"Occasionally";""
+20104613;"Respiratory system";"Bricanyl";"R03AC";"Occasionally";""
+20105008;"Nervous system";"Paracetamol";"N02BE";"Occasionally";""
+20105210;"Dermatologicals";"Roaccutan";"D10BA";"Regularly";""
+20105311;"Nervous system";"Paracetamol";"N02BE";"Occasionally";""
+20105311;"Musculo-skeletal system";"Ibux 200 mg";"M01A";"Occasionally";""
+20105412;"Respiratory system";"Otrivin";"R01AA";"Unknown";""
+20107313;"Musculo-skeletal system";"Ibux 400 mg";"M01A";"Occasionally";""
+20107313;"Nervous system";"Paracetamol";"N02BE";"Occasionally";""
+20107717;"Respiratory system";"Cetrizin";"R06A";"Occasionally";""
+20108011;"Nervous system";"Paracetamol";"N02BE";"Occasionally";""
+20108011;"Musculo-skeletal system";"Ibux 400 mg";"M01A";"Occasionally";""
+20108011;"Nervous system";"Paralgin forte";"N02AA59";"Occasionally";""
+20108112;"Systemic hormonal preparations, excluding sex hormones and insulins";"Levaxin";"H03A";"Regularly";""
+20108617;"Respiratory system";"Zyrtec";"R06A";"Occasionally";""
+20109719;"Nervous system";"Paracetamol";"N02BE";"Occasionally";""
+20109719;"Musculo-skeletal system";"Ibux 400 mg";"M01A";"Occasionally";""
+20110004;"Respiratory system";"Cetrizin";"R06A";"Occasionally";""
+20110004;"Respiratory system";"Symbicort";"R03AK";"Regularly";""
+20110004;"Respiratory system";"Ventolin";"R03AC";"Occasionally";""
+20110105;"Respiratory system";"Symbicort";"R03AK";"Occasionally";""
+20112915;"Dermatologicals";"Betnovat";"D07A";"Unknown";""
+20114008;"Nervous system";"Paracetamol";"N02BE";"Occasionally";""
+20114008;"Musculo-skeletal system";"Ibux 200 mg";"M01A";"Occasionally";""
+20114210;"Alimentary tract and metabolism";"Insulin";"A10A";"Regularly";""
+20114715;"Nervous system";"Paracetamol";"N02BE";"Occasionally";""
+20114715;"Musculo-skeletal system";"Ibux 200 mg";"M01A";"Occasionally";""
+20116616;"Musculo-skeletal system";"Ibux 200 mg";"M01A";"Occasionally";""
+20116717;"Nervous system";"Paracetamol";"N02BE";"Occasionally";""
+20116717;"Musculo-skeletal system";"Ibux 600 mg";"M01A";"Occasionally";""
+20116818;"Nervous system";"Paracetamol";"N02BE";"Occasionally";""
+20116818;"Musculo-skeletal system";"Ibux 200 mg";"M01A";"Occasionally";""
+20116919;"Musculo-skeletal system";"Ibux 400 mg";"M01A";"Occasionally";""
+20117011;"Nervous system";"Paracetamol";"N02BE";"Occasionally";""
+20117011;"Musculo-skeletal system";"Ibux 200 mg";"M01A";"Occasionally";""
+20117112;"Musculo-skeletal system";"Ibux 600 mg";"M01A";"Occasionally";""
+20117213;"Nervous system";"Lamictal";"N03A";"Regularly";""
+20117314;"Respiratory system";"Zyrtec";"R06A";"Occasionally";""
+20118012;"Nervous system";"Zoloft";"N06AB06";"Regularly";""
+20118012;"Nervous system";"Paracetamol";"N02BE";"Occasionally";""
+20118315;"Nervous system";"Paracetamol";"N02BE";"Occasionally";""
+20118315;"Musculo-skeletal system";"Ibux 200 mg";"M01A";"Occasionally";""
+20118517;"Alimentary tract and metabolism";"Zantac";"A02B";"Regularly";""
+20119720;"Respiratory system";"Ventolin";"R03AC";"Occasionally";""
+20119922;"Nervous system";"Imigran";"N02CC";"Occasionally";""
+20120409;"Respiratory system";"Aerius";"R06A";"Occasionally";""
+20120409;"Nervous system";"Paracetamol";"N02BE";"Occasionally";""
+20120611;"Nervous system";"Paracetamol";"N02BE";"Occasionally";""
+20120611;"Musculo-skeletal system";"Ibux 400 mg";"M01A";"Occasionally";""
+20120914;"Respiratory system";"Zyrtec";"R06A";"Occasionally";""
+20121006;"Respiratory system";"Singulair";"R03DC";"Regularly";""
+20121006;"Respiratory system";"Flutide nasal";"R01AD";"Occasionally";""
+20121006;"Respiratory system";"Ventolin";"R03AC";"Occasionally";""
+20121006;"Nervous system";"Ritalin";"N06BA";"Occasionally";""
+20121006;"Nervous system";"Concerta";"N06BA";"Regularly";""
+20121612;"Musculo-skeletal system";"Ibux 200 mg";"M01A";"Occasionally";""
+20122209;"Nervous system";"Imigran";"N02CC";"Occasionally";""
+20122209;"Respiratory system";"Cetrizin";"R06A";"Occasionally";""
+20122512;"Respiratory system";"Cetrizin";"R06A";"Occasionally";""
+20122815;"Nervous system";"Paracetamol";"N02BE";"Occasionally";""
+20122916;"Respiratory system";"Zyrtec";"R06A";"Occasionally";""
+20123210;"Respiratory system";"Zyrtec";"R06A";"Occasionally";""
+20123311;"Respiratory system";"Ventolin";"R03AC";"Occasionally";""
+20123412;"Nervous system";"Paracetamol";"N02BE";"Occasionally";""
+20123513;"Nervous system";"Concerta";"N06BA";"Regularly";""
+20123513;"Musculo-skeletal system";"Ibux 400 mg";"M01A";"Occasionally";""
+20123513;"Blood and blood forming organs";"Duroferron";"B03A";"Regularly";""
+20123816;"Musculo-skeletal system";"Ibux 200 mg";"M01A";"Occasionally";""
+20124211;"Respiratory system";"Flutide";"R03BA";"Regularly";""
+20124211;"Respiratory system";"Ventolin";"R03AC";"Occasionally";""
+20124211;"Respiratory system";"Cetrizin";"R06A";"Occasionally";""
+20124413;"Respiratory system";"Cetrizin";"R06A";"Regularly";""
+20126112;"Respiratory system";"Zyrtec";"R06A";"Occasionally";""
+20127012;"Respiratory system";"Symbicort";"R03AK";"Regularly";""
+20127012;"Respiratory system";"Cetrizin";"R06A";"Occasionally";""
+20127214;"Alimentary tract and metabolism";"Insulin";"A10A";"Regularly";""
+20129317;"Respiratory system";"Ventolin";"R03AC";"Occasionally";""
+20129317;"Respiratory system";"Zyrtec";"R06A";"Occasionally";""
+20129923;"Respiratory system";"Zyrtec";"R06A";"Occasionally";""
+20130006;"Systemic hormonal preparations, excluding sex hormones and insulins";"Levaxin";"H03A";"Regularly";""
+20131512;"Respiratory system";"Kestine";"R06A";"Occasionally";""
+20131815;"Alimentary tract and metabolism";"Insulin";"A10A";"Unknown";""
+20133110;"Respiratory system";"Seretide";"R03AK";"Occasionally";""
+20133716;"Nervous system";"Paracetamol";"N02BE";"Occasionally";""
+20135011;"Dermatologicals";"Hydrokortison";"D07A";"Regularly";""
+20135011;"Dermatologicals";"Apolar";"D07A";"Occasionally";""
+20135011;"Dermatologicals";"Betnovat";"D07A";"Regularly";""
+20135112;"Nervous system";"Imigran";"N02CC";"Occasionally";""
+20135213;"Respiratory system";"Symbicort";"R03AK";"Regularly";""
+20135213;"Respiratory system";"Singulair";"R03DC";"Regularly";""
+20137114;"Respiratory system";"Ventolin";"R03AC";"Occasionally";""
+20000507;"Musculo-skeletal system";"Ibux 200 mg";"M01A";"";""
+20002913;"Nervous system";"Paracetamol";"N02BE";"";""
+20004410;"Musculo-skeletal system";"Ibux 200 mg";"M01A";"";""
+20006210;"Musculo-skeletal system";"Ibux 200 mg";"M01A";"";""
+20006210;"Nervous system";"Paracetamol";"N02BE";"";""
+20006412;"Nervous system";"Paracetamol";"N02BE";"";""
+20006614;"Nervous system";"Paracetamol";"N02BE";"";""
+20008313;"Nervous system";"Paracetamol";"N02BE";"";""
+20011610;"Musculo-skeletal system";"Ibux 200 mg";"M01A";"";""
+20013814;"Nervous system";"Paracetamol";"N02BE";"";""
+20013915;"Nervous system";"Paracetamol";"N02BE";"";""
+20014714;"Musculo-skeletal system";"Ibux 200 mg";"M01A";"";""
+20017313;"Nervous system";"Paracetamol";"N02BE";"";""
+20018213;"Musculo-skeletal system";"Ibux 200 mg";"M01A";"";""
+20018213;"Nervous system";"Paracetamol";"N02BE";"";""
+20018920;"Nervous system";"Paracetamol";"N02BE";"";""
+20023512;"Musculo-skeletal system";"Ibux 200 mg";"M01A";"";""
+20026111;"Nervous system";"Paracetamol";"N02BE";"";""
+20028416;"Nervous system";"Paracetamol";"N02BE";"";""
+20029013;"Nervous system";"Paracetamol";"N02BE";"";""
+20029013;"Musculo-skeletal system";"Ibux 200 mg";"M01A";"";""
+20030005;"Nervous system";"Paracetamol";"N02BE";"";""
+20030207;"Nervous system";"Paracetamol";"N02BE";"";""
+20031309;"Musculo-skeletal system";"Ibux 200 mg";"M01A";"";""
+20031511;"Musculo-skeletal system";"Ibux 200 mg";"M01A";"";""
+20031511;"Nervous system";"Paracetamol";"N02BE";"";""
+20031814;"Musculo-skeletal system";"Ibux 200 mg";"M01A";"";""
+20033412;"Nervous system";"Paracetamol";"N02BE";"";""
+20033715;"Musculo-skeletal system";"Ibux 200 mg";"M01A";"";""
+20034514;"Nervous system";"Paracetamol";"N02BE";"";""
+20034514;"Musculo-skeletal system";"Ibux 400 mg";"M01A";"";""
+20038013;"Nervous system";"Paracetamol";"N02BE";"";""
+20038013;"Musculo-skeletal system";"Ibux 200 mg";"M01A";"";""
+20038114;"Musculo-skeletal system";"Ibux 200 mg";"M01A";"";""
+20039923;"Musculo-skeletal system";"Ibux 200 mg";"M01A";"";""
+20040410;"Nervous system";"Paracetamol";"N02BE";"";""
+20048822;"Musculo-skeletal system";"Ibux 200 mg";"M01A";"";""
+20048923;"Musculo-skeletal system";"Ibux 400 mg";"M01A";"";""
+20050310;"Nervous system";"Paracetamol";"N02BE";"";""
+20053414;"Musculo-skeletal system";"Ibux 400 mg";"M01A";"";""
+20057216;"Nervous system";"Paracetamol";"N02BE";"";""
+20058217;"Nervous system";"Paracetamol";"N02BE";"";""
+20058520;"Musculo-skeletal system";"Ibux 400 mg";"M01A";"";""
+20059319;"Nervous system";"Paracetamol";"N02BE";"";""
+20062919;"Nervous system";"Paracetamol";"N02BE";"";""
+20062919;"Musculo-skeletal system";"Voltaren";"M01A";"";""
+20066620;"Nervous system";"Paracetamol";"N02BE";"";""
+20074215;"Musculo-skeletal system";"Ibux 400 mg";"M01A";"";""
+20075115;"Nervous system";"Paracetamol";"N02BE";"";""
+20075418;"Nervous system";"Paralgin forte";"N02AA59";"";""
+20075418;"Musculo-skeletal system";"Ibux 200 mg";"M01A";"";""
+20078118;"Musculo-skeletal system";"Ibux 400 mg";"M01A";"";""
+20079220;"Nervous system";"Paracetamol";"N02BE";"";""
+20079321;"Nervous system";"Paralgin forte";"N02AA59";"";""
+20080515;"Nervous system";"Paracetamol";"N02BE";"";""
+20085318;"Nervous system";"Paracetamol";"N02BE";"";""
+20087825;"Nervous system";"Paracetamol";"N02BE";"";""
+20088826;"Musculo-skeletal system";"Ibux 200 mg";"M01A";"";""
+20089019;"Nervous system";"Paracetamol";"N02BE";"";""
+20090011;"Nervous system";"Panodil";"N02BE";"";""
+20091719;"Nervous system";"Paracetamol";"N02BE";"";""
+20091719;"Musculo-skeletal system";"Ibux 200 mg";"M01A";"";""
+20093519;"Musculo-skeletal system";"Ibux 200 mg";"M01A";"";""
+20093721;"Musculo-skeletal system";"Ibux 400 mg";"M01A";"";""
+20093822;"Nervous system";"Paracetamol";"N02BE";"";""
+20096623;"Nervous system";"Paracetamol";"N02BE";"";""
+20096926;"Musculo-skeletal system";"Ibux 400 mg";"M01A";"";""
+20096926;"Nervous system";"Paracetamol";"N02BE";"";""
+20098221;"Nervous system";"Paracetamol";"N02BE";"";""
+20100609;"Musculo-skeletal system";"Ibux 200 mg";"M01A";"";""
+20102712;"Nervous system";"Paracetamol";"N02BE";"";""
+20115211;"Nervous system";"Paracetamol";"N02BE";"";""
+20118214;"Nervous system";"Paracetamol";"N02BE";"";""
+20118214;"Musculo-skeletal system";"Ibux 600 mg";"M01A";"";""
+20119417;"Nervous system";"Paracetamol";"N02BE";"";""
+20120510;"Musculo-skeletal system";"Ibux 400 mg";"M01A";"";""
+20121006;"Musculo-skeletal system";"Ibux 200 mg";"M01A";"";""
+20124009;"Nervous system";"Paracetamol";"N02BE";"";""
+20124211;"Nervous system";"Pinex";"N02BE";"";""
+20125414;"Nervous system";"Paracetamol";"N02BE";"";""
+20127012;"Musculo-skeletal system";"Voltaren";"M01A";"";""
+20130208;"Nervous system";"Paracetamol";"N02BE";"";""
+20131512;"Musculo-skeletal system";"Ibux 400 mg";"M01A";"";""
+20135314;"Nervous system";"Paracetamol";"N02BE";"";""
+20012207;"Antiinfectives for systemic use";"Ekvacillin";"J01CF02";"";""
+20022915;"Antiinfectives for systemic use";"Tetralysal";"J01AA04";"";""
+20031309;"Antiinfectives for systemic use";"Apocillin";"J01CE02";"";""
+20032815;"Antiinfectives for systemic use";"Tetracyclin";"J01AA07";"";""
+20045920;"Antiinfectives for systemic use";"Tetralysal";"J01AA04";"";""
+20047922;"Antiinfectives for systemic use";"Apocillin";"J01CE02";"";""
+20060210;"Antiinfectives for systemic use";"Tetralysal";"J01AA04";"";""
+20067116;"Antiinfectives for systemic use";"Tetracyclin";"J01AA07";"";""
+20085621;"Antiinfectives for systemic use";"Doksycyklin HEXAL";"J01A";"";""
+20089322;"Antiinfectives for systemic use";"Tetralysal";"J01AA04";"";""
+20111005;"Antiinfectives for systemic use";"Apocillin";"J01CE02";"";""
+20133110;"Antiinfectives for systemic use";"Ery-Max";"J01FA01";"";""
+1;"Genito-urinary system and sex hormones";"Microgynon";"G03AA07";"Unknown";NA
+7;"Genito-urinary system and sex hormones";"Microgynon";"G03AA07";"Unknown";NA
+14;"Genito-urinary system and sex hormones";"Mercilon";"G03AA09";"Unknown";NA
+15;"Genito-urinary system and sex hormones";"Loette";"G03AA07";"Unknown";NA
+20;"Genito-urinary system and sex hormones";"Loette";"G03AA07";"Unknown";NA
+23;"Genito-urinary system and sex hormones";"Microgynon";"G03AA07";"Unknown";NA
+29;"Genito-urinary system and sex hormones";"Loette";"G03AA07";"Unknown";NA
+30;"Genito-urinary system and sex hormones";"Microgynon";"G03AA07";"Unknown";NA
+31;"Genito-urinary system and sex hormones";"Synfase";"G03AB04";"Unknown";NA
+45;"Genito-urinary system and sex hormones";"Microgynon";"G03AA07";"Unknown";NA
+52;"Genito-urinary system and sex hormones";"Microgynon";"G03AA07";"Unknown";NA
+53;"Genito-urinary system and sex hormones";"Evra";"G03AA13";"Unknown";NA
+54;"Genito-urinary system and sex hormones";"Yasminelle";"G03AA12";"Unknown";NA
+55;"Genito-urinary system and sex hormones";"Microgynon";"G03AA07";"Unknown";NA
+57;"Genito-urinary system and sex hormones";"Loette";"G03AA07";"Unknown";NA
+78;"Genito-urinary system and sex hormones";"Microgynon";"G03AA07";"Unknown";NA
+81;"Genito-urinary system and sex hormones";"Microgynon";"G03AA07";"Unknown";NA
+92;"Genito-urinary system and sex hormones";"Microgynon";"G03AA07";"Unknown";NA
+107;"Genito-urinary system and sex hormones";"Mercilon";"G03AA09";"Unknown";NA
+110;"Genito-urinary system and sex hormones";"Microgynon";"G03AA07";"Unknown";NA
+113;"Genito-urinary system and sex hormones";"Synfase";"G03AB04";"Unknown";NA
+118;"Genito-urinary system and sex hormones";"Loette";"G03AA07";"Unknown";NA
+124;"Genito-urinary system and sex hormones";"Microgynon";"G03AA07";"Unknown";NA
+134;"Genito-urinary system and sex hormones";"Microgynon";"G03AA07";"Unknown";NA
+137;"Genito-urinary system and sex hormones";"Microgynon";"G03AA07";"Unknown";NA
+138;"Genito-urinary system and sex hormones";"Evra";"G03AA13";"Unknown";NA
+139;"Genito-urinary system and sex hormones";"Loette";"G03AA07";"Unknown";NA
+147;"Genito-urinary system and sex hormones";"Yasmin";"G03AA12";"Unknown";NA
+148;"Genito-urinary system and sex hormones";"Loette";"G03AA07";"Unknown";NA
+152;"Genito-urinary system and sex hormones";"Loette";"G03AA07";"Unknown";NA
+178;"Genito-urinary system and sex hormones";"Microgynon";"G03AA07";"Unknown";NA
+186;"Genito-urinary system and sex hormones";"Microgynon";"G03AA07";"Unknown";NA
+197;"Genito-urinary system and sex hormones";"Microgynon";"G03AA07";"Unknown";NA
+200;"Genito-urinary system and sex hormones";"Mercilon";"G03AA09";"Unknown";NA
+215;"Genito-urinary system and sex hormones";"Yasmin";"G03AA12";"Unknown";NA
+218;"Genito-urinary system and sex hormones";"Microgynon";"G03AA07";"Unknown";NA
+224;"Genito-urinary system and sex hormones";"Microgynon";"G03AA07";"Unknown";NA
+226;"Genito-urinary system and sex hormones";"Microgynon";"G03AA07";"Unknown";NA
+240;"Genito-urinary system and sex hormones";"Loette";"G03AA07";"Unknown";NA
+246;"Genito-urinary system and sex hormones";"Cerazette";"G03AC09";"Unknown";NA
+250;"Genito-urinary system and sex hormones";"Microgynon";"G03AA07";"Unknown";NA
+252;"Genito-urinary system and sex hormones";"Loette";"G03AA07";"Unknown";NA
+255;"Genito-urinary system and sex hormones";"Microgynon";"G03AA07";"Unknown";NA
+257;"Genito-urinary system and sex hormones";"Microgynon";"G03AA07";"Unknown";NA
+258;"Genito-urinary system and sex hormones";"Microgynon";"G03AA07";"Unknown";NA
+265;"Genito-urinary system and sex hormones";"Microgynon";"G03AA07";"Unknown";NA
+280;"Genito-urinary system and sex hormones";"Microgynon";"G03AA07";"Unknown";NA
+281;"Genito-urinary system and sex hormones";"Microgynon";"G03AA07";"Unknown";NA
+305;"Genito-urinary system and sex hormones";"Microgynon";"G03AA07";"Unknown";NA
+317;"Genito-urinary system and sex hormones";"Mercilon";"G03AA09";"Unknown";NA
+319;"Genito-urinary system and sex hormones";"Microgynon";"G03AA07";"Unknown";NA
+321;"Genito-urinary system and sex hormones";"Yasmin";"G03AA12";"Unknown";NA
+326;"Genito-urinary system and sex hormones";"Microgynon";"G03AA07";"Unknown";NA
+332;"Genito-urinary system and sex hormones";"Yasmin";"G03AA12";"Unknown";NA
+337;"Genito-urinary system and sex hormones";"Microgynon";"G03AA07";"Unknown";NA
+345;"Genito-urinary system and sex hormones";"Mercilon";"G03AA09";"Unknown";NA
+351;"Genito-urinary system and sex hormones";"Microgynon";"G03AA07";"Unknown";NA
+353;"Genito-urinary system and sex hormones";"Cerazette";"G03AC09";"Unknown";NA
+354;"Genito-urinary system and sex hormones";"Loette";"G03AA07";"Unknown";NA
+357;"Genito-urinary system and sex hormones";"Loette";"G03AA07";"Unknown";NA
+371;"Genito-urinary system and sex hormones";"Cerazette";"G03AC09";"Unknown";NA
+388;"Genito-urinary system and sex hormones";"Loette";"G03AA07";"Unknown";NA
+400;"Genito-urinary system and sex hormones";"Microgynon";"G03AA07";"Unknown";NA
+403;"Genito-urinary system and sex hormones";"Cerazette";"G03AC09";"Unknown";NA
+410;"Genito-urinary system and sex hormones";"Microgynon";"G03AA07";"Unknown";NA
+415;"Genito-urinary system and sex hormones";"Microgynon";"G03AA07";"Unknown";NA
+417;"Genito-urinary system and sex hormones";"Microgynon";"G03AA07";"Unknown";NA
+428;"Genito-urinary system and sex hormones";"Loette";"G03AA07";"Unknown";NA
+432;"Genito-urinary system and sex hormones";"Loette";"G03AA07";"Unknown";NA
+444;"Genito-urinary system and sex hormones";"Loette";"G03AA07";"Unknown";NA
+447;"Genito-urinary system and sex hormones";"Mercilon";"G03AA09";"Unknown";NA
+454;"Genito-urinary system and sex hormones";"Microgynon";"G03AA07";"Unknown";NA
+455;"Genito-urinary system and sex hormones";"Loette";"G03AA07";"Unknown";NA
+459;"Genito-urinary system and sex hormones";"Zyrona";"G03HB01";"Unknown";NA
+461;"Genito-urinary system and sex hormones";"Microgynon";"G03AA07";"Unknown";NA
+462;"Genito-urinary system and sex hormones";"Microgynon";"G03AA07";"Unknown";NA
+468;"Genito-urinary system and sex hormones";"Microgynon";"G03AA07";"Unknown";NA
+470;"Genito-urinary system and sex hormones";"Microgynon";"G03AA07";"Unknown";NA
+482;"Genito-urinary system and sex hormones";"Microgynon";"G03AA07";"Unknown";NA
+486;"Genito-urinary system and sex hormones";"Microgynon";"G03AA07";"Unknown";NA
+490;"Genito-urinary system and sex hormones";"Microgynon";"G03AA07";"Unknown";NA
+491;"Genito-urinary system and sex hormones";"Depo-provera";"G03AC06";"Unknown";NA
+494;"Genito-urinary system and sex hormones";"Microgynon";"G03AA07";"Unknown";NA
+496;"Genito-urinary system and sex hormones";"Microgynon";"G03AA07";"Unknown";NA
+501;"Genito-urinary system and sex hormones";"Microgynon";"G03AA07";"Unknown";NA
+508;"Genito-urinary system and sex hormones";"Depo-provera";"G03AC06";"Unknown";NA
+510;"Genito-urinary system and sex hormones";"Loette";"G03AA07";"Unknown";NA
+512;"Genito-urinary system and sex hormones";"Microgynon";"G03AA07";"Unknown";NA
+516;"Genito-urinary system and sex hormones";"Mercilon";"G03AA09";"Unknown";NA
+520;"Genito-urinary system and sex hormones";"Microgynon";"G03AA07";"Unknown";NA
+525;"Genito-urinary system and sex hormones";"Loette";"G03AA07";"Unknown";NA
+533;"Genito-urinary system and sex hormones";"Microgynon";"G03AA07";"Unknown";NA
+536;"Genito-urinary system and sex hormones";"Loette";"G03AA07";"Unknown";NA
+545;"Genito-urinary system and sex hormones";"Mercilon";"G03AA09";"Unknown";NA
+548;"Genito-urinary system and sex hormones";"Cerazette";"G03AC09";"Unknown";NA
+549;"Genito-urinary system and sex hormones";"Yasmin";"G03AA12";"Unknown";NA
+563;"Genito-urinary system and sex hormones";"Microgynon";"G03AA07";"Unknown";NA
+564;"Genito-urinary system and sex hormones";"Yasminelle";"G03AA12";"Unknown";NA
+577;"Genito-urinary system and sex hormones";"Yasmin";"G03AA12";"Unknown";NA
+588;"Genito-urinary system and sex hormones";"Microgynon";"G03AA07";"Unknown";NA
+598;"Genito-urinary system and sex hormones";"Microgynon";"G03AA07";"Unknown";NA
+602;"Genito-urinary system and sex hormones";"Microgynon";"G03AA07";"Unknown";NA
+609;"Genito-urinary system and sex hormones";"Loette";"G03AA07";"Unknown";NA
+612;"Genito-urinary system and sex hormones";"Microgynon";"G03AA07";"Unknown";NA
+620;"Genito-urinary system and sex hormones";"Yasmin";"G03AA12";"Unknown";NA
+621;"Genito-urinary system and sex hormones";"Cerazette";"G03AC09";"Unknown";NA
+632;"Genito-urinary system and sex hormones";"Mercilon";"G03AA09";"Unknown";NA
+636;"Genito-urinary system and sex hormones";"Zyrona";"G03HB01";"Unknown";NA
+638;"Genito-urinary system and sex hormones";"Microgynon";"G03AA07";"Unknown";NA
+659;"Genito-urinary system and sex hormones";"Yasminelle";"G03AA12";"Unknown";NA
+666;"Genito-urinary system and sex hormones";"Yasmin";"G03AA12";"Unknown";NA
+668;"Genito-urinary system and sex hormones";"Microgynon";"G03AA07";"Unknown";NA
+671;"Genito-urinary system and sex hormones";"Microgynon";"G03AA07";"Unknown";NA
+673;"Genito-urinary system and sex hormones";"Microgynon";"G03AA07";"Unknown";NA
+681;"Genito-urinary system and sex hormones";"Microgynon";"G03AA07";"Unknown";NA
+683;"Genito-urinary system and sex hormones";"Yasminelle";"G03AA12";"Unknown";NA
+692;"Genito-urinary system and sex hormones";"Microgynon";"G03AA07";"Unknown";NA
+708;"Genito-urinary system and sex hormones";"Microgynon";"G03AA07";"Unknown";NA
+710;"Genito-urinary system and sex hormones";"Loette";"G03AA07";"Unknown";NA
+720;"Genito-urinary system and sex hormones";"Microgynon";"G03AA07";"Unknown";NA
+725;"Genito-urinary system and sex hormones";"Microgynon";"G03AA07";"Unknown";NA
+738;"Genito-urinary system and sex hormones";"Cerazette";"G03AC09";"Unknown";NA
+754;"Genito-urinary system and sex hormones";"Loette";"G03AA07";"Unknown";NA
+757;"Genito-urinary system and sex hormones";"Loette";"G03AA07";"Unknown";NA
+779;"Genito-urinary system and sex hormones";"Microgynon";"G03AA07";"Unknown";NA
+783;"Genito-urinary system and sex hormones";"Microgynon";"G03AA07";"Unknown";NA
+790;"Genito-urinary system and sex hormones";"Depo-provera";"G03AC06";"Unknown";NA
+791;"Genito-urinary system and sex hormones";"Yasmin";"G03AA12";"Unknown";NA
+793;"Genito-urinary system and sex hormones";"Microgynon";"G03AA07";"Unknown";NA
+807;"Genito-urinary system and sex hormones";"Mercilon";"G03AA09";"Unknown";NA
+819;"Genito-urinary system and sex hormones";"Microgynon";"G03AA07";"Unknown";NA
+847;"Genito-urinary system and sex hormones";"Microgynon";"G03AA07";"Unknown";NA
+855;"Genito-urinary system and sex hormones";"Yasmin";"G03AA12";"Unknown";NA
+860;"Genito-urinary system and sex hormones";"Mercilon";"G03AA09";"Unknown";NA
+862;"Genito-urinary system and sex hormones";"Microgynon";"G03AA07";"Unknown";NA
+873;"Genito-urinary system and sex hormones";"Cerazette";"G03AC09";"Unknown";NA
+875;"Genito-urinary system and sex hormones";"Microgynon";"G03AA07";"Unknown";NA
+888;"Genito-urinary system and sex hormones";"Microgynon";"G03AA07";"Unknown";NA
+889;"Genito-urinary system and sex hormones";"Depo-provera";"G03AC06";"Unknown";NA
+891;"Genito-urinary system and sex hormones";"Mercilon";"G03AA09";"Unknown";NA
+904;"Genito-urinary system and sex hormones";"Microgynon";"G03AA07";"Unknown";NA
+915;"Genito-urinary system and sex hormones";"Yasminelle";"G03AA12";"Unknown";NA
+918;"Genito-urinary system and sex hormones";"Loette";"G03AA07";"Unknown";NA
+928;"Genito-urinary system and sex hormones";"Loette";"G03AA07";"Unknown";NA
+931;"Genito-urinary system and sex hormones";"Microgynon";"G03AA07";"Unknown";NA
+935;"Genito-urinary system and sex hormones";"Microgynon";"G03AA07";"Unknown";NA
+936;"Genito-urinary system and sex hormones";"Zyrona";"G03HB01";"Unknown";NA
+939;"Genito-urinary system and sex hormones";"Yasminelle";"G03AA12";"Unknown";NA
+942;"Genito-urinary system and sex hormones";"Microgynon";"G03AA07";"Unknown";NA
+945;"Genito-urinary system and sex hormones";"Cerazette";"G03AC09";"Unknown";NA
+951;"Genito-urinary system and sex hormones";"Microgynon";"G03AA07";"Unknown";NA
+954;"Genito-urinary system and sex hormones";"Loette";"G03AA07";"Unknown";NA
+955;"Genito-urinary system and sex hormones";"Microgynon";"G03AA07";"Unknown";NA
+962;"Genito-urinary system and sex hormones";"Loette";"G03AA07";"Unknown";NA
+963;"Genito-urinary system and sex hormones";"Microgynon";"G03AA07";"Unknown";NA
+978;"Genito-urinary system and sex hormones";"Microgynon";"G03AA07";"Unknown";NA
+996;"Genito-urinary system and sex hormones";"Loette";"G03AA07";"Unknown";NA
+1003;"Genito-urinary system and sex hormones";"Loette";"G03AA07";"Unknown";NA
+1012;"Genito-urinary system and sex hormones";"Microgynon";"G03AA07";"Unknown";NA
+1018;"Genito-urinary system and sex hormones";"Loette";"G03AA07";"Unknown";NA
+1022;"Genito-urinary system and sex hormones";"Cerazette";"G03AC09";"Unknown";NA
+1028;"Genito-urinary system and sex hormones";"Loette";"G03AA07";"Unknown";NA
+1037;"Genito-urinary system and sex hormones";"Microgynon";"G03AA07";"Unknown";NA

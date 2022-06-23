@@ -1,0 +1,66 @@
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\documentclass[10pt, a4paper, onecolumn]{article} % 10pt font size (11 and 12 also possible), A4 paper (letterpaper for US letter) and two column layout (remove for one column)
+
+\input{structure.tex} % Specifies the document structure and loads requires packages
+
+
+
+\begin{document}
+
+%----------------------------------------------------------------------------------------
+%	List of tables and figures
+%----------------------------------------------------------------------------------------
+\listoffigures
+\listoftables
+\newpage
+
+%----------------------------------------------------------------------------------------
+%	MAIN
+%----------------------------------------------------------------------------------------
+
+%----------------------------------------------------------------------------------------
+%	Main tables
+%
+%   These are the tables that are important for the article. The supplementary are ok to understanding
+%   things, but not esential.
+%----------------------------------------------------------------------------------------
+
+\section{Tables}
+
+% is there different in behaviour between men and women
+
+\input{../../../../results/biomarkers/tables/hostfactors/LatexTable_SexDifferencesHostFactorsTable.tex}
+
+
+\input{../../../../results/biomarkers/tables/hostfactors/sex/LatexTable_OverrepresentedCategoricalSexDifferencesChocolateFrequency.tex}
+
+\input{../../../../results/biomarkers/tables/hostfactors/sex/LatexTable_CategoricalSexDifferencesChocolateFrequency.tex}
+
+\input{../../../../results/biomarkers/tables/LatexTable_BiomarkersBothPBonferroni.tex}
+
+
+
+
+%----------------------------------------------------------------------------------------
+%	Main images
+%
+%   These are the images that are important for the article. The supplementary are ok to understanding
+%   things, but not esential.
+%----------------------------------------------------------------------------------------
+
+\section{Images}
+
+\input{../../../../results/biomarkers/images/network/logisticObesity.tex}
+
+\newpage
+
+\section{Change History}
+
+\subsection*{0.1}
+
+Divided the document in two, main and supplementary materials.
+
+\end{document}

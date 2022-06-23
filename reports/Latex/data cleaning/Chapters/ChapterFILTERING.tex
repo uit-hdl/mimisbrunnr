@@ -1,0 +1,43 @@
+%*****************************************
+\chapter{Filtering}\label{ch:filtering}
+%*****************************************
+
+\section{Intro}
+
+In the previous section we left the original data ready to be imported into any tool that do analysis. Now we have imported this file and we are about to begin our analysis. However we still need to filter by some criteria that we are going to see here. Notice that we don't deal with data stratification here. Later on we will study, for example, men and women separately depending on the context, by class ID, by snuff user status and so on. But that is not filtering. In here we will just take away the rows that we deemed inappropriate for our analysis.\vspace{3 mm}
+
+\section{Filters}
+
+\subsection{By Age}
+
+In Norway, a high-school student is usually between 16 to 19 years old, depending on which grade the student is, but in general they are teenagers within normal teenager years. However we also have some population that are older than 20 years old. Typically these are people with mental disabilities. Because of this, they have an special set of medication, bloodwork statistics, social relationships, and so on that are outliers to our relevant data. As such, we will only consider people who are younger than 20 years old, with age 20 also included.\vspace{3 mm}
+
+We deleted 20 persons like this, and a total of 91 relationships in the overall network. They were nominating a total of 59 people as friends (out), and a total of 50 people were nominating at least one of them as friend (in). They had 18 reciprocal nomination in between them.\vspace{3 mm}
+
+\subsection{By lack of information}
+
+Each person is a row in our data, each variable is a column. There are some columns with missing information. For example, in the BMI variable we have 4 people who doesn't have any BMI values. This doesn't make the whole row for that person worthless because we still have data for many other variables. \vspace{3 mm}
+
+However, in the data that we have in the TSD, there are empty rows, with valid IDs, that either doesn't have any information at all in any of the variables, or have just very few columns with valid data.\vspace{3 mm}
+
+We cannot access the data from the TSD so this part is left blank to fill later, but in here there will be a summary of rows that we had to delete due lack of information.\vspace{3 mm}
+
+\subsection{Final summary}
+
+After taking into account all the previous information, we generated new .csv files, with this filtering criteria, in the folder "../data/filterReady" \vspace{3 mm}
+
+Here is a summary of all the connection that were lost. Of course, all the new friendship information variables that we introduced in the previous chapter \ref{section:friendship_information}, such as popularity for each person, are updated after applying the filter.\vspace{3 mm}
+
+\input{../img/results/all/LatexTable_dataFilteringLogDF.tex}
+
+\input{../img/results/all/Boxplot_missingFriendsDF_Nominations.tex}
+
+\input{../img/results/all/Boxplot_missingFriendsDF_Popularity.tex}
+
+\section{Updating variables}
+
+After deleting these rows, we need to update some variables again, similarly as we did during the data cleaning process. As in re-assigning IDs so everybody has consecutive IDs and the friendship matrices indexes match with the person ID, re-calculating the friendship information in the phenotype table, re-construct the network matrices to keep up with the ID changes.
+
+
+
+\vspace{3 mm}

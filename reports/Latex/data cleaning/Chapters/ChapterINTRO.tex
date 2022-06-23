@@ -1,0 +1,238 @@
+%*****************************************
+\chapter{Introduction}\label{ch:introduction}
+%*****************************************
+
+\section{Abstract}
+
+This document describe how we prepare the data for analysis. It covers up to...  .\vspace{3 mm}
+
+%*****************************************
+\section{Definitions}
+%*****************************************
+
+This section is a brief layman description of the different concepts or entities involved in this project. Please refer to the reference section for more extensive info about each.\vspace{3 mm}
+
+\subsection{People}
+
+Lars-Ailo, ~\cite{ref:larsab} 
+Anne-Sophie, \cite{ref:annesofie}
+Anne-Merethe,
+Dina,
+Christopher,
+Whoever own the FF1+ data\vspace{3 mm}
+
+\subsection{Data}
+\subsection{Fit Futures}
+
+Fit Futures is divided in a series of interviews during a long period of time. The dates are as follow:
+
+FF1 - Fit futures 1
+FF11 - Several samples of S.Aureus were taken during FF1. A week later FF11 is looking for the control samples.
+
+FF12 - A few month later we take the sample two of the S.Aureus in FF12
+
+FF2 - Fit futures 2
+
+FF3 - Fit futures 3
+
+
+
+\subsection{Legal}
+\subsection{Privacy levels}
+
+\subsection{Statistics}
+
+\subsubsection{Reproducibility}
+
+\subsection{Programming languages}
+
+\subsubsection{LaTeX}
+
+LaTeX  \cite{ref:latexintro} is a system for preparing written documents. The main characteristich is that, unlike in Microsoft Word, LibreOffice, and other similar software where you see the final result of what you are written live as you edit it, in LaTeX the user types in plain text keeping style and content separated, in a similar way as HTML+CSS works. Later on the code is compiled into a PDF document where you can see the final stylized result.\vspace{3 mm}
+
+The main inconvinient of LaTeX is the learning curve, however LaTeX is widely used in all academia fields for the communication and publication of scientific documents. In my opinion, the inconvience of having to learn LaTeX outweights, by far, the amount of time that you are going to save editing documents in a "What You See Is What You Get"  \cite{ref:wysiwyg} editor. To the point that mathematics communications alone, would be near impossible to perform without this software.\vspace{3 mm}
+
+As opposite to Microsoft Word where you can syncronize automatically with OneDrive, Latex doesn't have by itself a colaborative interface and you are dependent of using a control software, such as GIT, or using online services, such as Overleaf. In any case, this problem can also be adverted by setting automatic version control scripts; which to be fair, scare people outside mathematics, informatics, and physics fields.\vspace{3 mm}
+
+\subsubsection{SPSS}
+
+The letters SPSS \cite{ref:spss} stands for "Statistical Package for the Social Sciences". Is a propietary statistics software developed for social sciences researcher who has very limited, or none, knowledge of programing.\vspace{3 mm}
+
+The advantage of SPSS is that is composed of easy to use drop-down menus. If a person has some basic knowedle of statistics, SPSS is very easy to use even for complex multivariate analysis.\vspace{3 mm}
+
+The shortcomings are that you can't do extensive scripting in SPSS, so anything that we do here that generate results automatically, generate latex code automatically, generate websites automatically, won't be possible. During the course of the project we also tend to change definitions of things, such as, what does it mean to be a carrier of a bacteria. Running manually all the drop-down menus in SPSS, each time we decide to change the definition of a disease, or who is the target population, would be an insormuntable time consuming task.\vspace{3 mm}
+
+Other negative issues are the propietary license cost, worsened by the fact that it has a software as service license, plus the issues with close software security. Adding to this, there are statistical method within several libraries available in R that aren't in SPSS, namely almost everything that has to do with network analysis. For fairness, mention that it has a trialware licese where you can use the software for free, but I would strongly advice agaitns wasting your time using it given all the limitations that presents.\vspace{3 mm}
+
+\subsubsection{R}
+
+R has however a lot of shortcommings and limitation as a programing language, which I discuss in great detail in section... \vspace{3 mm}
+
+\subsubsection{C/C++}
+
+While C++ would be my prefered program of choice, it is not the most popular language for data analysis, in part for the initial learning curve that has over R or Python.
+
+\subsubsection{Python}
+
+\subsection{Technologies}
+
+\subsubsection{SHA1}
+
+Let say two person have two files with thousand of rows and thousand of columns. They suspect that the files are different because they are not getting the same results after doing the same analysis.\vspace{3 mm}
+
+Normally, we would have to check each of the million cells one by one until we find the the data that is wrong. But it might be that there is actually nothing wrong with the data and we are getting different result for another reason.\vspace{3 mm}
+
+In order to avoid having to check all the data one by one every time we run a test, we can simply use what is call a hash function. SHA1 is one popular option of many different hash functions. This simply a function that takes all the bytes in the data, and generate a unique number based on those bytes. So if you input the same bytes you will get the same unique number. If the file is exactly the same for both parties, the generated number must also be the same. If it is not, it means that the error for getting different result is because we have different source files.\vspace{3 mm}
+
+In order to get the SHA1 sum of a file, simply run this command on a terminal of your Linux machine:\vspace{3 mm}
+
+\detokenize{sha1sum MyFile.csv > hash.txt} \vspace{3 mm}
+
+This will run the sha1sum algorithm, on the \detokenize{"MyFile.csv"} file, and save the result in the \"hash.txt\" file. You will obtain a string of characters similar to this: \vspace{3 mm}
+
+c4d047e998dd5d3701f4ce416b4fbebcd2da37a0  \vspace{3 mm}
+
+If you want to compare two files, you just need to compare this short string, instead of the million cells.\vspace{3 mm}
+
+Inside the folder containing the data for the project, you will find the all the data, and for each datafile, you will also find the SHA1 text corresponding to each file.\vspace{3 mm}
+
+\subsubsection{Git}
+
+Git is a software for keeping track of changes in any set of files. It can be set up for offline use in only one computer, but typically is use for file sharing over multiple computers with multiple collaborators. Git is an open-source software under GPL2.0 license\vspace{3 mm}
+
+Git is overwelmely the most poppular choice in the industry. It has a light leaning curve, but once you get use to it you will not want to use anything else. You can set up your own Git private server, but typically you will use one of the many free options already available.\vspace{3 mm}
+
+A shortcoming is the lack of a easy user interface for "drag and drop" files outside Windows operative systems, which can put off new potential users who don't want to deal typing commands over the terminal. It can be adverted depending of what Git service you use.\vspace{3 mm}
+
+Git only handle the store of data and doesn't offer any document collaboration functionality beside sharing the file itself, so things like adding comments into the documents need to be done within the document software that you are using for that particular file. I can't think of any major writing editor that doesn't offert that functionality already, so I would call this problem as adverted.\vspace{3 mm}
+
+
+\subsubsection{Storage}
+
+\subsubsection{FileSender}
+
+\href{https://www.uio.no/english/services/it/research/storage/filesender.html}{FileSender} is a web based application that allows authenticated users to securely and easily send large files to other users. This is use to send each other private data. The data here is store for a while until it self-destroy automatically. You need a Two Factor Authentication (2FA) in order to access the files.\vspace{3 mm}
+
+We use FileSender in order to share the original data as this platform is complaince with the privacy levels required\vspace{3 mm}
+
+\subsubsection{TSD}
+
+\href{https://www.uio.no/english/services/it/research/storage/filesender.html}{Services for sensitive data (TSD)} is a platform for collecting, storing, analyzing and sharing sensitive data in compliance with the Norwegian privacy regulation. TSD is used by researchers working at UiO and in other public research institutions (the UH-sector, universities, hospitals etc.). The TSD is primarily an IT-platform for research even if in some cases it is used for clinical research and commercial research.\vspace{3 mm}
+
+The complete data of FF1 is stored here. However we lost access to this at the beginning of 2021 when the TSD project "484" expired.\vspace{3 mm}
+
+TSD has the advantage that can be use a virtual remote machine, which is quite combinient if you don't want to be bothered with security issues related to data privacy. This include the possibility of several people working on the same documents (without version control software) and a common space to share results securely \vspace{3 mm}
+
+The disadvantages is that TSD getting something out of TSD, is a burocratic nightmare. So for example, if you want to write an article, and you want to include a figure you generated in there, you might have to wait several weeks before you are able to do so. And this will repeat each time you generate any new file.\vspace{3 mm}
+
+Other minor inconviennces is that, at the time of writing this, R software was limited to Windows arquitechture only. You also need to pass periodically another burocratic layer to keep access to your project, as project expire over time\vspace{3 mm}
+
+TSD however has the potential to become the best cloud-sharing option, by far. It already has in place the physical infrastructure, with the hard drives with the actual data within Norwewian borders, and software that allow for the execution of a remote virtual machine which you can use anyware you want. It just need to include it own private GIT system where you can store, and importaly retrieve, the red and black data of your project. \vspace{3 mm}
+
+\subsubsection{Local folders}
+
+Within this context, a local folder is just whatever you store in your own computer. This might or might not be syncronized over "The Cloud" somewhere else. So typically your own laptop or desktop computer. Each person related to this project has his or her own private computers. Each person can have different permission to access the private data, and as such, has different copies of such data in their own computers. For example, as time pass by, I get more and more data that somebody has to transfer (typically Anne-Sophie) from her computer, to my computer, via FileSender.\vspace{3 mm}
+
+As discused in the privacy levels, all private data is not allowed to leave the UiT computers. So this, the TSD, and the FileSender, are the only places where you can find the actual original data, or cleaned data.\vspace{3 mm}
+
+The biggest shortcoming of this is the data inconsistency that can arise from working with multiple data sources that are not properly managed under any version control. This however is adverted since we work with a proper logging system everytime we run an experiment.\vspace{3 mm}
+
+The next problem is that we had the situation in which I was working with a collaborator (Dina) in order to analyze some data. She have permission to read the data, but I didn't. And this run on for about 3 months where I had to work blind, and preparing the scripts using fake data, or preparing it in advance for when I received the actual data. \vspace{3 mm}
+
+\subsubsection{OneDrive}
+
+This is the infrastructure provided by the UiT to share files. You can use the OneDrive software to sync files automatically here; but because is limited to a Windows machine, if you are using Linux, you need to delete and update the project folder manually via website interface.\vspace{3 mm}
+
+We use this platform mostly to write the manuscripts for the scientific papers in commond and share minor folders with results.\vspace{3 mm}
+
+The greatest shortcoming of this is that you can't in any way automatize the writing. So once again, everytime you change a definition, or a variable, you need to write again, manually, the entire tables that might consist of several tables with hundreds of cell each with numerical information. This is very dangereous as it introduce too much risk of an error, not to mention time consuming. This is partially adverted as I generate all figures and tables in automaticall in Latex, and later on upload manually a PDF file with the most up to date results.\vspace{3 mm}
+
+Also, OneDrive doesn't support anonymous link sharing. For any external collaborator, or simply curoius minded person who want to see the results of the analysis, you need to ask persmission that need to be granted manually (by me), and in order to do so you need a mail account, and on top of that a Microsoft mail account if you want to access the full range of functionality.\vspace{3 mm}
+
+OneDrives can complay with UiT's privacy of data policies, however, further twiking is required via Azure in order to setup a proper secure server for your project. Dropping red and black data in a common OneDrive folder is not allowed.\vspace{3 mm}
+
+\subsubsection{Google Drive}
+
+The infrastructure provided by Google to share files. It has the same functionality as OneDrive, except that it can also work in Linux properly. However it present the same problems without solution of any other close software for cloud store platform; plus many ethical concern regarding how Google use your own private data. Furthermore, Google Drive, unlike OneDrive, is not UiT approved for the sharing of private data.\vspace{3 mm}
+
+That said, Google products have become really popular within academic fields as they are generally clean and easy to use, specially since Android has the greatest piece of mobile market and it come integrated by default with all usual Google product (to the point that you can't even coop-out from it unless you root your own phone). So, sooner or later you are bound to find a group or collaborator that demands working with Google Drive, either because of personal preference or imposibility of using something else.\vspace{3 mm}
+
+You can get read only access with this \href{https://drive.google.com/drive/folders/1ouVgSilqXLdPTj7P0gyoKuUL59eymPLf?usp=sharing}{link}.
+
+\subsubsection{Overleaf}
+
+The infrastructure provi\vspace{3 mm}
+
+\subsubsection{GitHub}
+
+Git is the software for tracking changes in any set of files. Anyone can create his own git server. GitHub offert the convinience that it has the server already setup for you and is free for the vast majority of proejects.\vspace{3 mm}
+
+I don't want to deal with the hassle of maintaining a server with my own GIT server, so I use this solution as the prefered one for file sharing. Our research group already use this too as a prefered option. If you want to access as a collaborator, you need a GitHub account though, otherwise, you can download almost everthing anonymously.\vspace{3 mm}
+
+The repository can be found at: \href{https://github.com/uit-hdl/mimisbrunnr/}{https://github.com/uit-hdl/mimisbrunnr/}.\vspace{3 mm}
+
+What you won't find here is any of the private individual data. That is of course an issue for reproducibility that we can't overcome anyway because chances are that you don't even have permission by the authorities to look at the data. You will find however some synthetic data which you can use to test the scripts.\vspace{3 mm}
+
+%*****************************************
+\section{Mimisbrunnr overview}
+%*****************************************
+
+The project structure is quite big. It is not complicated though, and if you are use to do any software project you will find the organization very intuitive and self-explanatory, described as follow:\vspace{3 mm}
+
+\begin{itemize}
+
+	\item[] \textbf{/data} Contain all the data use in the project.
+    \begin{itemize}
+    	\item[] \textbf{/dataframeReady} CSV files that are ready to be imported to R or any other software. All these files have data that has already being clean, normalized, or any other operation that was needed.
+        \item[] \textbf{/fakeData} CSV files that contain data with the same structure as the original data, but is completely made up randomly, so it is impossible that can be link to anybody in real life.
+        \item[] \textbf{/filtersReady} CSV files that has a filter apply to them, as in people whos BMI is greater than 30 and smoke frequenly. All of these files are also clean an ready to use.
+        \item[] \textbf{/metaData} CSV file with variables metainformation. Such as the name of each biomarker protein.        
+		    \begin{itemize}
+                	\item[] \textbf{/biomarkers} CSV and ODS with the biomarker metainformation.
+					\item[] \textbf{/blood} CSV and ODS with the blood metainformation.
+			\end{itemize}
+        \item[] \textbf{/originalData} Files with the original data. Each folder contain a SHA1 subfolder (not listed here) that contain the SHA1 checksum for each file.
+		    \begin{itemize}
+                	\item[] \textbf{/csv} CSV files with the original data directly exported without any modification.
+					\item[] \textbf{/verbatim} XLS, SAV and DTA files with the orignal data exactly as it was received.
+			\end{itemize}
+	\end{itemize}  
+	
+	
+   	\item[] \textbf{/doc} General documentation that explain nuances of the project.
+    \begin{enumerate}
+		\item /Data metadata: The original files don't contain human readable values, instead they have cells with fields such as "Do you smoke?", with values "1", "2" and so for. Here it is explained what each of these values means, and the possible range that they can take. It also describe several variables that are available in FF1, which may or may not be available to us.
+		\item /Fit Future Brochures: The original FF1 information brochores intended to captivate teenagers into collaborating in the data collection and explaining what Fit Fitures will do.
+	\end{enumerate}           	
+
+   	\item /reports : Everything that has to do with writting a document and presenting it to someone. Includes the manuscripts, HTML documents, meeting logs, and so for.
+	\begin{enumerate}
+		\item /Code tutorial: How to run the R or Latex code, and several naming conventions.
+		\item /Latex: Everything that is written in Latex is inside this folder.
+		\item /Meetings: The logs of collaborators meeting, teeling what it need to be done and who is going to do it.
+		\item /Notebook: The generated notebooks that can run the code, notice that this is not the same as the plain HTML webs that you can find later in /Web folder.
+		\item /ODT: The LibreOffice text documents, generally there is nothing of intetest here as is just use for quick writing before importing it to Latex.
+		\item /Web: Generated simple plain website with the HTML+CSS code.
+	\end{enumerate}           	   	
+   	
+	\item /res : Resources folder. This contain documents and images that were not generated by the code. For examples, icons use in the website, ODG files with diagrams of the definitions we have for carrier, UiT logos for using in Latex documents, empty HMTL templates, and so.
+   	
+	\item /results : All the results generated by the scripts. Just a lot of images, tables, and logs. It is divided by topic.
+
+	\item /src : All the source code.   	
+   	   	
+    \item LICENSE.html : License description (GPL3.0) for the GitHub web.
+    \item README.md : Initial project description in the GitHub web.
+    \item .gitignore : A description of what folders are not kept in the git repository. Mainly all the private data and all the result folder. You can still get the results in the report document with proper explanations.
+
+\end{itemize}
+
+All the public available files can be founnd in the GitHub repository, Google Drive, and OneDrive. Private data such as the patient data, or irrelevant files such as each individual table and image generated automatically, you can only find it in the local folder of each collaborator.\vspace{3 mm}
+
+If you want to gain access to any of these sites, please write an email to \detokenize{"rca015@uit.no"}.\vspace{3 mm}
+
+
+
+
+
+

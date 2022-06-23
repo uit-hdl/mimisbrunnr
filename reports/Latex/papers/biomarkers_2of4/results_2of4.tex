@@ -1,0 +1,96 @@
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\documentclass[10pt, a4paper, onecolumn]{article} % 10pt font size (11 and 12 also possible), A4 paper (letterpaper for US letter) and two column layout (remove for one column)
+
+\input{structure.tex} % Specifies the document structure and loads requires packages
+
+
+
+\begin{document}
+
+%----------------------------------------------------------------------------------------
+%	List of tables and figures
+%----------------------------------------------------------------------------------------
+\listoffigures
+\listoftables
+\newpage
+
+%----------------------------------------------------------------------------------------
+%	All tables
+%----------------------------------------------------------------------------------------
+
+\section{Tables}
+
+% All biomarkers
+\input{../../../../results/biomarkers/tables/LatexTable_SuplementaryAllBiomarkers.tex}	
+
+%Sex differences biomarkers
+\input{../../../../results/biomarkers/tables/LatexTable_SexDifferencesBiomakers.tex}	
+
+%Sex differences blood
+\input{../../../../results/biomarkers/tables/blood/LatexTable_SummaryBloodVariablesTable.tex}
+
+%Sex differences antropometry
+\input{../../../../results/biomarkers/tables/LatexTable_SexDifferencesAntropometryTable.tex}
+
+% Bonferroni for men and women
+% -- Biomarkers againts antropometry
+\input{../../../../results/biomarkers/tables/LatexTable_BiomarkersAntropometryBonferroniMen.tex}	
+
+\input{../../../../results/biomarkers/tables/LatexTable_BiomarkersAntropometryBonferroniWomen.tex}	
+% -- Biomarkers againts blood
+\input{../../../../results/biomarkers/tables/LatexTable_BiomarkersBloodBonferroniMen.tex}	
+
+\input{../../../../results/biomarkers/tables/LatexTable_BiomarkersBloodBonferroniWomen.tex}	
+
+\newpage
+
+%----------------------------------------------------------------------------------------
+%	All images
+%----------------------------------------------------------------------------------------
+
+\section{Images}
+
+% Sex respect biomarkers
+\input{../../../../results/biomarkers/images/general/CombinedAbsBarplot_sexInflamatorySummmaryDF_Protein_Type.tex}
+
+% LOD levels
+\input{../../../../results/biomarkers/images/general/CombinedRelBarplot_longLODStats_Type_Protein.tex}
+
+%Sex respect blood
+\input{../../../../results/biomarkers/images/blood/CombinedAbsBarplot_sexBloodSummmaryDF_BloodLevel_Type.tex}
+
+%Sex respect nutrition
+\input{../../../../results/biomarkers/images/blood/DoubleCategoricalBoxplot_relativeBloodValues_A_BloodConcept_RelativeValue_Sex.tex}
+
+\input{../../../../results/biomarkers/images/blood/DoubleCategoricalBoxplot_relativeBloodValues_B_BloodConcept_RelativeValue_Sex.tex}
+
+\input{../../../../results/biomarkers/images/blood/DoubleCategoricalBoxplot_relativeBloodValues_C_BloodConcept_RelativeValue_Sex.tex}
+
+%Antropometry Grid
+\input{../../../../results/biomarkers/images/antropometry/BloodGrid.tex}
+
+
+
+
+\newpage
+
+\section{Change History}
+
+This section helps keeping track of all the changes done in the document. Here is where all the TODO notes go when they are resolved. And you would find something like this so it is not repeated again. Currently this is just a placeholder text, so just ignore it until feedback start rolling.\\
+
+\subsection*{0.1}
+
+Something changed for the first time, and here is why it happens
+
+\subsection*{0.2}
+
+The change was bad. Somebody suggested that we undo the change and just clarify the second paragraph.
+
+\subsection*{0.22}
+
+We decided that dogs should not also be included in the results part, the article will talk only about humans from now on.
+
+\end{document}
